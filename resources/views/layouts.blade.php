@@ -4,9 +4,13 @@
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href={{asset('content\stylesheets\main.css')}}>
-    <link rel="stylesheet" href="{{asset('content\stylesheets\dannye.css')}}"
+    <link rel="stylesheet" href="{{asset('content\stylesheets\dannye.css')}}">
+    <link rel="stylesheet" href="{{asset('content\stylesheets\auth.css')}}">
+    <link rel="stylesheet" href="{{asset('content\stylesheets\registr.css')}}">
+    <link rel="stylesheet" href="{{asset('content\stylesheets\Zakladki.css')}}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src={{asset('content\javascript\main.js')}}></script>
+    <script src={{asset('content\javascript\Zakladki.js')}}></script>
   </head>
 <body>
 <header class="header">
@@ -27,7 +31,7 @@
     </div>
     <div class="PersonDiv">
       <div class="users__content">
-        <a href="">Закладки</a>
+        <a href="/public/Zakladki">Закладки</a>
 
         <a href="/public/register">Регистрация</a>
 
