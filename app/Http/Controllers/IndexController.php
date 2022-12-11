@@ -22,5 +22,5 @@ class IndexController extends Controller
     public function Auth(){
         return view('Auth');
     }
-    //konpni'ihm',mmjhg8ygk
+    
 }
