@@ -5,10 +5,11 @@
             <h5 class="str3">
                 Вход в аккаунт
             </h5>
-            <form class="jform">
+            <form class="jform" action="{{route('login')}}" method="POST">
+                @csrf
                 <div class="Derj">
                     <div class="Otstup">
-                        <input aria-invalid="false" name="namelogin" placeholder="Логин" type="text" class="Input" value="">
+                        <input aria-invalid="false" name="email" placeholder="Почта" type="email" class="Input" value="{{ old('email') }}">
                     </div>
                 </div>
                 <div class="Derj">
@@ -31,7 +32,7 @@
                 Нет учетной записи?
             </p>
             <p class="str2">
-                <a href="/public/Auto/Registr" class="ssilka1">
+                <a href="/public/register" class="ssilka1">
                     Зарегистрироваться
                 </a>
             </p>

@@ -20,9 +20,10 @@ class RegisterController extends Controller
     {
         $request->validate([
                             'namelogin' => ['required', 'string'],
-                            'email' => ['required', 'string', 'email', 'unigue:users'],
+                            'email' => ['required', 'string', 'email', 'unique:users'],
                             'password' => ['required', 'confirmed', 'min:8']
                             ]);
+        
 
         $user = User::create([
                               'namelogin' => $request->namelogin,

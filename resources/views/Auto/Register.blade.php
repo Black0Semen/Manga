@@ -16,13 +16,13 @@
             @csrf
             <div class="Derj">
                 <div class="Otstup">
-                    <input aria-invalid="false" name="namelogin" placeholder="Логин" type="text" class="Input" value="">
+                    <input aria-invalid="false" name="namelogin" placeholder="Логин" type="text" class="Input" value="{{ old('namelogin') }}">
                     <input type="hidden" name="id">
                 </div>
             </div>
             <div class="Derj">
                 <div class="Otstup">
-                    <input aria-invalid="false" name="email" placeholder="Почта" type="email" class="Input" value="">
+                    <input aria-invalid="false" name="email" placeholder="Почта" type="email" class="Input" value="{{ old('email') }}">
                 </div>
             </div>
             <div class="Derj">
@@ -45,7 +45,7 @@
             Есть аккаунт?
         </p>
         <p class="str2">
-            <a href="/public/Auth" class="ssilka1">
+            <a href="/public/login" class="ssilka1">
                 Войти
             </a>
         </p>
