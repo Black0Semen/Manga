@@ -1,12 +1,10 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <!-- Set the viewport width to device width for mobilebhhhhhhhhhhhhhhhhhhhhhh -->
+    <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href={{asset('content\stylesheets\main.css')}}>
-    <link rel="stylesheet" href="{{asset('content\stylesheets\dannye.css')}}">
-    <link rel="stylesheet" href="{{asset('content\stylesheets\auth.css')}}">
-    <link rel="stylesheet" href="{{asset('content\stylesheets\registr.css')}}">
+    <link rel="stylesheet" href="{{asset('content\stylesheets\dannye.css')}}"
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src={{asset('content\javascript\main.js')}}></script>
   </head>
@@ -21,21 +19,23 @@
         </div>
       </div>
       <div class="header__web">
-          <a href="/public/">Контент</a>
-          <a href="/public/top">Топ</a>
-          <a href="/public/order">Заказ</a>
-          <a href="">Поиск</a>
+          <a href="/">Контент</a>
+          <a href="/top">Топ</a>
+          <a href="/order">Заказ</a>
+          <a href="/search">Поиск</a><img width="20" src={{asset('content/photo/search.png')}}>
       </div>
     </div>
     <div class="PersonDiv">
       <div class="users__content">
         <a href="">Закладки</a>
+
         <a href="/public/register">Регистрация</a>
+
       </div>
       <div class="dropdown">
         <img src="content/photo/logo.png" onclick="myFunction()" class="droppng">
           <div id="myDropdown" class="dropdown-content">
-            <a href="#">Главная</a>
+            <a href="/user/">Профиль</a>
             <a href="#">О Нас</a>
             <a href="#">Контакты</a>
           </div>

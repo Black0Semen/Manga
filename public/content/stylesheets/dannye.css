@@ -1,3 +1,6 @@
+.Nadpisi_Form{
+
+}
 .osnova{
     display: grid;
     grid-template-columns: repeat(2,200px);
@@ -69,6 +72,9 @@ p{
     color: rgb(255 255 255);
     user-select: none;
 }
+  .Views_But{
+  
+  } 
   .Button_Vib_order:hover {
 	color: rgb(0,59,66);
 	cursor: pointer;

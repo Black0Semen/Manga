@@ -118,7 +118,7 @@ color: #fff;
   .header__web{
     position: relative;
     margin-right: 10%;
-    margin-top: -8%;
+    margin-top: -7%;
     margin-left: 10%;
   }
   .users__content{
@@ -237,32 +237,27 @@ color: #fff;
 }
 .Buttons{
   margin-bottom: 2%;
-  margin-top: -2px;
-  margin-left: -8px;
-  display: flex;
 }
 .Button_Vib{
   display: inline-block;
-  margin-left: 5%;
-  margin-top: 9px;
   width: 100px;
   height: 50px;
-  line-height: 48px;
-  font-size: 15px;
+  line-height: 50px;
+  font-size: 20px;
   text-align: center;
   text-decoration: none;
   text-shadow: 0 1px rgb(255 255 255 / 20%), 0 -1px rgb(0 0 0 / 80%);
   outline: none;
   border: none;
   border-radius: 100px;
-  background: rgb(151 150 149) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
+  background: rgb(36 35 33) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
   box-shadow: inset rgb(164 112 112 / 60%) 0 -2px 5px, inset rgb(247 255 183 / 70%) 0 2px 5px, rgb(90 82 64 / 80%) 0 2px 5px -1px;
   color: rgb(255 255 255);
   user-select: none;
 }
 .Views_But{
 
-}
+} 
 .Button_Vib:hover {
   color: rgb(0,59,66);
   cursor: pointer;
@@ -276,6 +271,27 @@ color: #fff;
    0 1px rgba(255,255,255,.08);
   color: rgb(230, 194, 96);
 }
+
+
+
+/* ---------------
+  Search styles
+----------------*/
+.search_main{
+  margin: 6%;
+  flex: 1 0 auto;
+  width: auto;
+  background-color: #4a4a4a;
+  color: #fff;
+  text-align: center;
+}
+.search_main input{
+  width: 260px;
+}
+fieldset{
+  border-radius: 10px;
+}
+
 /*--------------------
 	Footer styles
 --------------------*/
