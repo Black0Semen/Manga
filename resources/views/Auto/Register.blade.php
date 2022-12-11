@@ -45,7 +45,7 @@
             Есть аккаунт?
         </p>
         <p class="str2">
-            <a href="/public/Auto/Auth" class="ssilka1">
+            <a href="/public/Auth" class="ssilka1">
                 Войти
             </a>
         </p>

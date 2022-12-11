@@ -19,10 +19,10 @@
         </div>
       </div>
       <div class="header__web">
-          <a href="/">Контент</a>
-          <a href="/top">Топ</a>
-          <a href="/order">Заказ</a>
-          <a href="/search">Поиск</a><img width="20" src={{asset('content/photo/search.png')}}>
+          <a href="/public/">Контент</a>
+          <a href="/public/top">Топ</a>
+          <a href="/public/order">Заказ</a>
+          <a href="/public/search">Поиск</a><img width="20" src={{asset('content/photo/search.png')}}>
       </div>
     </div>
     <div class="PersonDiv">
