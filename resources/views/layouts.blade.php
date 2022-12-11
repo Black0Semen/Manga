@@ -30,7 +30,7 @@
     <div class="PersonDiv">
       <div class="users__content">
         <a href="">Закладки</a>
-        <a href="/public/Auto/Registr">Регистрация</a>
+        <a href="/public/register">Регистрация</a>
       </div>
       <div class="dropdown">
         <img src="content/photo/logo.png" onclick="myFunction()" class="droppng">

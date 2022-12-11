@@ -8,7 +8,7 @@
             <form class="jform">
                 <div class="Derj">
                     <div class="Otstup">
-                        <input aria-invalid="false" name="user" placeholder="Логин" type="text" class="Input" value="">
+                        <input aria-invalid="false" name="namelogin" placeholder="Логин" type="text" class="Input" value="">
                     </div>
                 </div>
                 <div class="Derj">
