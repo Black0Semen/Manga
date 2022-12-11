@@ -31,7 +31,7 @@
     </div>
     <div class="PersonDiv">
       <div class="users__content">
-        <a href="/public/Zakladki">Закладки</a>
+        <a href="/public/zakladki">Закладки</a>
 
         <a href="/public/register">Регистрация</a>
 
