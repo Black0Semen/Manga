@@ -35,7 +35,7 @@
                     <input aria-invalid="false" name="password_confirmation" placeholder="Пароль повторно" type="password" class="Input" value="">
                 </div>
             </div>
-            <button class="Button_Vib" tabindex="0" type="submit">
+            <button class="Button_V1" tabindex="0" type="submit">
                 <span>
                     Регистрация
                 </span>

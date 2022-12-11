@@ -21,7 +21,7 @@
                         Забыли пароль?
                     </a>
                 </div>
-                <button class="Button_Vib" type="submit">
+                <button class="Button_V" type="submit">
                     <span>
                         Войти
                     </span>
