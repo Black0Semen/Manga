@@ -22,7 +22,7 @@ p{
     margin-left: 38px;
     MARGIN-TOP: -11px;
 }
-.Button_Vib{
+.Button_V1{
     display: inline-block;
     margin-left: 57%;
     margin-top: 9px;
@@ -41,11 +41,11 @@ p{
     color: rgb(255 255 255);
     user-select: none;
 }
-  .Button_Vib:hover {
+  .Button_V1:hover {
 	color: rgb(0,59,66);
 	cursor: pointer;
   }
-  .Button_Vib:active {
+  .Button_V1:active {
 	padding-bottom: 1px;
 	box-shadow:
 	 inset rgba(0,0,0,1) 0 1px 3px,

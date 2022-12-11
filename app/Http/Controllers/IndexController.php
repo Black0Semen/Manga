@@ -22,6 +22,9 @@ class IndexController extends Controller
     public function search(){
         return view('search');
     }
+    public function Zakladki(){
+        return view('Zakladki');
+    }
     public function findSomeThing(Request $request){
         $input = $request->title;
         $comics = Comic::WHERE("title","=",$input)->get();
