@@ -14,15 +14,16 @@
         </ul>
         <form class="jform1" action="{{route('register')}}" method="POST">
             @csrf
-            <div class="Derj1">
-                <div class="Otstup1">
-                    <input aria-invalid="false" name="namelogin" placeholder="Логин" type="text" class="Input1" value="">
+
+            <div class="Derj">
+                <div class="Otstup">
+                    <input aria-invalid="false" name="namelogin" placeholder="Логин" type="text" class="Input" value="{{ old('namelogin') }}">
                     <input type="hidden" name="id">
                 </div>
             </div>
-            <div class="Derj1">
-                <div class="Otstup1">
-                    <input aria-invalid="false" name="email" placeholder="Почта" type="email" class="Input1" value="">
+            <div class="Derj">
+                <div class="Otstup">
+                    <input aria-invalid="false" name="email" placeholder="Почта" type="email" class="Input" value="{{ old('email') }}">
                 </div>
             </div>
             <div class="Derj1">
@@ -44,8 +45,8 @@
         <p class="str1">
             Есть аккаунт?
         </p>
-        <p class="str21">
-            <a href="/public/Auto/Auth" class="ssilka11">
+        <p class="str2">
+            <a href="/public/login" class="ssilka1">
                 Войти
             </a>
         </p>
