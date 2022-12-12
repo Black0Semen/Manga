@@ -44,7 +44,7 @@
         <img src="content/photo/logo.png" onclick="myFunction()" class="droppng">
           <div id="myDropdown" class="dropdown-content">
             <a href="/user/">Профиль</a>
-            <a href="#">О Нас</a>
+          <a href="#">О Нас</a>
             <a href="#">Контакты</a>
           </div>
       </div>

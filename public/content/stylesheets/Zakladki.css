@@ -1,14 +1,14 @@
 .drop {
-    width: 2px;
-    height: 10px;
-    margin-left: 1213px;
-    margin-top: -81px;
-    background-color: #3a3a3a;
-    color: #765555;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+  width: 2px;
+  height: 10px;
+  margin-left: 948px;
+  margin-top: -116px;
+  background-color: #3a3a3a;
+  color: #765555;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 
 .drop:hover, .droppng:focus {
@@ -21,15 +21,15 @@
 }
 
 .dropdown-conten {
-    margin-left: 88%;
-    margin-top: 0%;
-    display: none;
-    position: absolute;
-    background-color: #a4a39e;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
-    z-index: 100;
+  margin-left: 70%;
+  margin-top: 0%;
+  display: none;
+  position: absolute;
+  background-color: #a4a39e;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  z-index: 100;
 }
 
 .dropdown-conten a {
@@ -55,10 +55,10 @@
   font-style: oblique;
 }
 .Buttons1{
-    margin-bottom: 0%;
-    margin-top: 132px;
-    margin-left: -170px;
-    display: flex;
+  margin-bottom: 0%;
+  margin-top: 106px;
+  margin-left: -170px;
+  display: flex;
 }
 .Button_Vib1{
     display: inline-block;

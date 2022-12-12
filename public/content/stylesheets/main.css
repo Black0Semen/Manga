@@ -32,8 +32,8 @@ color: #fff;
 .droppng {
     width: 50px;
     height: 50px;
-    margin-left: 268px;
-    margin-top: -54px;
+    margin-left: 422px;
+    margin-top: -70px;
     background-color: #3a3a3a;
     color: #765555;
     padding: 16px;
@@ -52,7 +52,7 @@ color: #fff;
 }
 
 .dropdown-content {
-  margin-left: 56%;
+  margin-left: 65%;
   margin-top: -4%;
   display: none;
   position: absolute;
@@ -123,9 +123,12 @@ color: #fff;
   }
   .users__content{
     positioN: relative;
-    width: auto;
+    width: 417px;
     margin-top: 2%;
-  }
+    margin-left: 13px;
+    display: flex;
+    flex-direction: row-reverse;
+}
   .header__contents{
     position: relative;
     margin-left: 105%;
