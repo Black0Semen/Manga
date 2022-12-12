@@ -45,7 +45,7 @@
         <p class="str1">
             Есть аккаунт?
         </p>
-        <p class="str2">
+        <p class="str21">
             <a href="/public/login" class="ssilka1">
                 Войти
             </a>
