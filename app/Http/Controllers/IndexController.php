@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Comic;
 use App\Models\Team;
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
 
@@ -21,6 +21,9 @@ class IndexController extends Controller
     }
     public function search(){
         return view('search');
+    }
+    public function Zakladki(){
+        return view('Zakladki');
     }
     public function findSomeThing(Request $request){
         $input = $request->title;

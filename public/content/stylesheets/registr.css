@@ -1,4 +1,4 @@
-.Dialog{
+.Dialog1{
     display: grid;
     grid-template-columns: repeat(2,200px);
     width: 400px;
@@ -12,17 +12,18 @@
 p{
 	font-family:sans-serif;
 }
-.str2{
+.str21{
     font-family: sans-serif;
     margin-top: -17px;
+    margin-left: 46%;
 }
-.str{
+.str1{
     font-family: sans-serif;
     width: 180%;
     margin-left: 38px;
     MARGIN-TOP: -11px;
 }
-.Button_Vib{
+.Button_V1{
     display: inline-block;
     margin-left: 57%;
     margin-top: 9px;
@@ -41,11 +42,11 @@ p{
     color: rgb(255 255 255);
     user-select: none;
 }
-  .Button_Vib:hover {
+  .Button_V1:hover {
 	color: rgb(0,59,66);
 	cursor: pointer;
   }
-  .Button_Vib:active {
+  .Button_V1:active {
 	padding-bottom: 1px;
 	box-shadow:
 	 inset rgba(0,0,0,1) 0 1px 3px,
@@ -54,37 +55,41 @@ p{
 	 0 1px rgba(255,255,255,.08);
 	color: rgb(230, 194, 96);
   }
-  .Input{
+  .Input1{
     display: block;
     /* margin: 18px 0px; */
     BACKGROUND: #c3c4bd;
     width: 200px;
   }
-  .Derj{
+  .Derj1{
     width: 151%;
     margin-left: 5px;
   }
-  .jform{
+  .jform1{
     margin-left: -33px;
   }
-  .Osn{
+  .Osn1{
     margin-left: 55%;
   }
-  .str3{
-    width: 217px;
+  li {
+    width: 350px;
+    margin-left: -48px;
+  }
+  .str31{
+    width: 218px;
     margin-left: -15px;
     font-size: 20px;
     margin-top: -2px;
     margin-bottom: 12px;
   }
-  .ssilka1{
+  .ssilka11{
     margin-left: 8px;
     color: #fffd95;
     text-decoration: none;
     font-size: 13px;
     margin: 67px;
   }
-  .Otstup{
+  .Otstup1{
     padding: 6px;
     margin-top: -3px;
     margin-left: 10px;
