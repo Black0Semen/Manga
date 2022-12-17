@@ -7,6 +7,7 @@
 		<td>Логин</td>
 		<td>Почта</td>
 		<td>Роль</td>
+		<td>Дата создания профиля</td>
 	</tr>
 	@foreach($users as $user)
 	<tr>
@@ -14,6 +15,7 @@
 		<td>{{$user -> namelogin}}</td>
 		<td>{{$user -> email}}</td>
 		<td>{{$user -> roles}}</td>
+		<td>{{$user -> created_at}}</td>
 		<td><form method="post" action="{{route('edit', $user -> id)}}">
 			@csrf
 			<input type="submit" value="Изменить пользователя">
