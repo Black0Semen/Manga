@@ -44,8 +44,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function roles()
+    public function IsModer()
     {
-        return $this->roles === 'admin';
+        return $this->roles = 'admin';
     }
 }
