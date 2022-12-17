@@ -10,6 +10,7 @@
         </ul>
     </div>
 @endif
+<div class="osnova">
     <form method="post" action="{{route('update')}}">
         @csrf
 @method('PATCH')
@@ -19,3 +20,4 @@
         <input name="roles" value="{{$user->roles}}" placeholder="Роль">
         <button type="submit">Жимк</button>
     </form>
+</div>

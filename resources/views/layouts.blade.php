@@ -27,7 +27,7 @@
           <a href="/public/top">Топ</a>
           <a href="/public/order">Заказ</a>
           <a href="/public/search">Поиск</a><img width="20" src={{asset('content/photo/search.png')}}>
-          <a href="/public/admin">Админ панель</a>
+            <a href="/public/admin">Админ панель</a>
       </div>
     </div>
     <div class="PersonDiv">

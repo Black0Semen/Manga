@@ -24,6 +24,6 @@ Route::post('/login', [LoginController::class, 'store'])->middleware('guest');
 //Route::get('/profile', function () {})->middleware('auth');
 //админ
 Route::get('/admin', [AdminController::class, 'index'])->name('home');
-Route::patch('/edit', [AdminController::class, 'update'])->name('update');
-Route::delete('/delete/{user}', [AdminController::class, 'delete'])->name('delete');
-Route::get('/edit/{user}', [AdminController::class, 'edit'])->name('edit');
+Route::patch('/admin/edit', [AdminController::class, 'update'])->name('update');
+Route::delete('/admin/delete/{user}', [AdminController::class, 'delete'])->name('delete');
+Route::post('/admin/edit/{user}', [AdminController::class, 'edit'])->name('edit');
