@@ -8,7 +8,7 @@ html{
 body{
   padding: 8;
   margin: 0;
-  padding-top: 70px;
+  padding-top: 108px;
   height: 100%;
   font: 400 15px/1.4 'Open Sans',sans-serif;
   display: flex;
@@ -117,7 +117,7 @@ color: #fff;
   }
   .header__web{
     position: relative;
-    margin-right: 10%;
+    margin-right: 0%;
     margin-top: -7%;
     margin-left: 10%;
   }
