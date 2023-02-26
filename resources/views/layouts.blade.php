@@ -3,21 +3,21 @@
     <meta charset="utf-8" />
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href={{asset('content\stylesheets\main.css')}}>
+    <link rel="stylesheet" href="{{asset('content\stylesheets\main.css')}}">
     <link rel="stylesheet" href="{{asset('content\stylesheets\dannye.css')}}">
-    <link rel="stylesheet" href="{{asset('content\stylesheets\auth.css')}}">
-    <link rel="stylesheet" href="{{asset('content\stylesheets\registr.css')}}">
-    <link rel="stylesheet" href="{{asset('content\stylesheets\Zakladki.css')}}">
+    <!-- <link rel="stylesheet" href="{{asset('content\stylesheets\auth.css')}}"> -->
+     <!-- <link rel="stylesheet" href="{{asset('content\stylesheets\registr.css')}}"> -->
+    <link rel="stylesheet" href="{{asset('content\stylesheets\temnaya\Zakladki.css')}}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src={{asset('content\javascript\main.js')}}></script>
-    <script src={{asset('content\javascript\Zakladki.js')}}></script>
+    <script src="{{asset('content\javascript\main.js')}}"></script>
+    <script src="{{asset('content\javascript\Zakladki.js')}}"></script>
   </head>
 <body>
 <header class="header">
   <div class="header__inner">
     <div class="logoDiv">
       <div class="header__logo-wrapper">
-        <img class="header__logo" width="50" src={{asset('content/photo/logo.png')}}>
+        <img class="header__logo" width="50" src="{{asset('content/photo/logo.png')}}">
         <div class="header__logo-text">
 
         </div>
@@ -26,7 +26,7 @@
           <a href="/public/">Контент</a>
           <a href="/public/top">Топ</a>
           <a href="/public/order">Заказ</a>
-          <a href="/public/search">Поиск</a><img width="20" src={{asset('content/photo/search.png')}}>
+          <a href="/public/search">Поиск</a><img width="20" src="{{asset('content/photo/search.png')}}">
             <a href="/public/admin">Админ панель</a>
       </div>
     </div>
@@ -39,7 +39,7 @@
       <div class="dropdown">
         <img src="content/photo/logo.png" onclick="myFunction()" class="droppng">
           <div id="myDropdown" class="dropdown-content">
-            <a href="/user/">Профиль</a>
+            <a href="/public/dashboard">Профиль</a>
             <a href="/public/login">Вход</a>
             <a href="/public/logout">Выход</a>
           </div>

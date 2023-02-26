@@ -16,6 +16,18 @@ window.onclick = function(event) {
     }
   }
 }
+
+let switchMode = document.getElementById("switchMode");
+
+switchMode.onclick = function () {
+  let theme = document.getElementById("theme");
+
+  if (theme.getAttribute("href") == "main_dark.css"){;
+    theme.href = "main_light.css";
+  } else{
+    theme.href = "main_dark.css";
+  }
+}
 ////////////////////////////////////////////////////////////
 /*$(function() {
     let header = $('.header');
