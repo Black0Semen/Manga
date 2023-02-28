@@ -15,7 +15,7 @@
         @csrf
 @method('PATCH')
         <input type="hidden" name="id" value="{{$user->id}}">
-        <input name="namelogin" value="{{$user->namelogin}}" placeholder="Логин">
+        <input name="namelogin" value="{{$user->name}}" placeholder="Логин">
         <input name="email" value="{{$user->email}}" placeholder="Почта">
         <input name="roles" value="{{$user->roles}}" placeholder="Роль">
         <button type="submit">Жимк</button>
