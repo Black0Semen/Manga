@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(2,200px);
     width: 400px;
-    BACKGROUND: #86837d;
+    BACKGROUND: #a8a3d3;
     margin: auto;
     margin-top: 7%;
     border-radius: 5%;
@@ -21,24 +21,24 @@ p{
     width: 180%;
     margin-left: 10px;
 }
-.Button_V{
-    display: inline-block;
-    margin-left: 57%;
-    margin-top: 9px;
-    width: 100px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 18px;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 0 1px rgb(255 255 255 / 20%), 0 -1px rgb(0 0 0 / 80%);
-    outline: none;
-    border: none;
-    border-radius: 100px;
-    background: rgb(151 150 149) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
-    box-shadow: inset rgb(164 112 112 / 60%) 0 -2px 5px, inset rgb(247 255 183 / 70%) 0 2px 5px, rgb(90 82 64 / 80%) 0 2px 5px -1px;
-    color: rgb(255 255 255);
-    user-select: none;
+.Button_V {
+  display: inline-block;
+  margin-left: 57%;
+  margin-top: 9px;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px rgb(255 255 255 / 20%), 0 -1px rgb(0 0 0 / 80%);
+  outline: none;
+  border: none;
+  border-radius: 23px;
+  background: #c49f68 radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
+  box-shadow: inset rgb(255 114 114 / 60%) 0 -2px 5px, inset rgb(247 255 183 / 70%) 0 2px 5px, rgb(255 234 185 / 80%) 0 2px 5px -1px;
+  color: rgb(255 255 255);
+  user-select: none;
 }
   .Button_V:hover {
 	color: rgb(0,59,66);
@@ -56,7 +56,7 @@ p{
   .Input{
     display: block;
     /* margin: 18px 0px; */
-    BACKGROUND: #c3c4bd;
+    BACKGROUND: #f2f5e4;
     width: 200px;
   }
   .Derj{

@@ -46,7 +46,7 @@
             Есть аккаунт?
         </p>
         <p class="str21">
-            <a href="/public/login" class="ssilka1">
+            <a href="/login" class="ssilka1">
                 Войти
             </a>
         </p>

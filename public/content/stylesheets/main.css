@@ -3,7 +3,7 @@
 --------------*/
 
 html{
-  background-color: #4a4a4a;
+  background-color: #543fb521;
 }
 body{
   padding: 8;
@@ -17,14 +17,14 @@ body{
 }
 
 a{
-  color:#fff;
+  color:#FF9800;
   text-decoration: none;
   font-size: 1.5em;
   margin: 10px;
 }
 
 .Color_Opis{
-color: #fff;
+color: #FF9800;
 }
 /*-------------
 	Header
@@ -34,8 +34,8 @@ color: #fff;
     height: 50px;
     margin-left: 422px;
     margin-top: -70px;
-    background-color: #3a3a3a;
-    color: #765555;
+    background-color: #3F51B5;
+    color: #8e3939;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -43,7 +43,7 @@ color: #fff;
 }
 
 .droppng:hover, .droppng:focus {
-  background-color: #31383c;
+  background-color: #3f51b5;
 }
 
 .dropdown {
@@ -56,7 +56,7 @@ color: #fff;
   margin-top: -3%;
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #f9faff;
   min-width: 160px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
@@ -89,7 +89,7 @@ color: #fff;
   left: 0;
   width: 100%;
   position: absolute;
-  background-color: #3a3a3a;
+  background-color: #3F51B5;
   box-shadow: 0 1px 1px 0 rgb(0 0 0 / 12%);
   padding: 15px 0;
   z-index: 100;
@@ -135,7 +135,7 @@ color: #fff;
     margin-top: -29%;
   }
   .header__contacts{
-    background-color: black;
+    background-color: white;
   }
   /*--------------------
 	Main Content
@@ -147,20 +147,18 @@ color: #fff;
   margin-right: 0%;
   flex: 1 0 auto;
   width: auto;
-  background-color: #4a4a4a;
+  background-color: #e8e6f5;
 }
 #pageContent {
 	z-index: 99;
-	background: rgb(0, 0, 0);
+	background: rgb(255 255 255);
 }
 .rek{
-  padding: 5px;
-  width: 170px;
-  height: 230px;
+  padding: 10px;
+  width: 121px;
   margin: 2px;
-  display:inline-block;
-  padding-bottom: 10px;
-  border-radius: 3px;
+  display: inline-block;
+  background-color: #edebff;
   }
   .rek_name{
   width: 170px;
@@ -177,7 +175,7 @@ color: #fff;
   background-color: 292c2f;
   }
   .block{
-    background-color: #52523c;
+    background-color: #ffffff;
     width: 100%;
     height: 1500px;
     top: 5%;
@@ -220,7 +218,7 @@ color: #fff;
   width: 121px;
   margin: 2px;
   display: inline-block;
-  background-color: #4f4f4f;
+  background-color: #edebff;
 }
 .Top{
   padding-left: 5px;
@@ -231,7 +229,7 @@ color: #fff;
 }
 .Top_title{
   font-size: 2.5em;
-  color: white;
+  color: #fbb753;
   font-style: oblique;
 }
 .Nomer_Block{
@@ -253,7 +251,7 @@ color: #fff;
   outline: none;
   border: none;
   border-radius: 100px;
-  background: rgb(36 35 33) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
+  background: rgb(249 162 0 / 89%) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
   box-shadow: inset rgb(164 112 112 / 60%) 0 -2px 5px, inset rgb(247 255 183 / 70%) 0 2px 5px, rgb(90 82 64 / 80%) 0 2px 5px -1px;
   color: rgb(255 255 255);
   user-select: none;
@@ -272,7 +270,7 @@ color: #fff;
    inset rgba(0,0,0,.6) 0 -2px 5px,
    inset rgba(252,255,255,.7) 0 2px 5px,
    0 1px rgba(255,255,255,.08);
-  color: rgb(230, 194, 96);
+  color: #ffffff;
 }
 
 
@@ -300,7 +298,7 @@ fieldset{
 --------------------*/
 
 footer{
-    background-color: #3a3a3a;
+    background-color: #3F51B5;
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 12%);
     width: 104%;
     text-align: left;
@@ -316,7 +314,7 @@ footer .footer-limiter {
 }
 
 footer .footer-left p{
-	color:  #8f9296;
+	color:  #f2f2f2;
 	font-size: 14px;
 	margin: 0;
 }
@@ -348,7 +346,7 @@ footer .footer-right a{
 	display: inline-block;
 	width: 35px;
 	height: 35px;
-	background-color:  #33383b;
+	background-color:  #3F51B5;
 	border-radius: 2px;
 
 	font-size: 20px;

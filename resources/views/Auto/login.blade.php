@@ -32,7 +32,7 @@
                 Нет учетной записи?
             </p>
             <p class="str2">
-                <a href="/public/register" class="ssilka1">
+                <a href="/register" class="ssilka1">
                     Зарегистрироваться
                 </a>
             </p>

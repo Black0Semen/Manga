@@ -23,25 +23,26 @@
         </div>
       </div>
       <div class="header__web">
-          <a href="/public/">Контент</a>
-          <a href="/public/top">Топ</a>
-          <a href="/public/order">Заказ</a>
-          <a href="/public/search">Поиск</a><img width="20" src={{asset('content/photo/search.png')}}>
-            <a href="/public/admin">Админ панель</a>
+          <a href="/">Контент</a>
+          <a href="/top">Топ</a>
+          <a href="/order">Заказ</a>
+          <a href="/search">Поиск</a><img width="20" src={{asset('content/photo/search.png')}}>
+            <a href="/admin">Админ панель</a>
       </div>
     </div>
     <div class="PersonDiv">
       <div class="users__content">
-        <a href="/public/zakladki">Закладки</a>
+        <a href="/zakladki">Закладки</a>
 
-        <a href="/public/register">Регистрация</a>
+        <a href="/register">Регистрация</a>
       </div>
       <div class="dropdown">
         <img src="content/photo/logo.png" onclick="myFunction()" class="droppng">
           <div id="myDropdown" class="dropdown-content">
+            <a href="/logout">Фон</a>
             <a href="/user/">Профиль</a>
-            <a href="/public/login">Вход</a>
-            <a href="/public/logout">Выход</a>
+            <a href="/login">Вход</a>
+            <a href="/logout">Выход</a>
           </div>
       </div>
     </div>
