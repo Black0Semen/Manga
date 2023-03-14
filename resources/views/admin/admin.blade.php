@@ -1,6 +1,8 @@
 @extends('layouts')
 @section('content')
-
+<button> Разбор обратной связи</button>
+<button> Админ-Панель</button>
+<button> Расмотрение заявок</button>
 <table>
 	<tr>
 		<td>Id</td>
