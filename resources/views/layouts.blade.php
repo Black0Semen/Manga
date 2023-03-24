@@ -130,6 +130,7 @@
           <div class="search__suggestions autocomplete__suggestions"></div>
         </div>
       </div>
+
   </div>
 </div>
     <!--/ SEARCH -->

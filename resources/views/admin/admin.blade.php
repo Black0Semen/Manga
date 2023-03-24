@@ -1,7 +1,10 @@
 @extends('layouts')
 @section('content')
-<div>
-<table style="border-collapse:collapse;border:3px solid black;">
+
+<button> Разбор обратной связи</button>
+<button> Админ-Панель</button>
+<button> Расмотрение заявок</button>
+<table>
 	<tr>
 		<td style="border:1px solid black;">Id</td>
 		<td style="border:1px solid black;">Логин</td>
@@ -13,12 +16,13 @@
 	</tr>
 	@foreach($users as $user)
 	<tr>
-		<td style="border:1px solid black;">{{$user -> id}}</td>
-		<td style="border:1px solid black;">{{$user -> name}}</td>
-		<td style="border:1px solid black;">{{$user -> email}}</td>
-		<td style="border:1px solid black;">{{$user -> roles}}</td>
-		<td style="border:1px solid black;">{{$user -> created_at}}</td>
-		<td style="border:1px solid black;"><form method="post" action="{{route('edit', $user -> id)}}">
+
+		<td>{{$user -> id}}</td>
+		<td>{{$user -> name}}</td>
+		<td>{{$user -> email}}</td>
+		<td>{{$user -> roles}}</td>
+		<td>{{$user -> created_at}}</td>
+		<td><form method="post" action="{{route('edit', $user -> id)}}">
 			@csrf
 			<input type="submit" value="Изменить пользователя">
 		</form></td>
