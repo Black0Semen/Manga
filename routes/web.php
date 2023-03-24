@@ -20,12 +20,13 @@ Route::get('/top', [IndexController::class, 'top']);
 Route::get('/order', [IndexController::class, 'order']);
 Route::get('/zakladki', [IndexController::class, 'zakladki']);
 
+
 Route::get('/search', [IndexController::class, 'search']);
 Route::get('/search', [IndexController::class, 'findSomeThing']);
 
 //Route::get('/profile', function () {})->middleware('auth');
 //админ
-Route::get('/admin', [AdminController::class, 'index'])->name('home');
+Route::get('/MyManga', [AdminController::class, 'index'])->name('home');
 Route::patch('/admin/edit', [AdminController::class, 'update'])->name('update');
 Route::delete('/admin/delete/{user}', [AdminController::class, 'delete'])->name('delete');
 Route::post('/admin/edit/{user}', [AdminController::class, 'edit'])->name('edit');

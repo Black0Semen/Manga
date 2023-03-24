@@ -130,7 +130,6 @@
           <div class="search__suggestions autocomplete__suggestions"></div>
         </div>
       </div>
-
   </div>
 </div>
     <!--/ SEARCH -->
@@ -237,75 +236,196 @@
 
 </div>
     <!--/ Website Menu -->
-<section id="pageContent">
-    @yield('content')
-</section>
-<footer class="footer paper">
 
+    <div class="page" id="main-page">
+      <div class="page__inner">
+        
+        
+        <div class="container container_offset">
 
-
-
-
-
-
-<div class="footer__inner container">
-  <div class="footer__menu clearfix">
-    <div class="footer__copyright">
-      <a href="/">
-        <h4>
-          MyManga © 2023
-        </h4>
-      </a>        
-      <p class="footer-links">Мы всегда рады вам!</p>
-      <a>
-        Задать вопрос
-      </a>
-    </div>
-    <ul class="footer__nav clearfix">
-      <li>
-        <a class="footer__nav-link" rel="nofollow" target="_blank" href="/" title="Обратная связь">Обратная связь</a>
-      </li>
-
-      <li>
-        <a class="footer__nav-link" href="/" target="_blank" title="Для правообладателей">Авторское право</a>
-      </li>
-      <li>
-        <a class="footer__nav-link" href="/" target="_blank" title="Пользовательское соглашение">Пользовательское соглашение</a>
-      </li>
-
-
-       <li>
-        <a class="footer__nav-link" href="/" target="_blank" title="DMCA">DMCA</a>
-      </li>
-
-
-                <li>
-          <a class="footer__nav-link" href="/" target="_blank" title="Список манги">О нас</a>
-        </li>
-              <li>
-        <a class="footer__nav-link" href="/" target="_blank" title="Лицензия">Лицензия</a>
-      </li>
-
-    </ul>
-  </div>
-</div>
-</footer>
-  </div>
-
-  <div class="page-modals" tabindex="-1">
-              </div>
-
-  <script type="text/javascript">
-        </script>
-
-
-
+  <div class="page__wrapper page__wrapper_left">
+   
+    <section class="section paper">
   
-
-  <div class="flash-messages">
+</section>
+  
     
-                                                  </div>
 
-      <script src="./content/javascript/vendor.f1211b48.js"></script>
-  <script src="./content/javascript/main.f1211b48.js"></script><div class="toast"><div></div></div><div class="popup-root"></div><div class="toast"><div></div></div><div class="popup-root"></div><div class="toast"><div></div></div><div class="popup-root"></div>
-</body></html>
+    
+     
+      <section class="section paper tabs" id="latest-updates" data-tabs-id="tabs_1">
+  <div class="section__body">
+    <div class="updates tabs__content tabs__content_show">
+
+      </div>
+            <div class="updates__item">
+              <div class="aside__content">
+                <div class="top-user">
+                  <div class="top-user__body">
+                    <div class="top-user__username">
+                      <a class="link-default" href="/">Заявка</a>
+                    </div>
+                    <div class="top-user__rank">1</div>
+                    <div>
+                      <div class="top-user__lvl">Отправитель: BgEu</div>
+                    </div>
+                    <div>
+                      <div class="top-user__lvl">Дата отправления: 2023-02-28 11:05:44</div>
+                    </div>
+                    <ul class="tabs__list" data-tabs-list-id="tabs_1">
+                      <li class="tabs__item tabs__item_active" data-key="home-updates">
+                        <span><a href="/">Открыть</a></span>
+                      </li></ul></div>
+                </div>
+                <div class="top-user">
+                  <div class="top-user__body">
+                    <div class="top-user__username">
+                      <a class="link-default" href="/">Заявка</a>
+                    </div>
+                    <div class="top-user__rank">2</div>
+                    <div>
+                      <div class="top-user__lvl">Отправитель: BgEu</div>
+                    </div>
+                    <div>
+                      <div class="top-user__lvl">Дата отправления: 2023-02-28 11:05:44</div>
+                    </div>
+                    <ul class="tabs__list" data-tabs-list-id="tabs_1">
+                      <li class="tabs__item tabs__item_active" data-key="home-updates">
+                        <span><a href="/">Открыть</a></span>
+                      </li></ul></div>
+                </div>
+                <div class="top-user">
+                  <div class="top-user__body">
+                    <div class="top-user__username">
+                      <a class="link-default" href="/">Заявка</a>
+                    </div>
+                    <div class="top-user__rank">3</div>
+                    <div>
+                      <div class="top-user__lvl">Отправитель: BgEu</div>
+                    </div>
+                    <div>
+                      <div class="top-user__lvl">Дата отправления: 2023-02-28 11:05:44</div>
+                    </div>
+                    <ul class="tabs__list" data-tabs-list-id="tabs_1">
+                      <li class="tabs__item tabs__item_active" data-key="home-updates">
+                        <span><a href="/">Открыть</a></span>
+                      </li></ul></div>
+                </div>
+                <div class="top-user">
+                  <div class="top-user__body">
+                    <div class="top-user__username">
+                      <a class="link-default" href="/">Заявка</a>
+                    </div>
+                    <div class="top-user__rank">4</div>
+                    <div>
+                      <div class="top-user__lvl">Отправитель: BgEu</div>
+                    </div>
+                    <div>
+                      <div class="top-user__lvl">Дата отправления: 2023-02-28 11:05:44</div>
+                    </div>
+                    <ul class="tabs__list" data-tabs-list-id="tabs_1">
+                      <li class="tabs__item tabs__item_active" data-key="home-updates">
+                        <span><a href="/">Открыть</a></span>
+                      </li></ul></div>
+                </div>
+                <div class="top-user">
+                  <div class="top-user__body">
+                    <div class="top-user__username">
+                      <a class="link-default" href="/">Заявка</a>
+                    </div>
+                    <div class="top-user__rank">5</div>
+                    <div>
+                      <div class="top-user__lvl">Отправитель: BgEu</div>
+                    </div>
+                    <div>
+                      <div class="top-user__lvl">Дата отправления: 2023-02-28 11:05:44</div>
+                    </div>
+                    <ul class="tabs__list" data-tabs-list-id="tabs_1">
+                      <li class="tabs__item tabs__item_active" data-key="home-updates">
+                        <span><a href="/">Открыть</a></span>
+                      </li></ul></div>
+                </div>
+      </div>
+    </div>
+
+        
+    <div class="tabs__content">
+      <div data-latest-updates="user"></div>
+    </div>
+      </div>
+</section>
+        
+  </div>
+  
+</div>
+
+              </div>
+              <footer class="footer paper">
+
+
+
+
+
+
+
+                <div class="footer__inner container">
+                  <div class="footer__menu clearfix">
+                    <div class="footer__copyright">
+                      <a href="/">
+                        <h4>
+                          MyManga © 2023
+                        </h4>
+                      </a>        
+                      <p class="footer-links">Мы всегда рады вам!</p>
+                      <a>
+                        Задать вопрос
+                      </a>
+                    </div>
+                    <ul class="footer__nav clearfix">
+                      <li>
+                        <a class="footer__nav-link" rel="nofollow" target="_blank" href="/" title="Обратная связь">Обратная связь</a>
+                      </li>
+              
+                      <li>
+                        <a class="footer__nav-link" href="/" target="_blank" title="Для правообладателей">Авторское право</a>
+                      </li>
+                      <li>
+                        <a class="footer__nav-link" href="/" target="_blank" title="Пользовательское соглашение">Пользовательское соглашение</a>
+                      </li>
+              
+              
+                       <li>
+                        <a class="footer__nav-link" href="/" target="_blank" title="DMCA">DMCA</a>
+                      </li>
+              
+              
+                                <li>
+                          <a class="footer__nav-link" href="/" target="_blank" title="Список манги">О нас</a>
+                        </li>
+                              <li>
+                        <a class="footer__nav-link" href="/" target="_blank" title="Лицензия">Лицензия</a>
+                      </li>
+              
+                    </ul>
+                  </div>
+                </div>
+              </footer>
+                  </div>
+              
+                  <div class="page-modals" tabindex="-1">
+                              </div>
+              
+                  <script type="text/javascript">
+                        </script>
+              
+              
+              
+                  
+              
+                  <div class="flash-messages">
+                    
+                                                                  </div>
+              
+                      <script src="./content/javascript/vendor.f1211b48.js"></script>
+                  <script src="./content/javascript/main.f1211b48.js"></script><div class="toast"><div></div></div><div class="popup-root"></div><div class="toast"><div></div></div><div class="popup-root"></div><div class="toast"><div></div></div><div class="popup-root"></div>
+              </body></html>

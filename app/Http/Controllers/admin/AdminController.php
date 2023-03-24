@@ -11,13 +11,13 @@ class AdminController extends Controller
     public function index()
     {
         $users = User::all();
-        return view('admin.admin')->with(compact('users'));
+        return view('Moders')->with(compact('users'));
     }
     
     public function delete(User $user)
     {
     $user->delete();
-    return redirect('/admin');
+    return redirect('/Moders');
     }
     
     public function edit(User $user)
