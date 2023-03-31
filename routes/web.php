@@ -19,6 +19,7 @@ Route::get('/', [IndexController::class, 'mainShow']);
 Route::get('/top', [IndexController::class, 'top']);
 Route::get('/order', [IndexController::class, 'order']);
 Route::get('/zakladki', [IndexController::class, 'zakladki']);
+Route::get('/Catalog', [IndexController::class, 'Catalog']);
 
 
 Route::get('/search', [IndexController::class, 'search']);

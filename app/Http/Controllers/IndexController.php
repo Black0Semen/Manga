@@ -16,6 +16,9 @@ class IndexController extends Controller
     public function order(){
         return view('order');
     }
+    public function Catalog(){
+        return view('Catalog');
+    }
     public function top(){
         return view('top');
     }
