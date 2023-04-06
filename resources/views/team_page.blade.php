@@ -1,9 +1,7 @@
 @extends('layouts')
 @section('content')
     <div class="page" id="main-page">
-      <div class="page__inner">
-        
-        
+      <div class="page__inner">   
   <div class="container container_offset team-profile">
     <div class="aside aside_left">
               <div class="section paper">
@@ -11,7 +9,6 @@
         </div>
             <div class="paper section-body">
         <div class="team-profile__section">
-
           <div class="team-profile__title">Контакты</div>
           <div class="team-profile-links team-profile-links_column">
                     <a href="https://vk.com/melinoteam" target="_blank" class="team-profile-links__item link-default">
@@ -25,7 +22,6 @@
         <div class="team-profile__section">
           <div class="team-profile-users">
   <div class="team-profile__title">Состав команды<span class="small text-muted ml-5">5</span></div>
-
       <a class="team-profile-users__item link-default " href="https://mangalib.me/user/317188">
       <img src="./команда_files/X2pD0Z5SIDKU.jpg" class="team-profile-users__avatar avatar avatar_circle">
       <div class="team-profile-users__content">
@@ -35,54 +31,13 @@
                   </div>
       </div>
     </a>
-      <a class="team-profile-users__item link-default " href="https://mangalib.me/user/4507506">
-      <img src="./команда_files/tq0gynFMSJT7.jpg" class="team-profile-users__avatar avatar avatar_circle">
-      <div class="team-profile-users__content">
-        <div class="team-profile-users__name text-truncate">ʂą℘ơų</div>
-        <div class="team-profile-users__role text-truncate">
-                      <span>Модератор</span>
-                  </div>
-      </div>
-    </a>
-      <a class="team-profile-users__item link-default " href="https://mangalib.me/user/6863724">
-      <img src="./команда_files/mpaXFfxVN3ER.jpg" class="team-profile-users__avatar avatar avatar_circle">
-      <div class="team-profile-users__content">
-        <div class="team-profile-users__name text-truncate">lamdash</div>
-        <div class="team-profile-users__role text-truncate">
-                      <span>Переводчик</span>
-                  </div>
-      </div>
-    </a>
-      <a class="team-profile-users__item link-default " href="https://mangalib.me/user/580803">
-      <img src="./команда_files/uuSShp0NgpEP.jpg" class="team-profile-users__avatar avatar avatar_circle">
-      <div class="team-profile-users__content">
-        <div class="team-profile-users__name text-truncate">Enko7</div>
-        <div class="team-profile-users__role text-truncate">
-                      <span>Клинер</span>
-                  </div>
-      </div>
-    </a>
-      <a class="team-profile-users__item link-default " href="https://mangalib.me/user/744187">
-      <img src="./команда_files/d3rbHikHOAtO.jpg" class="team-profile-users__avatar avatar avatar_circle">
-      <div class="team-profile-users__content">
-        <div class="team-profile-users__name text-truncate">Милистерра</div>
-        <div class="team-profile-users__role text-truncate">
-                      <span>Админ</span>
-                      <span>Эдитор</span>
-                      <span>Редактор</span>
-                  </div>
-      </div>
-    </a>
-  
   </div>
         </div>
       </div>
     </div>
-
     <div class="page__wrapper page__wrapper_right">
       <div class="section paper section-body">
         <div class="team-profile__name">Mel<a href="https://mangalib.me/team/6122/edit" class="small ml-10 text-muted">редактировать</a></div>
-
           <div class="team-profile__section">
             <div class="team-profile-stats">
   <div class="team-profile-stats__item">
@@ -99,7 +54,6 @@
   </div>
 </div>
           </div>
-
                       <div class="team-profile__section">
               <div class="team-profile__title">Описание</div>
 
@@ -121,30 +75,10 @@
         </div>
               </a>
     </div>
-      <div class="media-card-wrap">
-      <a class="media-card" href="https://mangalib.me/jangleuleul-bakkwobodolog-hagessseubnida" data-media-slug="jangleuleul-bakkwobodolog-hagessseubnida" data-media-id="65075" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/jangleuleul-bakkwobodolog-hagessseubnida/cover/vkNmL51U6xBc_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/jangleuleul-bakkwobodolog-hagessseubnida/cover/vkNmL51U6xBc_250x350.jpg" data-was-processed="true">
-        <div class="media-card__caption">
-          <h5 class="media-card__subtitle">Манхва</h5>
-                    <h3 class="media-card__title line-clamp">Давайте сменим жанр</h3>
-        </div>
-              </a>
-    </div>
-      <div class="media-card-wrap">
-      <a class="media-card" href="https://mangalib.me/geunyang-ag-yeog-eulo-salgessseubnida" data-media-slug="geunyang-ag-yeog-eulo-salgessseubnida" data-media-id="64095" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/geunyang-ag-yeog-eulo-salgessseubnida/cover/cjIyfsq7toHO_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/geunyang-ag-yeog-eulo-salgessseubnida/cover/cjIyfsq7toHO_250x350.jpg" data-was-processed="true">
-        <div class="media-card__caption">
-          <h5 class="media-card__subtitle">Манхва</h5>
-                    <h3 class="media-card__title line-clamp">Я просто буду жить, как злодейка</h3>
-        </div>
-              </a>
-    </div>
-    
   </div>
   </div>
 </div>
           </div>
-
   </div>
-
-        
               </div>
     </div>
