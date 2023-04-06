@@ -19,7 +19,7 @@
       <section class="section paper tabs" id="latest-updates" data-tabs-id="tabs_1">
       <div class="header__item header__menu">
         <div class="header-menu__item dropdown">
-          <span data-dropdown="" src="/" aria-expanded="false"><a href="/">Разбор обратно связи</a></span>
+          <span data-dropdown="" src="/" aria-expanded="false"><a href="/feedback_panel">Разбор обратно связи</a></span>
           <div class="menu-template">
             
           </div>
