@@ -147,7 +147,7 @@
     <div class="header__item header__menu">
       <div class="header-menu">
                <div class="header-menu__item dropdown">
-          <span data-dropdown="" aria-expanded="false"><a href="/">Каталог</a></span>
+          <span data-dropdown="" aria-expanded="false"><a href="/Catalog">Каталог</a></span>
           <div class="menu-template">
             
           </div>
@@ -195,12 +195,6 @@
             </div>
           </div>
 
-
-                <div class="header-right-menu__item dropdown header-button">
-          <div class="header-button__icon" data-dropdown="" data-tippy-placement="bottom-end" data-tippy-interactive="true" data-open-notifications="" aria-expanded="false">
-            <i class="fa fa-bell"></i>
-                          <div class="notify__count notify__count_bell" data-counter="4">4</div>
-                      </div>
           <div class="menu-template">
             
           </div>
@@ -210,18 +204,17 @@
 
         <a class="header-right-menu__item header-button" href="/">
               <div class="footer__theme-toggler">
-      <h3>Тема</h3>
-      <span class="footer-t-previews">
-        <div class="footer-t-preview tooltip" data-toggle-theme="light" data-place="top" aria-label="Светлая">A</div>
-        <div class="footer-t-preview tooltip" data-toggle-theme="dark" data-place="top" aria-label="Темная">A</div>
-      </span>
     </div>
         </a>
         <div class="header-right-menu__item dropdown">
           <img src="./content/photo/placeholder.png" class="header-right-menu__avatar" data-dropdown="" data-tippy-placement="bottom-end" aria-expanded="false">
           <div class="menu-template">
             <div data-tippy-root="" id="tippy-6" style="z-index: 9999;visibility: visible;margin: 0px;margin-left: 128px;margin-top: -1455px;position: absolute;inset: 0px auto auto 0px;transform: translate(755.2px, 1504.8px);"><div class="tippy-box" data-state="visible" tabindex="-1" data-theme="dropdown" data-animation="shift-toward" role="tooltip" style="max-width: 350px; transition-duration: 200ms;" data-placement="bottom-end"><div class="tippy-content" data-state="visible" style="transition-duration: 200ms;"><div class="menu header-dropdown">
-              <a class="menu__item" href="/dashboard"><i class="fa fa-user fa-fw"></i> Профиль пользователя</a>
+            <span class="footer-t-previews" style="    margin-left: 192px;">
+              <div class="footer-t-preview tooltip" data-toggle-theme="light" data-place="top" aria-label="Светлая">C</div>
+              <div class="footer-t-preview tooltip" data-toggle-theme="dark" data-place="top" aria-label="Темная">T</div>
+            </span>  
+            <a class="menu__item" href="/dashboard"><i class="fa fa-user fa-fw"></i> Профиль пользователя</a>
               <a class="menu__item" href="/zakladki"><i class="fa fa-bookmark fa-fw"></i> Мои закладки</a>
               <a class="menu__item" href="/"><i class="fa fa-bell fa-fw"></i> Уведомления</a>
               <div class="menu__item" data-balance-dialog=""><i class="fa fa-money"></i> Баланс (0)</div>

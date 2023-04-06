@@ -19,6 +19,9 @@ Route::get('/', [IndexController::class, 'mainShow']);
 Route::get('/top', [IndexController::class, 'top']);
 Route::get('/order', [IndexController::class, 'order']);
 Route::get('/zakladki', [IndexController::class, 'zakladki']);
+Route::get('/Catalog', [IndexController::class, 'Catalog']);
+Route::get('/comics', [IndexController::class, 'comics']);
+Route::get('/team_page', [IndexController::class, 'team_page']);
 
 
 Route::get('/search', [IndexController::class, 'search']);
@@ -30,6 +33,8 @@ Route::get('/MyManga', [AdminController::class, 'index'])->name('home');
 Route::patch('/admin/edit', [AdminController::class, 'update'])->name('update');
 Route::delete('/admin/delete/{user}', [AdminController::class, 'delete'])->name('delete');
 Route::post('/admin/edit/{user}', [AdminController::class, 'edit'])->name('edit');
+Route::get('/feedback_panel', [IndexController::class, 'feedback_panel']);
+Route::get('/ConsOfApp', [IndexController::class, 'ConsOfApp']);
 
 //Route::get('/', function () {
    // return view('welcome');

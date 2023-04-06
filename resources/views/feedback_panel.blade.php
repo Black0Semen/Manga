@@ -37,24 +37,16 @@
                   <div class="top-user__body">
                     <div class="top-user__username">
                       <div class="link-default" style="
-    padding-left: 24px;
-">Оформление заказа</div>
+    padding-left: 36px;
+">Обратная связь</div>
                     </div>
                     <div>
-                      <div class="top-user__lvl">Название</div>
+                      <div class="top-user__lvl">Тема сообщения</div>
 					  <input class="form__input manga-search__input" type="text">
                     </div>
 					<div>
-                      <div class="top-user__lvl">Описание</div>
-					  <input class="form__input manga-search__input" type="text">
-                    </div>
-                    <div>
-                      <div class="top-user__lvl">Ссылка на оригинал</div>
-					  <input class="form__input manga-search__input" type="text">
-                    </div>
-					<div>
-                      <div class="top-user__lvl">Сумма</div>
-					  <input class="form__input manga-search__input" type="number">
+                      <div class="top-user__lvl">Сообщение</div>
+					  <textarea class="form__input manga-search__input" style="resize: none; height: 100px ; "></textarea>
                     </div>
                     <ul class="tabs__list" data-tabs-list-id="tabs_1">
                       <li class="tabs__item tabs__item_active" data-key="home-updates" style="
