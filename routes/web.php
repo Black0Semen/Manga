@@ -23,9 +23,16 @@ Route::get('/Catalog', [IndexController::class, 'Catalog']);
 Route::get('/comics', [IndexController::class, 'comics']);
 Route::get('/team_page', [IndexController::class, 'team_page']);
 
-
 Route::get('/search', [IndexController::class, 'search']);
 Route::get('/search', [IndexController::class, 'findSomeThing']);
+
+Route::get('/team/{id}', [IndexController::class, 'teamShow']);
+
+Route::get('/comic_add', [IndexController::class, 'addComic']);
+
+Route::get('comic/{id}',[IndexController::class, 'comicPage']);
+
+Route::get('/rules', [IndexController::class, 'ruleShow']);
 
 //Route::get('/profile', function () {})->middleware('auth');
 //админ
@@ -43,6 +50,8 @@ Route::get('/ConsOfApp', [IndexController::class, 'ConsOfApp']);
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/user/{id}', [IndexController::class, 'userShow']);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
