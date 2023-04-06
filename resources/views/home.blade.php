@@ -8,102 +8,20 @@
 
   <div class="page__wrapper page__wrapper_left">
    
-    <section class="section paper">
+<section class="section paper">
   <div class="section__body">
-    <h2 class="page__title">  
-              Заманчивое предложение
-          </h2>
+    <h2 class="page__title">Заманчивое предложение</h2>
     <div class="hot-media-wrap">
-              <div class="hot-media-item media-card-wrap media-card-wrap_sm">
-          <a href="https://mangalib.me/twice-princess/v2/c61?ui=5740535" title="Читать 61 главу. " class="hot-media-item__card media-card" style="background-image: url(&#39;https://cover.imglib.info/uploads/cover/twice-princess/cover/dNiTGN5LQRBd_250x350.jpg&#39;)">
-            <div class="media-card__caption">
-              <div class="media-card__title">Том 2 Глава 61</div>
-            </div>
-          </a>
-          <a href="https://mangalib.me/twice-princess" class="hot-media-item__name line-clamp link-default">Двуликая принцесса</a>
-        </div>
+      @foreach($comic as $value)
         <div class="hot-media-item media-card-wrap media-card-wrap_sm">
-          <a href="https://mangalib.me/twice-princess/v2/c61?ui=5740535" title="Читать 61 главу. " class="hot-media-item__card media-card" style="background-image: url(&#39;https://cover.imglib.info/uploads/cover/twice-princess/cover/dNiTGN5LQRBd_250x350.jpg&#39;)">
+          <a href="/comic/{{$value->id_comic}}" title="Читать последнюю главу. " class="hot-media-item__card media-card" style="background-image: url(&#39;https://cover.imglib.info/uploads/cover/twice-princess/cover/dNiTGN5LQRBd_250x350.jpg&#39;)">
             <div class="media-card__caption">
               <div class="media-card__title">Том 2 Глава 61</div>
             </div>
           </a>
-          <a href="https://mangalib.me/twice-princess" class="hot-media-item__name line-clamp link-default">Двуликая принцесса</a>
+          <a href="/comic/{{$value->id_comic}}" class="hot-media-item__name line-clamp link-default">{{$value->title}}</a>
         </div>
-        <div class="hot-media-item media-card-wrap media-card-wrap_sm">
-          <a href="https://mangalib.me/twice-princess/v2/c61?ui=5740535" title="Читать 61 главу. " class="hot-media-item__card media-card" style="background-image: url(&#39;https://cover.imglib.info/uploads/cover/twice-princess/cover/dNiTGN5LQRBd_250x350.jpg&#39;)">
-            <div class="media-card__caption">
-              <div class="media-card__title">Том 2 Глава 61</div>
-            </div>
-          </a>
-          <a href="https://mangalib.me/twice-princess" class="hot-media-item__name line-clamp link-default">Двуликая принцесса</a>
-        </div>
-        <div class="hot-media-item media-card-wrap media-card-wrap_sm">
-          <a href="https://mangalib.me/twice-princess/v2/c61?ui=5740535" title="Читать 61 главу. " class="hot-media-item__card media-card" style="background-image: url(&#39;https://cover.imglib.info/uploads/cover/twice-princess/cover/dNiTGN5LQRBd_250x350.jpg&#39;)">
-            <div class="media-card__caption">
-              <div class="media-card__title">Том 2 Глава 61</div>
-            </div>
-          </a>
-          <a href="https://mangalib.me/twice-princess" class="hot-media-item__name line-clamp link-default">Двуликая принцесса</a>
-        </div>
-        <div class="hot-media-item media-card-wrap media-card-wrap_sm">
-          <a href="https://mangalib.me/twice-princess/v2/c61?ui=5740535" title="Читать 61 главу. " class="hot-media-item__card media-card" style="background-image: url(&#39;https://cover.imglib.info/uploads/cover/twice-princess/cover/dNiTGN5LQRBd_250x350.jpg&#39;)">
-            <div class="media-card__caption">
-              <div class="media-card__title">Том 2 Глава 61</div>
-            </div>
-          </a>
-          <a href="https://mangalib.me/twice-princess" class="hot-media-item__name line-clamp link-default">Двуликая принцесса</a>
-        </div>
-        <div class="hot-media-item media-card-wrap media-card-wrap_sm">
-          <a href="https://mangalib.me/twice-princess/v2/c61?ui=5740535" title="Читать 61 главу. " class="hot-media-item__card media-card" style="background-image: url(&#39;https://cover.imglib.info/uploads/cover/twice-princess/cover/dNiTGN5LQRBd_250x350.jpg&#39;)">
-            <div class="media-card__caption">
-              <div class="media-card__title">Том 2 Глава 61</div>
-            </div>
-          </a>
-          <a href="https://mangalib.me/twice-princess" class="hot-media-item__name line-clamp link-default">Двуликая принцесса</a>
-        </div>
-              <div class="hot-media-item media-card-wrap media-card-wrap_sm">
-          <a href="https://mangalib.me/princess-strategy/v1/c51?ui=5740535" title="Читать 51 главу. " class="hot-media-item__card media-card" style="background-image: url(&#39;https://cover.imglib.info/uploads/cover/princess-strategy/cover/V6GeAKNIwdow_250x350.jpg&#39;)">
-            <div class="media-card__caption">
-              <div class="media-card__title">Том 1 Глава 51</div>
-            </div>
-          </a>
-          <a href="https://mangalib.me/princess-strategy" class="hot-media-item__name line-clamp link-default">Завоевать сердце папочки. Система принцессы</a>
-        </div>
-              <div class="hot-media-item media-card-wrap media-card-wrap_sm">
-          <a href="https://mangalib.me/bing-uijaleul-wihan-teughye/v2/c45?ui=5740535" title="Читать 45 главу. " class="hot-media-item__card media-card" style="background-image: url(&#39;https://cover.imglib.info/uploads/cover/bing-uijaleul-wihan-teughye/cover/IRp6A65CpNl9_250x350.jpg&#39;)">
-            <div class="media-card__caption">
-              <div class="media-card__title">Том 2 Глава 45</div>
-            </div>
-          </a>
-          <a href="https://mangalib.me/bing-uijaleul-wihan-teughye" class="hot-media-item__name line-clamp link-default">Привилегия попаданки</a>
-        </div>
-              <div class="hot-media-item media-card-wrap media-card-wrap_sm">
-          <a href="https://mangalib.me/banjjog/v1/c26?ui=5740535" title="Читать 26 главу. " class="hot-media-item__card media-card" style="background-image: url(&#39;https://cover.imglib.info/uploads/cover/banjjog/cover/yeFHYnEH1mhb_250x350.jpg&#39;)">
-            <div class="media-card__caption">
-              <div class="media-card__title">Том 1 Глава 26</div>
-            </div>
-          </a>
-          <a href="https://mangalib.me/banjjog" class="hot-media-item__name line-clamp link-default">Обезображенная половина</a>
-        </div>
-              <div class="hot-media-item media-card-wrap media-card-wrap_sm">
-          <a href="https://mangalib.me/kalkkeut-e-ibsul-webtoon/v1/c15?ui=5740535" title="Читать 15 главу. " class="hot-media-item__card media-card" style="background-image: url(&#39;https://cover.imglib.info/uploads/cover/kalkkeut-e-ibsul-webtoon/cover/BPk0F5l4jCks_250x350.jpg&#39;)">
-            <div class="media-card__caption">
-              <div class="media-card__title">Том 1 Глава 15</div>
-            </div>
-          </a>
-          <a href="https://mangalib.me/kalkkeut-e-ibsul-webtoon" class="hot-media-item__name line-clamp link-default">Губы на острие меча</a>
-        </div>
-              <div class="hot-media-item media-card-wrap media-card-wrap_sm">
-          <a href="https://mangalib.me/nega-juggileul-balal-ttaega-iss-eossda/v2/c62?ui=5740535" title="Читать 62 главу. " class="hot-media-item__card media-card" style="background-image: url(&#39;https://cover.imglib.info/uploads/cover/nega-juggileul-balal-ttaega-iss-eossda/cover/NwJn3HLZ9had_250x350.jpg&#39;)">
-            <div class="media-card__caption">
-              <div class="media-card__title">Том 2 Глава 62</div>
-            </div>
-          </a>
-          <a href="https://mangalib.me/nega-juggileul-balal-ttaega-iss-eossda" class="hot-media-item__name line-clamp link-default">Были времена, когда я желал тебе смерти</a>
-        </div>
-          </div>
-  </div>
+      @endforeach
 </section>
   
     

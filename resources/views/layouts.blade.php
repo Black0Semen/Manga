@@ -221,15 +221,18 @@
           <img src="./content/photo/placeholder.png" class="header-right-menu__avatar" data-dropdown="" data-tippy-placement="bottom-end" aria-expanded="false">
           <div class="menu-template">
             <div data-tippy-root="" id="tippy-6" style="z-index: 9999;visibility: visible;margin: 0px;margin-left: 128px;margin-top: -1455px;position: absolute;inset: 0px auto auto 0px;transform: translate(755.2px, 1504.8px);"><div class="tippy-box" data-state="visible" tabindex="-1" data-theme="dropdown" data-animation="shift-toward" role="tooltip" style="max-width: 350px; transition-duration: 200ms;" data-placement="bottom-end"><div class="tippy-content" data-state="visible" style="transition-duration: 200ms;"><div class="menu header-dropdown">
-              <a class="menu__item" href="/dashboard"><i class="fa fa-user fa-fw"></i> Профиль пользователя</a>
+            @if(Illuminate\Support\Facades\Auth::check())
+            <a class="menu__item" href="/user/{{Illuminate\Support\Facades\Auth::user()->id}}"><i class="fa fa-user fa-fw"></i> Профиль пользователя</a>
               <a class="menu__item" href="/zakladki"><i class="fa fa-bookmark fa-fw"></i> Мои закладки</a>
               <a class="menu__item" href="/"><i class="fa fa-bell fa-fw"></i> Уведомления</a>
               <div class="menu__item" data-balance-dialog=""><i class="fa fa-money"></i> Баланс (0)</div>
                             <a class="menu__item" href="/"><i class="fa fa-cog fa-fw"></i> Настройки</a>
+                            <a class="menu__item text-danger" href="/logout" id="logout-button"><i class="fa fa-sign-out fa-fw"></i> Выход</a>
+                            @else
                             <a class="menu__item" href="/register"><i class="fa fa-bell fa-fw"></i> Регистрация</a>
-                            <a class="menu__item text-danger" href="/login" id="logout-button"><i class="fa fa-sign-out fa-fw"></i> Вход</a>
-              <a class="menu__item text-danger" href="/logout" id="logout-button"><i class="fa fa-sign-out fa-fw"></i> Выход</a>
-            </div></div></div></div>
+                           <a class="menu__item text-danger" href="/login" id="logout-button"><i class="fa fa-sign-out fa-fw"></i> Вход</a>
+                           @endif
+                          </div></div></div></div>
           </div>
         </div>
           </div>

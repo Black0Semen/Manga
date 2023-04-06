@@ -20,9 +20,16 @@ Route::get('/top', [IndexController::class, 'top']);
 Route::get('/order', [IndexController::class, 'order']);
 Route::get('/zakladki', [IndexController::class, 'zakladki']);
 
-
 Route::get('/search', [IndexController::class, 'search']);
 Route::get('/search', [IndexController::class, 'findSomeThing']);
+
+Route::get('/team/{id}', [IndexController::class, 'teamShow']);
+
+Route::get('/comic_add', [IndexController::class, 'addComic']);
+
+Route::get('comic/{id}',[IndexController::class, 'comicPage']);
+
+Route::get('/rules', [IndexController::class, 'ruleShow']);
 
 //Route::get('/profile', function () {})->middleware('auth');
 //админ
@@ -38,6 +45,8 @@ Route::post('/admin/edit/{user}', [AdminController::class, 'edit'])->name('edit'
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/user/{id}', [IndexController::class, 'userShow']);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
