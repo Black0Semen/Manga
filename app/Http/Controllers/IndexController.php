@@ -23,7 +23,15 @@ class IndexController extends Controller
     public function order(){
         return view('order');
     }
-
+    public function feedback_panel(){
+        return view('feedback_panel');
+    }
+    public function ConsOfApp(){
+        return view('ConsOfApp');
+    }
+    public function Catalog(){
+        return view('Catalog');
+    }
     public function top(){
         return view('top');
     }
@@ -35,7 +43,12 @@ class IndexController extends Controller
     public function Zakladki(){
         return view('Zakladki');
     }
-
+    public function comics(){
+        return view('comics');
+    }
+    public function team_page(){
+        return view('team_page');
+    }
     public function findSomeThing(Request $request){
         $input = $request->title;
         $comics = Comic::WHERE("title","=",$input)->get();
