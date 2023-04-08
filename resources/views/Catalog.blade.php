@@ -24,122 +24,114 @@
                   </div>
         <input class="form__input manga-search__input" type="text" placeholder="Поиск по названию..." value="">
       </div>
-
-      <div class="" id="manga-list">
-  <div class="media-grid-wrap">
+      <div class="media-grid-wrap">
     <div class="media-cards-grid">
       <div class="media-card-wrap">
-        <a class="media-card" href="/" style="background-image: url(/);">
+      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
         <div class="media-card__caption">
-          <h5 class="media-card__subtitle">
-            Манхва
-          </h5>
-          <h5 class="media-card__subtitle">
-
-          </h5>
-          <h3 class="media-card__title line-clamp">
-            Поднятие уровня в одиночку
-          </h3>
+          <h5 class="media-card__subtitle">Манхва</h5>
+                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
         </div>
-      </a>
+              </a>
+    </div>
+    <div class="media-card-wrap">
+      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
+        <div class="media-card__caption">
+          <h5 class="media-card__subtitle">Манхва</h5>
+                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
+        </div>
+              </a>
+    </div>
+    <div class="media-card-wrap">
+      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
+        <div class="media-card__caption">
+          <h5 class="media-card__subtitle">Манхва</h5>
+                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
+        </div>
+              </a>
+    </div>
+    <div class="media-card-wrap">
+      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
+        <div class="media-card__caption">
+          <h5 class="media-card__subtitle">Манхва</h5>
+                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
+        </div>
+              </a>
+    </div>
+    <div class="media-card-wrap">
+      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
+        <div class="media-card__caption">
+          <h5 class="media-card__subtitle">Манхва</h5>
+                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
+        </div>
+              </a>
+    </div>
+    <div class="media-card-wrap">
+      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
+        <div class="media-card__caption">
+          <h5 class="media-card__subtitle">Манхва</h5>
+                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
+        </div>
+              </a>
+    </div>
+    <div class="media-card-wrap">
+      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
+        <div class="media-card__caption">
+          <h5 class="media-card__subtitle">Манхва</h5>
+                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
+        </div>
+              </a>
+    </div>
+    <div class="media-card-wrap">
+      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
+        <div class="media-card__caption">
+          <h5 class="media-card__subtitle">Манхва</h5>
+                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
+        </div>
+              </a>
+    </div>
+    <div class="media-card-wrap">
+      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
+        <div class="media-card__caption">
+          <h5 class="media-card__subtitle">Манхва</h5>
+                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
+        </div>
+              </a>
+    </div>
+    <div class="media-card-wrap">
+      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
+        <div class="media-card__caption">
+          <h5 class="media-card__subtitle">Манхва</h5>
+                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
+        </div>
+              </a>
+    </div>
+    <div class="media-card-wrap">
+      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
+        <div class="media-card__caption">
+          <h5 class="media-card__subtitle">Манхва</h5>
+                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
+        </div>
+              </a>
+    </div>
+    <div class="media-card-wrap">
+      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
+        <div class="media-card__caption">
+          <h5 class="media-card__subtitle">Манхва</h5>
+                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
+        </div>
+              </a>
+    </div>
+    <div class="media-card-wrap">
+      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
+        <div class="media-card__caption">
+          <h5 class="media-card__subtitle">Манхва</h5>
+                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
+        </div>
+              </a>
     </div>
   </div>
-</div>
-<div class="media-grid-wrap">
-    <div class="media-cards-grid">
-      <div class="media-card-wrap">
-        <a class="media-card" href="/" style="background-image: url(/);">
-        <div class="media-card__caption">
-          <h5 class="media-card__subtitle">
-            Манхва
-          </h5>
-          <h5 class="media-card__subtitle">
-
-          </h5>
-          <h3 class="media-card__title line-clamp">
-            Поднятие уровня в одиночку
-          </h3>
-        </div>
-      </a>
-    </div>
   </div>
-</div>
-<div class="media-grid-wrap">
-    <div class="media-cards-grid">
-      <div class="media-card-wrap">
-        <a class="media-card" href="/" style="background-image: url(/);">
-        <div class="media-card__caption">
-          <h5 class="media-card__subtitle">
-            Манхва
-          </h5>
-          <h5 class="media-card__subtitle">
-
-          </h5>
-          <h3 class="media-card__title line-clamp">
-            Поднятие уровня в одиночку
-          </h3>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
-<div class="media-grid-wrap">
-    <div class="media-cards-grid">
-      <div class="media-card-wrap">
-        <a class="media-card" href="/" style="background-image: url(/);">
-        <div class="media-card__caption">
-          <h5 class="media-card__subtitle">
-            Манхва
-          </h5>
-          <h5 class="media-card__subtitle">
-
-          </h5>
-          <h3 class="media-card__title line-clamp">
-            Поднятие уровня в одиночку
-          </h3>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
-<div class="media-grid-wrap">
-    <div class="media-cards-grid">
-      <div class="media-card-wrap">
-        <a class="media-card" href="/" style="background-image: url(/);">
-        <div class="media-card__caption">
-          <h5 class="media-card__subtitle">
-            Манхва
-          </h5>
-          <h5 class="media-card__subtitle">
-
-          </h5>
-          <h3 class="media-card__title line-clamp">
-            Поднятие уровня в одиночку
-          </h3>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
-<div class="media-grid-wrap">
-    <div class="media-cards-grid">
-      <div class="media-card-wrap">
-        <a class="media-card" href="/" style="background-image: url(/);">
-        <div class="media-card__caption">
-          <h5 class="media-card__subtitle">
-            Манхва
-          </h5>
-          <h5 class="media-card__subtitle">
-
-          </h5>
-          <h3 class="media-card__title line-clamp">
-            Поднятие уровня в одиночку
-          </h3>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
     </div>
           <div class="paper search-filter">
             <div class="search-filter-layout"><!----> 
@@ -355,9 +347,7 @@
       </button> <button class="button button_green">
         Показать
       </button></div>
-          </span></div></div></div></div> <div class="search-filter__buttons buttons-stretch"><button class="button">
-        Выбрать
-      </button></div></div></div>
+          </span></div></div></div></div> <div class="search-filter__buttons buttons-stretch"></div></div></div>
       </div>
 
         
