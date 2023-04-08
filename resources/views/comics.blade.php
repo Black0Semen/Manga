@@ -2,6 +2,10 @@
 @section('content')
     <div class="page" id="main-page">
       <div class="page__inner">
+        
+        
+          
+  
   <div class="container container_responsive">
     <div class="media-container">
       <div class="media-sidebar">
@@ -64,7 +68,7 @@
               <div class="media-rating__value">8.86</div>
               <div class="media-rating__votes">171</div>
             </div>
-            <button class="button button_sm button_white media-rating-wrap__btn " data-open-modal="#rating-modal">
+            <button class="button button_sm button_white media-rating-wrap__btn" data-open-modal="#rating-modal">
                               <span>
                   Оценить
                 </span>
@@ -93,7 +97,7 @@
 
 &quot;Может, лучше мне его заполучить, чем так страдать?&quot;">
     <div class="media-description media-description_short">
-      <div class="media-description__text">
+      <div>
         Бывшая принцесса, подрабатывающая в публичном доме, Бенедикт Кридс по воле случая смогла выбраться оттуда. Условие - стать леди семьи Баирэнхаг. Но на что не пойдёшь, чтобы выжить? Где-то полмесяца всё было неплохо. Тогда она получила в подарок от фальшивого брата эрцгерцога Баирэнхага милое маленькое домашнее животное. Сперва она решила, что это первый и последний подарок, но со временем их стало только больше. В конце концов, когда он решил подарить всего себя, Кридс уже чувствовала, что эти отношения приведут к катастрофе.<br>
 <br>
 "Может, лучше мне его заполучить, чем так страдать?"
@@ -140,20 +144,6 @@
             </div>
                       </a>
         </div>
-                      <div class="media-slider__item  media-slider__item_rate ">
-                    <a href="https://mangalib.me/honey-im-going-on-strike" class="manga-list-item manga-list-item_inline" title="Дорогой, я объявляю забастовку">
-            <div class="manga-list-item__cover" style="background-image: url(https://cover.imglib.info/uploads/cover/honey-im-going-on-strike/cover/SgnxS2BCIAhP_thumb.jpg);"></div>
-            <div class="manga-list-item__body">
-              <div class="manga-list-item__name">
-                Дорогой, я объявляю забастовку
-              </div>
-              <div class="manga-list-item__meta">
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-                      </a>
-        </div>
           </div>
   </div>
 </div>
@@ -166,9 +156,8 @@
         Милистерра
       </a></div> <!----> <div class="media-chapter__date">
       04.04.2023
-    </div>
-  </div>
-  </div>
+    </div></div><div class="media-chapter__actions"><a href="https://mangalib.me/manga/gajja-yeodongsaeng-eul-wonhamyeon/chapter/2356340" data-place="left" aria-label="Редактировать главу" class="media-chapter__icon media-chapter__icon_edit tooltip"><i class="fa fa-pencil fa-fw"></i></a> <div data-place="left" aria-label="Скачать главу" class="media-chapter__icon media-chapter__icon_download tooltip"><i class="fa fa-cloud-download fa-fw"></i></div> <!----></div></div></div></div> <!----> <div data-v-b329ee4c="" tabindex="-1" class="resize-observer"><object aria-hidden="true" tabindex="-1" type="text/html" data="./комикс_files/saved_resource.html"></object></div></div> <!----></div></div>
+                      </div>
           <!-- END:Главы -->
           <!-- START:Комментарии -->
           <div class="tabs__content">
@@ -179,7 +168,11 @@
     Написать комментарий...
   </div></div> <!----> <!----> <div class="comments-list"><div id="comment_183945110" class="comment"><div class="comment__body"><div class="comment__head"><a href="https://mangalib.me/user/4671250" class="comment__user"><img src="./комикс_files/hV6Z5WpbJe35.jpg" alt="яяяяя чурка" class="comment__avatar"> <span class="comment__username text-truncate">яяяяя чурка</span></a> <time class="comment__date-time"><time datetime="Mon Mar 27 2023 14:21:00 GMT+0500 (Екатеринбург, стандартное время)">8 дней назад</time></time></div> <div class="comment__content"><div>чет, как то не зашло. может когда выйдет больше глав вернусь, но не думаю</div></div> <!----> <div class="comment__controls"><button class="button_link">
         ответить
-      </button>
+      </button> <div class="dropdown comment__dropdown"><div data-dropdown-trigger="" class="comment__control comment__control_dropdown"><svg><use xlink:href="#icon-extra"></use></svg></div> <!----></div> <div class="comment__rating"><div data-action="1" class="comment__rating-action"><svg class="comment__rating-icon"><use xlink:href="#icon-arrow-up"></use></svg></div> <div data-vote="4_1" class="comment__rating-value comment__rating-value_positive">
+          3
+        </div>
+ <div data-action="0" class="comment__rating-action"><svg class="comment__rating-icon"><use xlink:href="#icon-arrow-down"></use></svg></div></div></div> <!----></div> <!----> <!----></div> <!----></div> <div class="comments__load-page"><!----></div></div></section>
+                
                           </div>
           </div>
           <!-- END:Комментарии -->
@@ -288,14 +281,3 @@
 
   
             </div>
-
-    <script type="text/javascript">
-          </script>
-
-
-
-    
-
-    <div class="flash-messages">
-      
-                                                    </div>
