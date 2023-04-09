@@ -83,7 +83,7 @@
                 <li class="tabs__item tabs__item_active" data-key="info">Информация</li>
                 <li class="tabs__item" data-key="chapters">Главы</li>
                 <li class="tabs__item" data-key="comments">Комментарии</li>
-              <div class="tabs__line" style="display: block; width: 90px; transform: translateX(0px);"></div></ul>
+              <div class="tabs__line" style="display: block; width: 270px; transform: translateX(0px);"></div></ul>
             </div>
           </div>
 
@@ -185,31 +185,6 @@
     </div>
 
     <div class="page-modals" tabindex="-1">
-        <div class="modal" id="error-message">
-    <div class="modal__inner">
-      <div class="modal__content">
-        <div class="modal__header">
-          <h4 class="modal__title">Сообщение об ошибке</h4>
-          <div class="modal__close" data-close-modal="">
-            <svg class="modal__close-icon">
-              <use xlink:href="#icon-close"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="modal__body">
-            <div class="form__field">
-            </div>
-              <div class="form__field">
-                <div class="form-group has-feedback ">
-                  <a href="https://discord.gg/hmuDDWahaC" class="button button_block button_primary">
-        Дискорд</a><br><br>
-                </div>
-              </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="modal" id="rating-modal">
   <div class="modal__inner">
     <div class="modal__content" data-size="small">

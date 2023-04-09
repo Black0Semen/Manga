@@ -42,6 +42,7 @@ Route::delete('/admin/delete/{user}', [AdminController::class, 'delete'])->name(
 Route::post('/admin/edit/{user}', [AdminController::class, 'edit'])->name('edit');
 Route::get('/feedback_panel', [IndexController::class, 'feedback_panel']);
 Route::get('/ConsOfApp', [IndexController::class, 'ConsOfApp']);
+Route::get('/ziavka', [IndexController::class, 'ziavka']);
 
 //Route::get('/', function () {
    // return view('welcome');

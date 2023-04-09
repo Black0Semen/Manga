@@ -19,24 +19,25 @@
       <section class="section paper tabs" id="latest-updates" data-tabs-id="tabs_1">
       <div class="header__item header__menu">
         <div class="header-menu__item dropdown">
-          <span data-dropdown="" src="/" aria-expanded="false"><a href="/feedback_panel">Разбор обратно связи</a></span>
+          <a href="/feedback_panel">Разбор обратно связи</a>
           <div class="menu-template">
             
           </div>
         </div>
         <div class="header-menu__item dropdown">
-          <span data-dropdown="" src="/" aria-expanded="false"><a href="/admin">Админ-панель</a></span>
+          <a href="/admin">Админ-панель</a>
           <div class="menu-template">
             
           </div>
         </div>
         <div class="header-menu__item dropdown">
-          <span data-dropdown="" src="/" aria-expanded="false"><a href="/ConsOfApp">Рассмотрение заявок</a></span>
+          <a href="/ConsOfApp">Рассмотрение заявок</a>
           <div class="menu-template">
             
           </div>
         </div>
       </div>
+      <input class="form__input manga-search__input" style="margin: 11px; width: 500px;" type="text" placeholder="Поиск по названию..." value="">
   <div class="section__body">
     <div class="updates tabs__content tabs__content_show">
 
@@ -57,106 +58,18 @@
                     <div>
                       <div class="top-user__lvl">Дата создания: 2023-02-28 11:05:44</div>
                     </div>
-                    <ul class="tabs__list" data-tabs-list-id="tabs_1">
-                      <li class="tabs__item tabs__item_active" data-key="home-updates">
-                        <span>Изменить</span>
-                      </li>
-                      <li class="tabs__item" data-key="my-updates">
-                        <span>Удалить</span>
-                      </li>
-                  <div class="tabs__line" style="display: block; width: 103px; transform: translateX(0px);"></div></ul></div>
-                </div>
-                <div class="top-user">
-                  <img class="lazyload top-user__avatar loaded" src="/" data-src="/" alt="Ruler" data-was-processed="true">
-                  <div class="top-user__body">
-                    <div class="top-user__username">
-                      <a class="link-default" href="/">er</a>
-                    </div>
-                    <div class="top-user__rank">1</div>
-                    <div>
-                      <div class="top-user__exp">Модератор</div>
-                      <div class="top-user__lvl">Почта: vlad.v@mail.ru</div>
-                    </div>
-                    <div>
-                      <div class="top-user__lvl">Дата создания: 2023-02-28 11:05:44</div>
-                    </div>
-                    <ul class="tabs__list" data-tabs-list-id="tabs_1">
-                      <li class="tabs__item" data-key="home-updates">
-                        <span>Изменить</span>
-                      </li>
-                      <li class="tabs__item" data-key="my-updates">
-                        <span>Удалить</span>
-                      </li>
-                  </ul></div>
-                </div>
-                <div class="top-user">
-                  <img class="lazyload top-user__avatar loaded" src="/" data-src="/" alt="Ruler" data-was-processed="true">
-                  <div class="top-user__body">
-                    <div class="top-user__username">
-                      <a class="link-default" href="/">er</a>
-                    </div>
-                    <div class="top-user__rank">3</div>
-                    <div>
-                      <div class="top-user__exp">Модератор</div>
-                      <div class="top-user__lvl">Почта: vlad.v@mail.ru</div>
-                    </div>
-                    <div>
-                      <div class="top-user__lvl">Дата создания: 2023-02-28 11:05:44</div>
-                    </div>
-                    <ul class="tabs__list" data-tabs-list-id="tabs_1">
-                      <li class="tabs__item" data-key="home-updates">
-                        <span>Изменить</span>
-                      </li>
-                      <li class="tabs__item" data-key="my-updates">
-                        <span>Удалить</span>
-                      </li>
-                  </ul></div>
-                </div>
-                <div class="top-user">
-                  <img class="lazyload top-user__avatar loaded" src="/" data-src="/" alt="Ruler" data-was-processed="true">
-                  <div class="top-user__body">
-                    <div class="top-user__username">
-                      <a class="link-default" href="/">er</a>
-                    </div>
-                    <div class="top-user__rank">4</div>
-                    <div>
-                      <div class="top-user__exp">Модератор</div>
-                      <div class="top-user__lvl">Почта: vlad.v@mail.ru</div>
-                    </div>
-                    <div>
-                      <div class="top-user__lvl">Дата создания: 2023-02-28 11:05:44</div>
-                    </div>
-                    <ul class="tabs__list" data-tabs-list-id="tabs_1">
-                      <li class="tabs__item" data-key="home-updates">
-                        <span>Изменить</span>
-                      </li>
-                      <li class="tabs__item" data-key="my-updates">
-                        <span>Удалить</span>
-                      </li>
-                  </ul></div>
-                </div>
-                <div class="top-user">
-                  <img class="lazyload top-user__avatar loaded" src="/" data-src="/" alt="Ruler" data-was-processed="true">
-                  <div class="top-user__body">
-                    <div class="top-user__username">
-                      <a class="link-default" href="/">er</a>
-                    </div>
-                    <div class="top-user__rank">8</div>
-                    <div>
-                      <div class="top-user__exp">Модератор</div>
-                      <div class="top-user__lvl">Почта: vlad.v@mail.ru</div>
-                    </div>
-                    <div>
-                      <div class="top-user__lvl">Дата создания: 2023-02-28 11:05:44</div>
-                    </div>
-                    <ul class="tabs__list" data-tabs-list-id="tabs_1">
-                      <li class="tabs__item" data-key="home-updates">
-                        <span>Изменить</span>
-                      </li>
-                      <li class="tabs__item" data-key="my-updates">
-                        <span>Удалить</span>
-                      </li>
-                  </ul></div>
+                    <ul class="tabs__list">
+                    <li class="tabs__item" data-key="home-updates">
+            <button class="button button_sm button_white media-rating-wrap__btn">
+                Изменить
+            </button>
+            </li>
+            <li class="tabs__item">
+            <button class="button button_sm button_white media-rating-wrap__btn">
+                Удалить
+            </button>
+            </li>
+                  <div class="tabs__line" style="display: block; width: 263px; transform: translateX(0px);"></div></ul></div>
                 </div>
       </div>
     </div>

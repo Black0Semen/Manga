@@ -56,12 +56,15 @@
                       <div class="top-user__lvl">Сумма</div>
 					  <input class="form__input manga-search__input" type="number">
                     </div>
-                    <ul class="tabs__list" data-tabs-list-id="tabs_1">
-                      <li class="tabs__item tabs__item_active" data-key="home-updates" style="
-    padding-left: 53px;
+                    <ul class="tabs__list">
+                    <li class="tabs__item" data-key="home-updates" style="
+    margin-left: 25px;
 ">
-                        <span><a href="http://manga/">Отправить</a></span>
-                      </li><div class="tabs__line" style="display: block; width: 188px; transform: translateX(0px);"></div></ul></div>
+            <button class="button button_sm button_white media-rating-wrap__btn">
+                Отправить
+            </button>
+            </li>
+                  <div class="tabs__line" style="display: block; width: 185px; transform: translateX(0px);"></div></ul></div>
                 </div>
       </div>
     </div>

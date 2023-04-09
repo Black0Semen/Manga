@@ -49,6 +49,9 @@ class IndexController extends Controller
     public function team_page(){
         return view('team_page');
     }
+    public function ziavka(){
+        return view('ziavka');
+    }
     public function findSomeThing(Request $request){
         $input = $request->title;
         $comics = Comic::WHERE("title","=",$input)->get();
