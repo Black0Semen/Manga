@@ -329,7 +329,7 @@
                 3.7&thinsp;M &thinsp;
               </span>
             </div>
-            <h5 class="media-card__subtitle">№5</h5> 
+            <h5 class="media-card__subtitle" >№5</h5> 
           </div>
           <div class="updates__body">
                       </div>
