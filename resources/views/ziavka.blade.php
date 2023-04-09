@@ -19,19 +19,19 @@
       <section class="section paper tabs" id="latest-updates" data-tabs-id="tabs_1">
       <div class="header__item header__menu">
         <div class="header-menu__item dropdown">
-          <span data-dropdown="" src="/" aria-expanded="false"><a href="/feedback_panel">Разбор обратно связи</a></span>
+          <a href="/feedback_panel">Разбор обратно связи</a>
           <div class="menu-template">
             
           </div>
         </div>
         <div class="header-menu__item dropdown">
-          <span data-dropdown="" src="/" aria-expanded="false"><a href="/admin">Админ-панель</a></span>
+          <a href="/admin">Админ-панель</a>
           <div class="menu-template">
             
           </div>
         </div>
         <div class="header-menu__item dropdown">
-          <span data-dropdown="" src="/" aria-expanded="false"><a href="/ConsOfApp">Рассмотрение заявок</a></span>
+          <a href="/ConsOfApp">Рассмотрение заявок</a>
           <div class="menu-template">
             
           </div>
@@ -67,14 +67,18 @@
                     <div>
                       <div class="top-user__lvl">Сумма: 1000 руб</div>
                     </div>
-                    <ul class="tabs__list" data-tabs-list-id="tabs_1">
-                      <li class="tabs__item" data-key="home-updates">
-                        <span>Одобрить</span>
-                      </li>
-                      <li class="tabs__item" data-key="my-updates">
-                        <span>Отклонить</span>
-                      </li>
-                  </ul></div>
+                    <ul class="tabs__list">
+                    <li class="tabs__item" data-key="home-updates">
+            <button class="button button_sm button_white media-rating-wrap__btn">
+                Одобрить
+            </button>
+            </li>
+            <li class="tabs__item">
+            <button class="button button_sm button_white media-rating-wrap__btn">
+                Отклонить
+            </button>
+            </li>
+                  <div class="tabs__line" style="display: block; width: 273px; transform: translateX(0px);"></div></ul></div>
                 </div>
       </div>
     </div>

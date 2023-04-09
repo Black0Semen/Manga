@@ -147,28 +147,28 @@
     <div class="header__item header__menu">
       <div class="header-menu">
                <div class="header-menu__item dropdown">
-          <span data-dropdown="" aria-expanded="false"><a href="/Catalog">Каталог</a></span>
+          <a class="menu_item" href="/Catalog">Каталог</a>
           <div class="menu-template">
             
           </div>
         </div>
                 <div class="header-menu__item" data-search-toggle="">
-          <span id="search-link" title="Быстрый поиск"><a href="">Поиск</a></span>
+          <a href="">Поиск</a>
         </div>
         <div class="header-menu__item dropdown">
-          <span data-dropdown="" aria-expanded="false"><a href="/top">Топ</a></span>
+          <a href="/top">Топ</a>
           <div class="menu-template">
             
           </div>
         </div>
         <div class="header-menu__item dropdown">
-          <span data-dropdown="" aria-expanded="false"><a href="/order">Заказ</a></span>
+          <a href="/order">Заказ</a>
           <div class="menu-template">
             
           </div>
         </div>
         <div class="header-menu__item dropdown">
-          <span data-dropdown="" aria-expanded="false"><a href="/MyManga">Панель модерации</a></span>
+          <a href="/MyManga">Панель модерации</a>
           <div class="menu-template">
             
           </div>

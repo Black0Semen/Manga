@@ -61,13 +61,66 @@
             </div>
                 </div>
 
-              <div class="paper" id="manga-list">
-      <div class="section__header manga-block-items__header">
-      <div class="manga-block-items__title text-truncate">Комиксы</div>
-    </div>
-  <div class="media-grid-wrap">
+              <div class="paper">
+              <div class="media-grid-wrap">
     <div class="media-cards-grid">
       <div class="media-card-wrap">
+      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
+        <div class="media-card__caption">
+          <h5 class="media-card__subtitle">Манхва</h5>
+                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
+        </div>
+              </a>
+    </div>
+    <div class="media-card-wrap">
+      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
+        <div class="media-card__caption">
+          <h5 class="media-card__subtitle">Манхва</h5>
+                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
+        </div>
+              </a>
+    </div>
+    <div class="media-card-wrap">
+      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
+        <div class="media-card__caption">
+          <h5 class="media-card__subtitle">Манхва</h5>
+                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
+        </div>
+              </a>
+    </div>
+    <div class="media-card-wrap">
+      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
+        <div class="media-card__caption">
+          <h5 class="media-card__subtitle">Манхва</h5>
+                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
+        </div>
+              </a>
+    </div>
+    <div class="media-card-wrap">
+      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
+        <div class="media-card__caption">
+          <h5 class="media-card__subtitle">Манхва</h5>
+                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
+        </div>
+              </a>
+    </div>
+    <div class="media-card-wrap">
+      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
+        <div class="media-card__caption">
+          <h5 class="media-card__subtitle">Манхва</h5>
+                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
+        </div>
+              </a>
+    </div>
+    <div class="media-card-wrap">
+      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
+        <div class="media-card__caption">
+          <h5 class="media-card__subtitle">Манхва</h5>
+                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
+        </div>
+              </a>
+    </div>
+    <div class="media-card-wrap">
       <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
         <div class="media-card__caption">
           <h5 class="media-card__subtitle">Манхва</h5>
