@@ -53,7 +53,7 @@
     margin-left: 25px;
 ">
             <button class="button button_sm button_white media-rating-wrap__btn">
-                Одобрить
+                Отправить
             </button>
             </li>
                   <div class="tabs__line" style="display: block; width: 185px; transform: translateX(0px);"></div></ul></div>

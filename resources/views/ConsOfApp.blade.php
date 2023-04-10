@@ -25,7 +25,13 @@
           </div>
         </div>
         <div class="header-menu__item dropdown">
-          <a href="/admin">Админ-панель</a>
+          <a href="/Admins">Админ-панель</a>
+          <div class="menu-template">
+            
+          </div>
+        </div>
+        <div class="header-menu__item dropdown">
+          <a href="/MyManga">Модер-панель</a>
           <div class="menu-template">
             
           </div>
