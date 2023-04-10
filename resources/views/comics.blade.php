@@ -65,10 +65,9 @@
               <svg class="media-rating__star">
                 <use xlink:href="#icon-star"></use>
               </svg>
-              <div class="media-rating__value">8.86</div>
-              <div class="media-rating__votes">171</div>
+              <div>8.86</div>
             </div>
-            <button class="button button_sm button_white media-rating-wrap__btn" data-open-modal="#rating-modal">
+            <button class="button" data-open-modal="#rating-modal">
                               <span>
                   Оценить
                 </span>
@@ -186,13 +185,13 @@
 
     <div class="page-modals" tabindex="-1">
   <div class="modal" id="rating-modal">
-  <div class="modal__inner">
-    <div class="modal__content" data-size="small">
+  <div class="modal__inner" style="width: 263px;">
+    <div class="modal__content">
       <div class="modal__header">
-        <h4 class="modal__title text-center">Оценить тайтл</h4>
+        <h4 class="modal__title text-center">Оценка</h4>
       </div>
-      <div class="modal__body media-rating-stars" data-id="156946">
-        <div class="text-center rating media-rating-stars">
+      <div class="modal__body">
+        <div class="text-center">
                                   <span class="rating__star rating__current" data-score="10">
               <svg>
                 <use xlink:href="#icon-star"></use>
@@ -245,9 +244,9 @@
             </span>
                   </div>
 
-        <div class="text-center hidden" data-user-rating="">
-          <div class="pb-10">мой рейтинг: <span data-user-score="">0</span></div>
-          <button class="button button_sm button_red" data-score="0">Удалить оценку</button>
+        <div class="text-center hidden">
+          <div class="pb-10">Рейтинг от меня: <span data-user-score="">0</span></div>
+          <button class="button" data-score="0">Удалить оценку</button>
         </div>
       </div>
     </div>
