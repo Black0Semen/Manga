@@ -44,6 +44,7 @@ Route::get('/feedback_panel', [IndexController::class, 'feedback_panel']);
 Route::get('/ConsOfApp', [IndexController::class, 'ConsOfApp']);
 Route::get('/ziavka', [IndexController::class, 'ziavka']);
 Route::get('/Admins', [IndexController::class, 'Admins']);
+Route::get('/Settings', [IndexController::class, 'Settings']);
 
 //Route::get('/', function () {
    // return view('welcome');

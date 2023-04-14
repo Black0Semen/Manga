@@ -55,6 +55,9 @@ class IndexController extends Controller
     public function Admins(){
         return view('Admins');
     }
+    public function Settings(){
+        return view('Settings');
+    }
     public function findSomeThing(Request $request){
         $input = $request->title;
         $comics = Comic::WHERE("title","=",$input)->get();

@@ -19,25 +19,25 @@
       <section class="section paper tabs" id="latest-updates" data-tabs-id="tabs_1">
       <div class="header__item header__menu">
         <div class="header-menu__item dropdown">
-          <a href="/feedback_panel">Разбор обратно связи</a>
+          <a href="/feedback_panel" style="color: darkred;">Разбор обратно связи</a>
           <div class="menu-template">
             
           </div>
         </div>
         <div class="header-menu__item dropdown">
-          <a href="/Admins">Админ-панель</a>
+          <a href="/Admins" style="color: darkred;">Админ-панель</a>
           <div class="menu-template">
             
           </div>
         </div>
         <div class="header-menu__item dropdown">
-          <a href="/MyManga">Модер-панель</a>
+          <a href="/MyManga" style="color: darkred;">Модер-панель</a>
           <div class="menu-template">
             
           </div>
         </div>
         <div class="header-menu__item dropdown">
-          <a href="/ConsOfApp">Рассмотрение заявок</a>
+          <a href="/ConsOfApp" style="color: darkred;">Рассмотрение заявок</a>
           <div class="menu-template">
             
           </div>
