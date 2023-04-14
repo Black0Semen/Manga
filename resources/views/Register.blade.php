@@ -17,7 +17,7 @@
                 <div class="top-user">
                   <div class="top-user__body">
                     <div class="top-user__username">
-                      <div class="link-default" style="padding-left: 24px;">Регистрация</div>
+                      <div class="link-default" style="padding-left: 45px;">Регистрация</div>
                     </div>
                     <div>
                       <div class="top-user__lvl">Логин</div>
@@ -43,7 +43,7 @@
                 {{ __('Уже зарегистрированы?') }}
             </a>
                     <li class="tabs__item tabs__item_active" data-key="home-updates" style="margin-left: -66px; margin-top: 12px;">
-            <x-primary-button class="button button_sm button_white media-rating-wrap__btn">
+            <x-primary-button class="button button_sm button_white media-rating-wrap__btn"    style="margin-left: 81px;">
                 {{ __('Регистрация') }}
             </x-primary-button>
             </li><div class="tabs__line" style="display: block; width: 215px; transform: translateX(0px);"></div>

@@ -1,0 +1,32 @@
+/* Кнопка выпадающего списка */
+.dropb2 {
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.drop2 {
+  position: relative;
+  display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.drop-content2 {
+  width: auto;
+  overflow: auto;
+  z-index: 500;
+  visibility: visible;
+  margin: 0px;
+  margin-left: -96px;
+  margin-top: -1442px;
+  position: absolute;
+  inset: 0px auto auto 0px;
+  transform: translate(755.2px, 1504.8px);
+  display: none;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show2 {display:block;}

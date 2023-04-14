@@ -1,16 +1,11 @@
 <!DOCTYPE html>
-<html id="site_type" lang="ru" data-id="1" data-mode="light"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html id="site_type" lang="ru" data-id="1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="-1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title> MyManga</title>
-    <meta name="description" content="Манга, Манга онлайн! У нас вся Читать мангу бесплатно и без регистрации! Читать Читать мангу! Читать мангу на русском языке, переводы Читать мангу, популярная Читать мангу
-">
-    <meta name="keywords" content=" манга, манга онлайн,  Читать мангу,  Читать мангу онлайн, манга бесплатно, манга романтика, манга по жанрам, манга про любовь, манга русская, манга на русском, перевод манга, лучшая манга, топ манга, каталог манга, популярная манга
-">
-
     <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="application-name" content="manga">
@@ -42,6 +37,12 @@
     <link href="./content/stylesheets/css2.css" rel="stylesheet">
     <link rel="stylesheet" href="./content/stylesheets/manga.css">
     <link rel="stylesheet" href="./content/stylesheets/main1.css">
+    <link rel="stylesheet" href="./content/stylesheets/spisok.css">
+    <link rel="stylesheet" href="./content/stylesheets/spisokJanr.css">
+    <link rel="stylesheet" href="./content/stylesheets/spisokreiting.css">
+    <link rel="stylesheet" href="./content/stylesheets/spisokstatus.css">
+    <link rel="stylesheet" href="./content/stylesheets/spisoktags.css">
+    <link rel="stylesheet" href="./content/stylesheets/spisoktip.css">
     <link rel="stylesheet" href="./content/stylesheets/mobile.css">
     <link rel="stylesheet" href="{{asset('content\stylesheets\temnaya\Zakladki.css')}}">
     <link rel="stylesheet" href="{{asset('content\stylesheets\dannye.css')}}">
@@ -50,6 +51,11 @@
     <link rel="stylesheet" href="{{asset('content\stylesheets\temnaya\Zakladki.css')}}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="{{asset('content\javascript\main.js')}}"></script>
+    <script src="{{asset('content\javascript\main1.js')}}"></script>
+    <script src="{{asset('content\javascript\main2.js')}}"></script>
+    <script src="{{asset('content\javascript\main3.js')}}"></script>
+    <script src="{{asset('content\javascript\main4.js')}}"></script>
+    <script src="{{asset('content\javascript\main5.js')}}"></script>
     <link media="all" type="text/css" rel="stylesheet" href="./content/stylesheets/font-awesome.min.css">
     <script src="./content/javascript/manifest.f1211b48.js"></script>
     <script src="./content/javascript/theme.f1211b48.js"></script>
@@ -301,7 +307,6 @@
   <div class="flash-messages">
     
                                                   </div>
-
       <script src="./content/javascript/vendor.f1211b48.js"></script>
   <script src="./content/javascript/main.f1211b48.js"></script><div class="toast"><div></div></div><div class="popup-root"></div><div class="toast"><div></div></div><div class="popup-root"></div><div class="toast"><div></div></div><div class="popup-root"></div>
 </body></html>
