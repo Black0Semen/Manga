@@ -34,32 +34,32 @@
     <meta name="rootURL" content="/">
     <meta name="_token" content="CsmtKpr9gpeUYKm94NbMWPLyP22AtAOlBH8imGI7">
 
-    <link href="./content/stylesheets/css2.css" rel="stylesheet">
-    <link rel="stylesheet" href="./content/stylesheets/manga.css">
-    <link rel="stylesheet" href="./content/stylesheets/main1.css">
-    <link rel="stylesheet" href="./content/stylesheets/spisok.css">
-    <link rel="stylesheet" href="./content/stylesheets/spisokJanr.css">
-    <link rel="stylesheet" href="./content/stylesheets/spisokreiting.css">
-    <link rel="stylesheet" href="./content/stylesheets/spisokstatus.css">
-    <link rel="stylesheet" href="./content/stylesheets/spisoktags.css">
-    <link rel="stylesheet" href="./content/stylesheets/spisoktip.css">
-    <link rel="stylesheet" href="./content/stylesheets/mobile.css">
+    <link href="{{asset('content\stylesheets\css2.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('content\stylesheets\manga.css')}}">
+    <link rel="stylesheet" href="{{asset('content\stylesheets\main1.css')}}">
+    <link rel="stylesheet" href="{{asset('content\stylesheets\spisok.css')}}">
+    <link rel="stylesheet" href="{{asset('content\stylesheets\spisokJanr.css')}}">
+    <link rel="stylesheet" href="{{asset('content\stylesheets\spisokreiting.css')}}">
+    <link rel="stylesheet" href="{{asset('content\stylesheets\spisokstatus.css')}}">
+    <link rel="stylesheet" href="{{asset('content\stylesheets\spisoktags.css')}}">
+    <link rel="stylesheet" href="{{asset('content\stylesheets\spisoktip.css')}}">
+    <link rel="stylesheet" href="{{asset('content\stylesheets\mobile.css')}}">
     <link rel="stylesheet" href="{{asset('content\stylesheets\temnaya\Zakladki.css')}}">
     <link rel="stylesheet" href="{{asset('content\stylesheets\dannye.css')}}">
     <!-- <link rel="stylesheet" href="{{asset('content\stylesheets\auth.css')}}"> -->
      <!-- <link rel="stylesheet" href="{{asset('content\stylesheets\registr.css')}}"> -->
     <link rel="stylesheet" href="{{asset('content\stylesheets\temnaya\Zakladki.css')}}">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{asset('https://ajax.googleapis.com\ajax\libs\jquery\3.5.1\jquery.min.js')}}"></script>
     <script src="{{asset('content\javascript\main.js')}}"></script>
     <script src="{{asset('content\javascript\main1.js')}}"></script>
     <script src="{{asset('content\javascript\main2.js')}}"></script>
     <script src="{{asset('content\javascript\main3.js')}}"></script>
     <script src="{{asset('content\javascript\main4.js')}}"></script>
     <script src="{{asset('content\javascript\main5.js')}}"></script>
-    <link media="all" type="text/css" rel="stylesheet" href="./content/stylesheets/font-awesome.min.css">
-    <script src="./content/javascript/manifest.f1211b48.js"></script>
-    <script src="./content/javascript/theme.f1211b48.js"></script>
-          <script type="text/javascript" charset="utf-8" async="" src="./content/javascript/22.2874d52df399f409f0bc.js"></script><script type="text/javascript" charset="utf-8" async="" src="./content/javascript/22.2874d52df399f409f0bc.js"></script><script type="text/javascript" charset="utf-8" async="" src="./content/javascript/22.2874d52df399f409f0bc.js"></script><script type="text/javascript" charset="utf-8" async="" src="./content/javascript/22.2874d52df399f409f0bc.js"></script></head>
+    <link media="all" type="text/css" rel="stylesheet" href="{{ asset('content\stylesheets\font-awesome.min.css') }}">
+    <script src="{{asset('content\javascript\manifest.f1211b48.js')}}"></script>
+    <script src="{{asset('content\javascript\theme.f1211b48.js')}}"></script>
+    <script type="text/javascript" charset="utf-8" async="" src="{{asset('content\javascript\22.2874d52df399f409f0bc.js')}}"></script><script type="text/javascript" charset="utf-8" async="" src="{{asset('content\javascript\22.2874d52df399f409f0bc.js')}}"></script><script type="text/javascript" charset="utf-8" async="" src="{{asset('content\javascript\22.2874d52df399f409f0bc.js')}}"></script><script type="text/javascript" charset="utf-8" async="" src="{{asset('content\javascript\22.2874d52df399f409f0bc.js')}}"></script></head>
   <body data-page="home">
 
     <!-- SVG ICONS -->
@@ -146,7 +146,7 @@
   <div class="header__inner">
     <div class="header__item header__left">
       <a href="/" class="header__logo">
-        <img src="./content/photo/logo.png" class="logo" alt="MyManga">
+        <img src="{{asset('content\photo\logo.png')}}" class="logo" alt="MyManga">
       </a>
       
     </div>
@@ -213,7 +213,7 @@
     </div>
         </a>
         <div class="header-right-menu__item dropdown">
-          <img src="./content/photo/placeholder.png" class="header-right-menu__avatar" data-dropdown="" data-tippy-placement="bottom-end" aria-expanded="false">
+          <img src="{{asset('content\photo\placeholder.png')}}" class="header-right-menu__avatar" data-dropdown="" data-tippy-placement="bottom-end" aria-expanded="false">
           <div class="menu-template">
             <div data-tippy-root="" id="tippy-6" style="z-index: 9999;visibility: visible;margin: 0px;margin-left: 128px;margin-top: -1455px;position: absolute;inset: 0px auto auto 0px;transform: translate(755.2px, 1504.8px);"><div class="tippy-box" data-state="visible" tabindex="-1" data-theme="dropdown" data-animation="shift-toward" role="tooltip" style="max-width: 350px; transition-duration: 200ms;" data-placement="bottom-end"><div class="tippy-content" data-state="visible" style="transition-duration: 200ms;"><div class="menu header-dropdown">
             @if(Illuminate\Support\Facades\Auth::check())
@@ -307,6 +307,6 @@
   <div class="flash-messages">
     
                                                   </div>
-      <script src="./content/javascript/vendor.f1211b48.js"></script>
-  <script src="./content/javascript/main.f1211b48.js"></script><div class="toast"><div></div></div><div class="popup-root"></div><div class="toast"><div></div></div><div class="popup-root"></div><div class="toast"><div></div></div><div class="popup-root"></div>
+      <script src="{{ asset('content\javascript\vendor.f1211b48.js') }}"> </script>
+      <script src="{{ asset('content\javascript\main.f1211b48.js') }}"> </script><div class="toast"><div></div></div><div class="popup-root"></div><div class="toast"><div></div></div><div class="popup-root"></div><div class="toast"><div></div></div><div class="popup-root"></div>
 </body></html>
