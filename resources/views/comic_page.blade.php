@@ -1,10 +1,8 @@
 @extends('layouts')
 @section('content')
+@foreach($comic as $value)
     <div class="page">
       <div class="page__inner">
-        
-        
-          
   
   <div class="container container_responsive">
     <div class="media-container">
@@ -22,18 +20,22 @@
       </div>
 
   <div class="media-info-list paper">
+  @foreach(\App\Models\ComicType::WHERE('id_type','=',$value->id_type)->get() as $type)
     <a href="https://mangalib.me/manga-list?types%5B%5D=5" target="_blank" class="media-info-list__item">
       <div class="media-info-list__title">Тип</div>
-      <div class="media-info-list__value">Манхва</div>
+      <div class="media-info-list__value">{{$type->type}}</div>
     </a>
+  @endforeach
           <a href="https://mangalib.me/manga-list?year%5Bmin%5D=2023" target="_blank" class="media-info-list__item">
         <div class="media-info-list__title">Год релиза</div>
-        <div class="media-info-list__value">2023</div>
+        <div class="media-info-list__value">{{$value->date}}</div>
       </a>
     
           <a href="https://mangalib.me/manga-list?status%5B%5D=1" target="_blank" class="media-info-list__item">
         <div class="media-info-list__title">Статус перевода</div>
-        <div class="media-info-list__value text-capitalize">Продолжается</div>
+        @foreach(App\Models\ComicStatus::WHERE('id_status','=',$value->status)->get() as $status)
+        <div class="media-info-list__value text-capitalize">{{$status->status}}</div>
+        @endforeach
       </a> 
               <div class="media-info-list__item">
        <div class="media-info-list__title">Просмотров</div>
@@ -50,7 +52,7 @@
       <div class="media-content media-content_side">
         <div id="media_type" data-type="manga" class="media-name section">
           <div class="media-name__body">
-            <div class="media-name__main">Сестра эрцгерцога - самозванка</div>
+            <div class="media-name__main">{{$value->title}}</div>
             
                                           <div class="media-name__alt">The Duke’s Imposter Sister</div>
                                     </div>
@@ -60,7 +62,7 @@
               <svg class="media-rating__star">
                 <use xlink:href="#icon-star"></use>
               </svg>
-              <div>8.86</div>
+              <div>{{$value->rating}}</div>
             </div>
             <button class="button" data-open-modal="#rating-modal">
                               <span>
@@ -85,10 +87,14 @@
             <div class="media-section media-section_info">
     <div class="media-description media-description_short">
       <div>
-        Бывшая принцесса, подрабатывающая в публичном доме, Бенедикт Кридс по воле случая смогла выбраться оттуда. Условие - стать леди семьи Баирэнхаг. Но на что не пойдёшь, чтобы выжить? Где-то полмесяца всё было неплохо. Тогда она получила в подарок от фальшивого брата эрцгерцога Баирэнхага милое маленькое домашнее животное. Сперва она решила, что это первый и последний подарок, но со временем их стало только больше. В конце концов, когда он решил подарить всего себя, Кридс уже чувствовала, что эти отношения приведут к катастрофе.
+        {{$value->opisanie}}
       </div>
       <div class="media-tags">
-                      <a href="https://mangalib.me/manga-list?genres%5Binclude%5D%5B%5D=43" class="media-tag-item ">драма</a>
+        @foreach($tags as $tag)
+        @foreach(App\Models\Tags::WHERE('id_tag','=',$tag->tag)->get() as $val)
+                      <a href="" class="media-tag-item ">{{$val->tag}}</a>
+                      @endforeach
+                      @endforeach
           </div>
   </div>
 
@@ -98,11 +104,16 @@
     </div>
 
     <div class="team-list">
-              <a href="https://mangalib.me/team/melinoie-team" class="team-list-item team-list-item_xs">
+      @foreach(App\Models\Team::WHERE('title','=',$value->team)->get() as $command)
+              <a href="/team/{{$command->id_team}}" class="team-list-item team-list-item_xs">
           <div class="team-list-item__cover" style="background-image: url(https://mangalib.me/uploads/team/melinoie-team/cover/evgbEDDlXq_250x350.jpg?)"></div>
-          <div class="team-list-item__name">Mel</div>
+          <div class="team-list-item__name">
+          {{$command->title}}
+          </div>
         </a>
           </div>
+          @endforeach
+       
   </div>
 
             
@@ -241,3 +252,4 @@
 
   
             </div>
+            @endforeach

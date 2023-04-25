@@ -5,7 +5,12 @@ namespace App\Http\Controllers;
 use App\Models\Comic;
 use App\Models\Team;
 use App\Models\User;
+use App\Models\Glava;
+use App\Models\Photo;
+use App\Models\ComicTags;
 use App\Models\ComicType;
+use App\Models\Tags;
+use App\Models\ComicStatus;
 use App\Models\UserTeam;
 use App\Models\ComicTeam;
 use Illuminate\Support\Facades\Auth;
@@ -16,8 +21,9 @@ class IndexController extends Controller
 {
     public function mainShow(){
         $comic = Comic::all();
+        $lastUpdated = Glava::JOIN('comic','glava.id_comic','=','comic.id_comic')->orderBy('glava.updated_at','DESC')->get();
 
-        return view('home', ['comic'=>$comic]);
+        return view('home', ['comic'=>$comic,'lastUpdated'=>$lastUpdated]);
     }
 
     public function order(){
@@ -79,8 +85,10 @@ class IndexController extends Controller
     public function comicPage($id){
         //$requestJoin = Course::JOIN('language', 'courses.language_id', '=', 'language.id')->WHERE('language.id', '=', "$language")->orderBy('user_id', 'DESC')->get();      
         $comic = Comic::WHERE('id_comic','=',$id)->get();
+        $tags = ComicTags::WHERE('id_comic','=',$id)->get();
+        //$team = ComicTeam::WHERE('id_comic', '=',$id)->get();
 
-        return view('comic_page',['comic'=>$comic   ]);
+        return view('comic_page',['comic'=>$comic,'tags'=>$tags]);
     }
 
     public function teamShow($id){
@@ -92,5 +100,10 @@ class IndexController extends Controller
 
     public function addComic(){
         return view('add_comic');
+    }
+
+    public function glavaView($id){
+        $photo = Photo::WHERE('id_glava','=',$id)->get();
+        return view('glava',['photo'=>$photo]);
     }
 }

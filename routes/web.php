@@ -32,6 +32,8 @@ Route::get('/comic_add', [IndexController::class, 'addComic']);
 
 Route::get('comic/{id}',[IndexController::class, 'comicPage']);
 
+Route::get('glava/{id}',[IndexController::class, 'glavaView']);
+
 Route::get('/rules', [IndexController::class, 'ruleShow']);
 
 //Route::get('/profile', function () {})->middleware('auth');
