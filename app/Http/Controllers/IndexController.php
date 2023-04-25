@@ -55,6 +55,19 @@ class IndexController extends Controller
     public function team_page(){
         return view('team_page');
     }
+
+    public function pravila(){
+        return view('pravila');
+    }
+
+    public function Notification(){
+        return view('Notification');
+    }
+
+    public function ComicsShowStr(){
+        return view('ComicsShowStr');
+    }
+
     public function ziavka(){
         return view('ziavka');
     }

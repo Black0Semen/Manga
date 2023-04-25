@@ -17,11 +17,14 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', [IndexController::class, 'mainShow']);
 Route::get('/top', [IndexController::class, 'top']);
+Route::get('/pravila', [IndexController::class, 'pravila']);
 Route::get('/order', [IndexController::class, 'order']);
 Route::get('/zakladki', [IndexController::class, 'zakladki']);
 Route::get('/Catalog', [IndexController::class, 'Catalog']);
 Route::get('/comics', [IndexController::class, 'comics']);
 Route::get('/team_page', [IndexController::class, 'team_page']);
+Route::get('/Notification', [IndexController::class, 'Notification']);
+Route::get('/ComicsShowStr', [IndexController::class, 'ComicsShowStr']);
 
 Route::get('/search', [IndexController::class, 'search']);
 Route::get('/search', [IndexController::class, 'findSomeThing']);
