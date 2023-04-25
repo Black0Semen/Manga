@@ -1,5 +1,6 @@
 @extends('layouts')
 @section('content')
+@foreach($team as $value)
     <div class="page" id="main-page">
       <div class="page__inner">   
   <div class="container container_offset team-profile">
@@ -21,27 +22,34 @@
           </div>
         <div class="team-profile__section">
           <div class="team-profile-users">
-  <div class="team-profile__title">Состав команды<span class="small text-muted ml-5">5</span></div>
+          @foreach($users as $val)
+  <div class="team-profile__title">Состав команды<span class="small text-muted ml-5">{{$val->count()}}</span></div>
+  
+  @foreach(\App\Models\User::WHERE('id','=',$val->id_user)->get() as $user)
+            
       <a class="team-profile-users__item link-default " href="https://mangalib.me/user/317188">
       <img src="./команда_files/X2pD0Z5SIDKU.jpg" class="team-profile-users__avatar avatar avatar_circle">
       <div class="team-profile-users__content">
-        <div class="team-profile-users__name text-truncate">Anidel</div>
-        <div class="team-profile-users__role text-truncate">
-                      <span>Админ</span>
-                  </div>
+        <div class="team-profile-users__name text-truncate">{{$user->name}}</div>
+        <div class="team-profile-users__role text-truncate"><span>Admin</span></div>
       </div>
     </a>
+    @endforeach
+    @endforeach
   </div>
         </div>
       </div>
     </div>
+
+
     <div class="page__wrapper page__wrapper_right">
       <div class="section paper section-body">
-        <div class="team-profile__name">Mel<a href="https://mangalib.me/team/6122/edit" class="small ml-10 text-muted">редактировать</a></div>
+        <div class="team-profile__name">{{$value->title}}<a href="https://mangalib.me/team/6122/edit" class="small ml-10 text-muted">редактировать</a></div>
           <div class="team-profile__section">
             <div class="team-profile-stats">
   <div class="team-profile-stats__item">
-    <div class="team-profile-stats__value">86</div>
+  
+    <div class="team-profile-stats__value">{{\App\Models\Comic::WHERE('team','=',$value->title)->count()}}</div>
     <div class="team-profile-stats__name">Комиксы</div>
   </div>
   <div class="team-profile-stats__item">
@@ -57,117 +65,23 @@
                       <div class="team-profile__section">
               <div class="team-profile__title">Описание</div>
 
-              <div class="team-profile-description">Команда переводчиковjgfkhg kjgfvkugfvujt</div>
+              <div class="team-profile-description">{{$value->opisanie}}</div>
             </div>
                 </div>
 
               <div class="paper">
               <div class="media-grid-wrap">
     <div class="media-cards-grid">
-      <div class="media-card-wrap">
-      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
-        <div class="media-card__caption">
-          <h5 class="media-card__subtitle">Манхва</h5>
-                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
-        </div>
-              </a>
-    </div>
+  @foreach(\App\Models\Comic::WHERE('team','=',$value->title)->get() as $comics)
     <div class="media-card-wrap">
-      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
+      <a class="media-card" href="/comic/{{$comics->id_comic}}" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
         <div class="media-card__caption">
           <h5 class="media-card__subtitle">Манхва</h5>
-                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
+                    <h3 class="media-card__title line-clamp">{{$comics->title}}</h3>
         </div>
               </a>
     </div>
-    <div class="media-card-wrap">
-      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
-        <div class="media-card__caption">
-          <h5 class="media-card__subtitle">Манхва</h5>
-                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
-        </div>
-              </a>
-    </div>
-    <div class="media-card-wrap">
-      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
-        <div class="media-card__caption">
-          <h5 class="media-card__subtitle">Манхва</h5>
-                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
-        </div>
-              </a>
-    </div>
-    <div class="media-card-wrap">
-      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
-        <div class="media-card__caption">
-          <h5 class="media-card__subtitle">Манхва</h5>
-                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
-        </div>
-              </a>
-    </div>
-    <div class="media-card-wrap">
-      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
-        <div class="media-card__caption">
-          <h5 class="media-card__subtitle">Манхва</h5>
-                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
-        </div>
-              </a>
-    </div>
-    <div class="media-card-wrap">
-      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
-        <div class="media-card__caption">
-          <h5 class="media-card__subtitle">Манхва</h5>
-                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
-        </div>
-              </a>
-    </div>
-    <div class="media-card-wrap">
-      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
-        <div class="media-card__caption">
-          <h5 class="media-card__subtitle">Манхва</h5>
-                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
-        </div>
-              </a>
-    </div>
-    <div class="media-card-wrap">
-      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
-        <div class="media-card__caption">
-          <h5 class="media-card__subtitle">Манхва</h5>
-                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
-        </div>
-              </a>
-    </div>
-    <div class="media-card-wrap">
-      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
-        <div class="media-card__caption">
-          <h5 class="media-card__subtitle">Манхва</h5>
-                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
-        </div>
-              </a>
-    </div>
-    <div class="media-card-wrap">
-      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
-        <div class="media-card__caption">
-          <h5 class="media-card__subtitle">Манхва</h5>
-                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
-        </div>
-              </a>
-    </div>
-    <div class="media-card-wrap">
-      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
-        <div class="media-card__caption">
-          <h5 class="media-card__subtitle">Манхва</h5>
-                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
-        </div>
-              </a>
-    </div>
-    <div class="media-card-wrap">
-      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
-        <div class="media-card__caption">
-          <h5 class="media-card__subtitle">Манхва</h5>
-                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
-        </div>
-              </a>
-    </div>
+  @endforeach
   </div>
   </div>
 </div>
@@ -175,3 +89,4 @@
   </div>
               </div>
     </div>
+    @endforeach
