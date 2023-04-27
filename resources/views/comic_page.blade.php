@@ -15,6 +15,9 @@
                 <button class="button button_block button_primary">
         <div>Добавить в список</div>
       </button>
+      <button class="button button_block button_primary" onclick="window.location.href='/'">
+        <div>Редактировать</div>
+      </button>
       </div>
   <div class="media-info-list paper">
     <a href="https://mangalib.me/manga-list?types%5B%5D=5" target="_blank" class="media-info-list__item">
@@ -228,6 +231,9 @@
     <a href="/manga/the-magic-chef-of-ice-and-fire/chapter/2416092" data-place="left" aria-label="Редактировать главу" class="media-chapter__icon media-chapter__icon_edit tooltip">
       +
     </a> 
+    <button data-place="left" aria-label="Удалить главу" class="button media-chapter__icon media-chapter__icon_edit tooltip">
+      х
+    </button> 
   </div>
 </div>
 </div>
