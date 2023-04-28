@@ -25,6 +25,12 @@ Route::get('/comics', [IndexController::class, 'comics']);
 Route::get('/team_page', [IndexController::class, 'team_page']);
 Route::get('/Notification', [IndexController::class, 'Notification']);
 Route::get('/ComicsShowStr', [IndexController::class, 'ComicsShowStr']);
+Route::get('/ShowAddComics', [IndexController::class, 'ShowAddComics']);
+Route::get('/ShowAddGlava', [IndexController::class, 'ShowAddGlava']);
+Route::get('/ShowAddTeams', [IndexController::class, 'ShowAddTeams']);
+Route::get('/ShowReplaceComics', [IndexController::class, 'ShowReplaceComics']);
+Route::get('/ShowReplaceGlava', [IndexController::class, 'ShowReplaceGlava']);
+Route::get('/ShowReplaceTeams', [IndexController::class, 'ShowReplaceTeams']);
 
 Route::get('/search', [IndexController::class, 'search']);
 Route::get('/search', [IndexController::class, 'findSomeThing']);
