@@ -216,16 +216,6 @@
         </div>
         <div>
         <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
-        Статус
-      </p>
-          <select type="text" placeholder="Статус" class="form__input">
-            <option class="text-truncate" value="1">Rescue Team</option>
-            <option class="text-truncate" value="2">Rescue555555555 Team</option>
-            <option class="text-truncate" value="3">Rescue 444444Team</option>
-          </select>
-        </div>
-        <div>
-        <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Статус перевода
       </p>
           <select type="text" placeholder="Статус перевода" class="form__input">
