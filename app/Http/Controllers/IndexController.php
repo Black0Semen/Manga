@@ -9,13 +9,16 @@ use App\Models\Glava;
 use App\Models\Photo;
 use App\Models\ComicTags;
 use App\Models\ComicType;
+use App\Models\ComicOgr;
 use App\Models\Tags;
+use App\Models\Janr;
 use App\Models\ComicStatus;
 use App\Models\UserTeam;
 use App\Models\ComicTeam;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
+use DB;
 
 class IndexController extends Controller
 {
@@ -98,12 +101,37 @@ class IndexController extends Controller
         return view('team', ['team'=>$team, 'users'=>$users]);
     }
 
-    public function addComic(){
-        return view('add_comic');
+    public function addComicShow(){
+        return view('comic_add');
+    }
+
+    public function addComic(Request $request){
+        DB::table('comic')->insert(['opisanie'=>$request->opisanie,'title'=>$request->title, 'date'=>$request->date, 
+        'id_type'=>$request->type,'status'=>$request->status, 'team'=>$request->team,'id_janr'=>$request->janr,'id_ogr'=>$request->ogr,
+        'on_moderation'=>1,'rating'=>10,'image'=>1]);
+        
+        $id = DB::getPdo()->lastInsertId();
+        DB::table('comic_tags')->insert(['tag'=>$request->tags, 'id_comic'=>$id]);
+        $idTag = DB::getPdo()->lastInsertId();
+        DB::table('comic')->where('id_comic',$id)->update(['id_tag'=>$idTag]);
+        
+        return redirect('/');
+    }
+
+    public function addTeamShow(){
+        return view('team_add');
+    }
+
+    public function addTeam(Request $request){
+        DB::table('translate_team')->insert(['opisanie'=>$request->opisanie, 'title'=>$request->title]);
+
+        return redirect('/');
     }
 
     public function glavaView($id){
         $photo = Photo::WHERE('id_glava','=',$id)->get();
+
+
         return view('glava',['photo'=>$photo]);
     }
 }
