@@ -37,7 +37,11 @@ Route::get('/search', [IndexController::class, 'findSomeThing']);
 
 Route::get('/team/{id}', [IndexController::class, 'teamShow']);
 
-Route::get('/comic_add', [IndexController::class, 'addComic']);
+Route::get('/comic_add', [IndexController::class, 'addComicShow']);
+Route::post('/comic_add', [IndexController::class, 'addComic']);
+
+Route::get('/team_add', [IndexController::class, 'addTeamShow']);
+Route::post('/team_add', [IndexController::class, 'addTeam']);
 
 Route::get('comic/{id}',[IndexController::class, 'comicPage']);
 
