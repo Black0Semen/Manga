@@ -228,7 +228,7 @@
         <a class="footer__nav-link" href="/" target="_blank" title="Для правообладателей">Авторское право</a>
       </li>
       <li>
-        <a class="footer__nav-link" href="/" target="_blank" title="Пользовательское соглашение">Пользовательское соглашение</a>
+        <a class="footer__nav-link" href="/" target="_blank" title="Пользовательское соглашение">Правила сайта</a>
       </li>
        <li>
         <a class="footer__nav-link" href="/" target="_blank" title="DMCA">DMCA</a>
