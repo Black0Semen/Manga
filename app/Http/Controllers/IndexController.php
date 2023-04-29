@@ -60,6 +60,30 @@ class IndexController extends Controller
         return view('pravila');
     }
 
+    public function ShowAddTeams(){
+        return view('ShowAddTeams');
+    }
+
+    public function ShowAddGlava(){
+        return view('ShowAddGlava');
+    }
+
+    public function ShowAddComics(){
+        return view('ShowAddComics');
+    }
+
+    public function ShowReplaceTeams(){
+        return view('ShowReplaceTeams');
+    }
+
+    public function ShowReplaceGlava(){
+        return view('ShowReplaceGlava');
+    }
+
+    public function ShowReplaceComics(){
+        return view('ShowReplaceComics');
+    }
+
     public function Notification(){
         return view('Notification');
     }

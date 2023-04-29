@@ -46,6 +46,11 @@
           <div class="media-info-list__item">
         <div class="media-info-list__title">Загружено глав</div>
         <div class="media-info-list__value text-capitalize">11</div>
+        <div>
+    <a href="/" data-place="left" aria-label="Добавить главу" class="media-chapter__icon media-chapter__icon_edit tooltip">
+      Добавить главу
+    </a> 
+  </div>
       </div>
       </div>
 </div>
