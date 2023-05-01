@@ -43,8 +43,8 @@ class IndexController extends Controller
     public function Zakladki(){
         return view('Zakladki');
     }
-    public function comics(){
-        return view('comics');
+    public function comic_page(){
+        return view('comic_page');
     }
     public function team_page(){
         return view('team_page');
@@ -76,6 +76,10 @@ class IndexController extends Controller
 
     public function ShowReplaceComics(){
         return view('ShowReplaceComics');
+    }
+
+    public function SettingsUser(){
+        return view('SettingsUser');
     }
 
     public function Notification(){
