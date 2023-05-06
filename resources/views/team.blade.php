@@ -57,7 +57,10 @@
     <div class="team-profile-stats__name">Лайки</div>
   </div>
   <div class="team-profile-stats__item">
-    <div class="team-profile-stats__value">1764</div>
+    <div class="team-profile-stats__value">
+    12
+   
+    </div>
     <div class="team-profile-stats__name">Главы</div>
   </div>
 </div>

@@ -8,7 +8,7 @@
       <div class="media-sidebar">
   <div>
         <div class="media-sidebar__cover paper">
-      <img src="/" style="height: 30%;">
+      <img src="{{ asset('/storage/uploads/' . $value->image )}}" style="height: 30%;">
     </div>
   </div>
 

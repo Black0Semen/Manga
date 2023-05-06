@@ -12,9 +12,10 @@
   <div class="section__body">
     <h2 class="page__title">Заманчивое предложение</h2>
     <div class="hot-media-wrap">
+      @if($comic != null)
       @foreach($comic as $value)
         <div class="hot-media-item media-card-wrap media-card-wrap_sm">
-          <a href="/comic/{{$value->id_comic}}" title="Читать последнюю главу. " class="hot-media-item__card media-card" style="background-image: url(&#39;https://cover.imglib.info/uploads/cover/twice-princess/cover/dNiTGN5LQRBd_250x350.jpg&#39;)">
+          <a href="/comic/{{$value->id_comic}}" title="Читать последнюю главу. " class="hot-media-item__card media-card" style="background-image: url(&#39;{{asset('/storage/uploads/' . $value->image)}}&#39;)">
             <div class="media-card__caption">
               <div class="media-card__title">Том 2 Глава 61</div>
             </div>
@@ -22,6 +23,7 @@
           <a href="/comic/{{$value->id_comic}}" class="hot-media-item__name line-clamp link-default">{{$value->title}}</a>
         </div>
       @endforeach
+      @endif
 </section>
   
     
@@ -35,6 +37,7 @@
       </div>
   <div class="section__body">
     <div class="updates tabs__content tabs__content_show">
+      @isset($lastUpdated)
     @foreach($lastUpdated as $value)
     <div class="updates__item">
         <div class="updates__left">
@@ -69,6 +72,7 @@
         </div>
       </div>  
       @endforeach
+      @endisset
 
       <div data-latest-updates="all"></div>
     </div>
