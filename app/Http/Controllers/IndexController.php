@@ -122,13 +122,12 @@ class IndexController extends Controller
         return view('rules');
     }
     
-    public function comicPage($id){
-        //$requestJoin = Course::JOIN('language', 'courses.language_id', '=', 'language.id')->WHERE('language.id', '=', "$language")->orderBy('user_id', 'DESC')->get();      
-        $comic = Comic::WHERE('id_comic','=',$id)->get();
-        $tags = ComicTags::WHERE('id_comic','=',$id)->get();
-        //$team = ComicTeam::WHERE('id_comic', '=',$id)->get();
+    public function comicPage($title){
+        //$requestJoin = Course::JOIN('language', 'courses.language_id', '=', 'language.id')->WHERE('language.id', '=', "$language")->orderBy('user_id', 'DESC')->get();  
+        // str_slug - ссылки через тире
+        $comic = Comic::WHERE('eng_title','=', $title)->get();
 
-        return view('comic_page',['comic'=>$comic,'tags'=>$tags]);
+        return view('comic_page',['comic'=>$comic]);
     }
 
     public function teamShow($id){
@@ -143,20 +142,19 @@ class IndexController extends Controller
     }
 
     public function addComic(Request $request){
-        /*
-        $array = $request->input('janrChoose');
-        foreach($array as $value){
-            $allJanr += $value;
-        };*/
         $imageName = time().'.'.$request->image->extension();
-        $request->image->storeAs('uploads',$imageName, 'public');
-        //$image = $request->file('image')->store('uploads','public');
-        
-        DB::table('comic')->insert(['opisanie'=>$request->opisanie,'title'=>$request->title, 'date'=>$request->date, 
-        'id_type'=>$request->type,'status'=>$request->status, 'team'=>$request->team,'id_ogr'=>$request->ogr,
+        $request->image->storeAs('uploads',$imageName, 'public');  
+        $array = $request->input('janrChoose');
+
+        DB::table('comic')->insert(['opisanie'=>$request->opisanie,'title'=>$request->title, 'orig_title'=>$request->original_title,'eng_title'=>$request->eng_title,
+        'date'=>$request->date, 'id_type'=>$request->type,'status'=>$request->status, 'team'=>$request->team,'id_ogr'=>$request->ogr,
         'on_moderation'=>1,'rating'=>10,'image'=>$imageName]);
+        $id = DB::getPdo()->lastInsertId();
 
-
+        
+        foreach($array as $value){
+            DB::table('comic_janr')->insert(['id_comic'=>$id,'janr'=>$value]);
+        };
         /*
         $id = DB::getPdo()->lastInsertId();
         DB::table('comic_tags')->insert(['tag'=>$request->tags, 'id_comic'=>$id]);
@@ -175,10 +173,36 @@ class IndexController extends Controller
         return redirect('/');
     }
 
-    public function glavaView($id){
+    public function glavaView($title,$id){
         $photo = Photo::WHERE('id_glava','=',$id)->get();
+        $glava = Glava::WHERE('id_glava','=',$id)->get();
+        $comic = Comic::WHERE('eng_title','=',$title)->get();
+        $team_name = Comic::WHERE('eng_title','=',$title)->value('team');
+        $team = Team::WHERE('title','=',$team_name)->get();
+        //dd($team);
 
+        return view('ComicsShowStr',['photo'=>$photo,'title'=>$title, 'id'=>$id,'team'=>$team, 'glava'=>$glava, 'comic'=>$comic]);
+    }
+    public function addGlavaShow($title){
+        $comic = Comic::WHERE('eng_title','=',$title)->get();
+        return view('ShowAddGlava',['comic'=>$comic]);
+    }
+    public function addGlava(Request $request, $title){        
+        $number = $request->number;
+        $comicId = Comic::WHERE('eng_title','=',$title)->value('id_comic');
 
-        return view('glava',['photo'=>$photo]);
+        DB::table('glava')->insert(['title'=>$request->title,'tom'=>$request->tom,'id_comic'=>$comicId,'number'=>$number]);
+        $id = DB::getPdo()->lastInsertId();
+
+        foreach($request->file('image') as $value){
+            $value->storeAs('glava/'. $title."/".$id,$value->getClientOriginalName(), 'public');  
+            $names[] = $value->getClientOriginalName();
+        }
+        
+        foreach($names as $value){
+            DB::table('photo')->insert(['id_glava'=>$id,'photo'=>$value]);
+        }
+
+        return redirect('/');
     }
 }

@@ -61,32 +61,28 @@
       </p>
           <textarea class="form__input manga-search__input" id="opisanie" name="opisanie" style="resize: none; height: 100px ; "></textarea>
         </div> 
+
+
         <div class="search-filter-submenu">
           <div class="search-filter-submenu__name">
             Жанры
           </div> 
           <div class="search-filter-submenu__right">
-          <ul class="dropdown">
+          
           <svg class="header-right-menu__avatar" data-dropdown="" data-tippy-placement="bottom-end" aria-expanded="false" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"></path></svg>
           <div class="menu-template">
             <div data-tippy-root="" id="tippy-4" style="height:200px; width:auto;overflow:auto; z-index: 9999;visibility: visible;margin: 0px;margin-left: 128px;margin-top: -1455px;position: absolute;inset: 0px auto auto 0px;transform: translate(755.2px, 1504.8px);"><div class="tippy-box" data-state="visible" tabindex="-1" data-theme="dropdown" data-animation="shift-toward" role="tooltip" style="max-width: 350px; transition-duration: 200ms;" data-placement="bottom-end"><div class="tippy-content" data-state="visible" style="transition-duration: 200ms;"><div class="menu header-dropdown">
-            @foreach(App\Models\Janr::all() as $value)
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" name="janrChoose[]" value="{{$value->id_janr}}"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                {{$value->janr}}
-              </span>
-            </label>
-            </li>
+            @foreach(App\Models\Janr::all() as $value)       
+              <input type="checkbox" name="janrChoose2[]" value="{{$value->id_janr}}"> {{$value->janr}}
             @endforeach
                           </div></div></div></div>
           </div>
-</ul>
           </div>
         </div>
+
+        @foreach(App\Models\Janr::all() as $value)       
+              <input type="checkbox" name="janrChoose[]" value="{{$value->id_janr}}"> {{$value->janr}}
+            @endforeach
         <div class="search-filter-submenu">
           <div class="search-filter-submenu__name">
             Теги
@@ -113,7 +109,6 @@
 </ul>
           </div>
         </div>
-
         <div>
         <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Статус
@@ -121,6 +116,17 @@
           <select type="text" name="type" placeholder="Команда переводчиков" class="form__input">
           @foreach(App\Models\ComicStatus::all() as $value)
             <option class="text-truncate" value="{{$value->id_status}}">{{$value->status}}</option>
+          @endforeach
+          </select>
+        </div>
+
+        <div>
+        <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
+        Команда переводчиков
+      </p>
+          <select type="text" name="type" placeholder="Команда переводчиков" class="form__input">
+          @foreach(App\Models\Team::all() as $value)
+            <option class="text-truncate" value="{{$value->id_team}}">{{$value->title}}</option>
           @endforeach
           </select>
         </div>

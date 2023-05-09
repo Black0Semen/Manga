@@ -15,12 +15,12 @@
       @if($comic != null)
       @foreach($comic as $value)
         <div class="hot-media-item media-card-wrap media-card-wrap_sm">
-          <a href="/comic/{{$value->id_comic}}" title="Читать последнюю главу. " class="hot-media-item__card media-card" style="background-image: url(&#39;{{asset('/storage/uploads/' . $value->image)}}&#39;)">
+          <a href="/comic/{{$value->eng_title}}" title="Читать последнюю главу. " class="hot-media-item__card media-card" style="background-image: url(&#39;{{asset('/storage/uploads/' . $value->image)}}&#39;)">
             <div class="media-card__caption">
               <div class="media-card__title">Том 2 Глава 61</div>
             </div>
           </a>
-          <a href="/comic/{{$value->id_comic}}" class="hot-media-item__name line-clamp link-default">{{$value->title}}</a>
+          <a href="/comic/{{$value->title}}" class="hot-media-item__name line-clamp link-default">{{$value->title}}</a>
         </div>
       @endforeach
       @endif
@@ -41,9 +41,11 @@
     @foreach($lastUpdated as $value)
     <div class="updates__item">
         <div class="updates__left">
-                                    <div class="updates__type">Комикс</div>
-                                          <a href="https://mangalib.me/seed">
-          <div class="cover cover_responsive lazyload updates__cover" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/seed/cover/2jJPfrsBbeYP_thumb.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/seed/cover/2jJPfrsBbeYP_thumb.jpg" data-was-processed="true"></div>
+        @foreach(\App\Models\ComicType::WHERE('id_type','=',$value->id_type)->get() as $type)
+                                    <div class="updates__type">{{$type->type}}</div>
+                                    @endforeach
+                                          <a href="/comic/{{$value->eng_title}}">
+          <div class="cover cover_responsive lazyload updates__cover" style="background-image: url(&quot;{{asset('/storage/uploads/'.$value->image)}}&quot;);" data-src="{{asset('/storage/uploads/'.$value->image)}}" data-was-processed="true"></div>
           </a>
         </div>
         <div class="updates__right">
@@ -52,23 +54,26 @@
               <div class="updates__labels">
                                               </div>
               <h4 class="updates__name">
-                <a class="link-default" href="https://mangalib.me/seed">{{$value->title}}</a>
+                <a class="link-default" href="/comic/{{$value->eng_title}}">{{$value->title}}</a>
               </h4>
             </div>
             <div class="updates__header-bottom">
               <div class="updates__date">Сегодня</div>
                               <h6 class="updates__name updates__name_rus">
-                  <a href="https://mangalib.me/seed">Seed</a>
+                  <a href="https://mangalib.me/seed">{{$value->eng_title}}</a>
                 </h6>
                           </div>
           </div>
+          @foreach(App\Models\Glava::WHERE('id_comic','=',$value->id_comic)->orderBy('created_at', 'desc')->first()->get() as $val)
           <div class="updates__body">
             <div class="updates__chapters">
-                              <a href="https://mangalib.me/seed/v2/c56?ui=5740535" class="updates__chapter">
-                  <strong class="updates__chapter-vol">Том 2 Глава 56</strong>
+                              <a href="/comic/{{$value->eng_title}}/{{$val->number}}" class="updates__chapter">
+                  <strong class="updates__chapter-vol">Том {{$val->tom}} Глава {{$val->number}}</strong>
                                                     </a>
                           </div>
                       </div>
+                      @endforeach
+
         </div>
       </div>  
       @endforeach

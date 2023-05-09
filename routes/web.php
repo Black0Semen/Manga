@@ -36,16 +36,16 @@ Route::get('/search', [IndexController::class, 'search']);
 Route::get('/search', [IndexController::class, 'findSomeThing']);
 
 Route::get('/team/{id}', [IndexController::class, 'teamShow']);
-
-Route::get('/comic_add', [IndexController::class, 'addComicShow']);
-Route::post('/comic_add', [IndexController::class, 'addComic']);
-
 Route::get('/team_add', [IndexController::class, 'addTeamShow']);
 Route::post('/team_add', [IndexController::class, 'addTeam']);
 
-Route::get('comic/{id}',[IndexController::class, 'comicPage']);
+Route::get('comic/{title}',[IndexController::class, 'comicPage']);
+Route::get('/comic_add', [IndexController::class, 'addComicShow']);
+Route::post('/comic_add', [IndexController::class, 'addComic']);
 
-Route::get('glava/{id}',[IndexController::class, 'glavaView']);
+Route::get('comic/{title}/{id}',[IndexController::class, 'glavaView']);
+Route::get('comic/{title}/glava_add', [IndexController::class, 'addGlavaShow']);
+Route::post('comic/{title}/glava_add', [IndexController::class, 'addGlava']);
 
 Route::get('/rules', [IndexController::class, 'ruleShow']);
 
