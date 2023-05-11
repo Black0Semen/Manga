@@ -143,24 +143,34 @@ class IndexController extends Controller
     }
 
     public function addComicShow(){
-        return view('comic_add');
+        return view('ShowAddComics');
     }
 
     public function addComic(Request $request){
-        DB::table('comic')->insert(['opisanie'=>$request->opisanie,'title'=>$request->title, 'date'=>$request->date, 
-        'id_type'=>$request->type,'status'=>$request->status, 'team'=>$request->team,'id_janr'=>$request->janr,'id_ogr'=>$request->ogr,
-        'on_moderation'=>1,'rating'=>10,'image'=>1]);
+        /*
+        $array = $request->input('janrChoose');
+        foreach($array as $value){
+            $allJanr += $value;
+        };*/
+        $imageName = time().'.'.$request->image->extension();
+        $request->image->storeAs('uploads',$imageName, 'public');
+        //$image = $request->file('image')->store('uploads','public');
         
+        DB::table('comic')->insert(['opisanie'=>$request->opisanie,'title'=>$request->title, 'date'=>$request->date, 
+        'id_type'=>$request->type,'status'=>$request->status, 'team'=>$request->team,'id_ogr'=>$request->ogr,
+        'on_moderation'=>1,'rating'=>10,'image'=>$imageName]);
+
+
+        /*
         $id = DB::getPdo()->lastInsertId();
         DB::table('comic_tags')->insert(['tag'=>$request->tags, 'id_comic'=>$id]);
-        $idTag = DB::getPdo()->lastInsertId();
-        DB::table('comic')->where('id_comic',$id)->update(['id_tag'=>$idTag]);
+        */
         
         return redirect('/');
     }
 
     public function addTeamShow(){
-        return view('team_add');
+        return view('ShowAddTeams');
     }
 
     public function addTeam(Request $request){

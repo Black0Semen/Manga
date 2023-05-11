@@ -188,8 +188,30 @@
 </svg>
           <div class="menu-template">
             <div data-tippy-root="" id="tippy-2" style="z-index: 9999;visibility: visible;margin: 0px;margin-left: 128px;margin-top: -1455px;position: absolute;inset: 0px auto auto 0px;transform: translate(755.2px, 1504.8px); height: 200px;width: auto;overflow: auto;"><div class="tippy-box" data-state="visible" tabindex="-1" data-theme="dropdown" data-animation="shift-toward" role="tooltip" style="max-width: 150px; transition-duration: 200ms;" data-placement="bottom-end"><div class="tippy-content" data-state="visible" style="transition-duration: 200ms;"><div class="menu header-dropdown" style="height:107px">
-            <a class="menu__item" href="/">Добавить комикс</a>
-            <a class="menu__item" href="/">Добавить команду</a>
+            <ul>
+            <div class="header-menu__item dropdown">
+          <a class="menu_item control__text" href="/Catalog">Добавить комикс</a>
+          <div class="menu-template">
+          </div>
+          <div class="header-menu__item dropdown">
+          <a class="menu_item control__text" href="/Catalog">Добавить команду</a>
+          <div class="menu-template">
+          </div>
+            <li class="menu__item">
+            <a href="/">
+              <span class="control__text">
+                Добавить комикс
+              </span>
+            </a>
+            </li>
+            <li class="menu__item">
+            <a href="/">
+              <span class="control__text">
+                Добавить команду
+              </span>
+            </a>
+            </li>
+            </ul>
                           </div></div></div></div>
           </div>
 </ul>
