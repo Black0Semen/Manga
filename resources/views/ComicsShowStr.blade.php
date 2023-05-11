@@ -10,37 +10,43 @@
             <div class="reader-view">
             <div id="media_type" data-type="manga" class="media-name section">
           <div class="media-name__body">
-            <div class="media-name__main">Сестра эрцгерцогаz</div>
+            @foreach($comic as $comic)
+            <div class="media-name__main">{{$comic->title}}</div>
             
-                                          <div class="media-name__alt">The Duke’s Imposter Sister</div>
+                                          <div class="media-name__alt">{{$comic->eng_title}}</div>
+                                          
                                     </div>
-
+                                  
           <div class="media-rating-wrap">
-            <div > 
-              <div class="media-name__main">Глава 1325437</div>
+            <div> 
+              @foreach($glava as $glava)
+              <div class="media-name__main">Глава {{$glava->number}}</div>
             </div>
           </div>
+
         </div>
           <div class="reader-pages">
             <label class="button reader-pages__label reader-footer__btn" for="reader-pages">
-              <span>Главы</span>
+              <span>Глава {{$glava->number}} / {{App\Models\Glava::WHERE('id_comic','=',$comic->id_comic)->count()}}</span>
             </label>
-            <select id="reader-pages"><option value="1" selected="true">Глава 1 / 104</option></select>
+            <select id="reader-pages"><option value="1" selected="true">Глава {{$glava->number}}</option></select>
           </div> 
+          @endforeach
+          @endforeach
             <div class="reader-footer">         
         </div>
       <div class="reader-view__container" style="max-width: 1536px;">
-                      <div class="reader-view__wrap" data-p="1" wfd-invisible="true">
-                        <img src="{{asset('content\photo\placeholder.png')}}">
-                        <img src="{{asset('content\photo\placeholder.png')}}">
-                        <img src="{{asset('content\photo\placeholder.png')}}">
-                        <img src="{{asset('content\photo\placeholder.png')}}">
-                        <img src="{{asset('content\photo\placeholder.png')}}">
+                      <div class="reader-view__wrap" data-p="1" wfd-invisible="true">                     
+                        @foreach($photo as $value)
+                        <img src="{{ asset('/storage/glava/' . $title . '/' .$id.'/'.$value->photo) }}">
+                        @endforeach
                       </div>
                     </div>
     </div>
+    
     <div class="container container_center">
   <div class="reader-review has-team">
+  @foreach($team as $team)
                 <div class="reader-review-team">
         <div class="reader-review-team__covers">
                             <div style="background-image: url(https://mangalib.me/uploads/team/slivkateam/cover/CvhRCohAKTBu_250x350.jpg?)" class="reader-review-team__cover"></div>
@@ -49,13 +55,14 @@
           <div class="reader-review-team__title text-muted small text-truncate">Команда</div>
           <div class="reader-review-team__name text-truncate">
                                 <span>
-                <a class="link-default" href="https://mangalib.me/team/slivkateam">
-                  SlivkaTeam
+                <a class="link-default" href="{{ asset('/team/'.$team->id_team) }}">
+                  {{$team->title}}
                 </a>
               </span>
                             </div>
         </span>
   </div>
+  @endforeach
   <div class="comment__controls">
       <div>
       <div class="comment__rating-value">
