@@ -32,37 +32,37 @@
     <p>
         Обложка
       </p>
-    <input type="file" placeholder="Глава" class="form__input">
+    <input type="file" placeholder="Обложка" class="form__input">
       </div>
         <div>
         <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Оригинальное название
       </p>
-          <input type="text" placeholder="Название главы" class="form__input"> 
+          <input type="text" placeholder="Оригинальное название" class="form__input"> 
           <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Русскоязычное название
       </p>
-          <input type="text" placeholder="Том" class="form__input"> 
+          <input type="text" placeholder="Русскоязычное название" class="form__input"> 
           <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Год релиза
       </p>
-          <input type="text" placeholder="Номер главы" class="form__input">
+          <input type="text" placeholder="Год релиза" class="form__input">
           <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Автор
       </p>
-          <input type="text" placeholder="Номер главы" class="form__input">
+          <input type="text" placeholder="Автор" class="form__input">
           <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Художник
       </p>
-          <input type="text" placeholder="Номер главы" class="form__input">
+          <input type="text" placeholder="Художние" class="form__input">
           <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Издатель
       </p>
-          <input type="text" placeholder="Номер главы" class="form__input">
+          <input type="text" placeholder="Издатель" class="form__input">
           <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Ссылка на оригинал
       </p>
-          <input type="text" placeholder="Номер главы" class="form__input">
+          <input type="text" placeholder="Ссылка на оригинал" class="form__input">
           <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Описание
       </p>
@@ -218,19 +218,9 @@
         </div>
         <div>
         <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
-        Статус
-      </p>
-          <select type="text" placeholder="Команда переводчиков" class="form__input">
-            <option class="text-truncate" value="1">Rescue Team</option>
-            <option class="text-truncate" value="2">Rescue555555555 Team</option>
-            <option class="text-truncate" value="3">Rescue 444444Team</option>
-          </select>
-        </div>
-        <div>
-        <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Статус перевода
       </p>
-          <select type="text" placeholder="Команда переводчиков" class="form__input">
+          <select type="text" placeholder="Статус перевода" class="form__input">
             <option class="text-truncate" value="1">Rescue Team</option>
             <option class="text-truncate" value="2">Rescue555555555 Team</option>
             <option class="text-truncate" value="3">Rescue 444444Team</option>
@@ -240,7 +230,7 @@
         <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Тип
       </p>
-          <select type="text" placeholder="Команда переводчиков" class="form__input">
+          <select type="text" placeholder="Тип" class="form__input">
             <option class="text-truncate" value="1">Rescue Team</option>
             <option class="text-truncate" value="2">Rescue555555555 Team</option>
             <option class="text-truncate" value="3">Rescue 444444Team</option>
@@ -250,7 +240,7 @@
         <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Возрастной рейтинг
       </p>
-          <select type="text" placeholder="Команда переводчиков" class="form__input">
+          <select type="text" placeholder="Возрастной рейтинг" class="form__input">
             <option class="text-truncate" value="1">Rescue Team</option>
             <option class="text-truncate" value="2">Rescue555555555 Team</option>
             <option class="text-truncate" value="3">Rescue 444444Team</option>
