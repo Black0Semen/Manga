@@ -52,6 +52,7 @@
     <script src="{{asset('content\javascript\main3.js')}}"></script>
     <script src="{{asset('content\javascript\main4.js')}}"></script>
     <script src="{{asset('content\javascript\main5.js')}}"></script>
+    <script src="{{asset('content\javascript\jquery.responsiveBlock.js')}}"></script>
     <link media="all" type="text/css" rel="stylesheet" href="{{ asset('content\stylesheets\font-awesome.min.css') }}">
     <script src="{{asset('content\javascript\manifest.f1211b48.js')}}"></script>
     <script src="{{asset('content\javascript\theme.f1211b48.js')}}"></script>
