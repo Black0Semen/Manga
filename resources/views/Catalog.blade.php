@@ -13,11 +13,11 @@
           <svg class="header-right-menu__avatar" data-dropdown="" data-tippy-placement="bottom-end" aria-expanded="false" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"></path></svg>
           <div class="menu-template">
             <div data-tippy-root="" id="tippy-1" style="z-index: 3;visibility: visible;margin: 0px;margin-left: 128px;margin-top: -1455px;position: absolute;inset: 0px auto auto 0px;transform: translate(755.2px, 1504.8px);"><div class="tippy-box" data-state="visible" tabindex="-1" data-theme="dropdown" data-animation="shift-toward" role="tooltip" style="max-width: 350px; transition-duration: 200ms;" data-placement="bottom-end"><div class="tippy-content" data-state="visible" style="transition-duration: 200ms;"><div class="menu header-dropdown">
-            <li class="menu__item">По рейтингу</li>
-            <li class="menu__item">По просмотрам</li>
-            <li class="menu__item">По лайкам</li>
-            <li class="menu__item">По кол-ву глав</li>
-            <li class="menu__item">По новизне</li> 
+            <a style="text-decoration: none;"><li class="menu__item">По рейтингу</li></a>
+            <a style="text-decoration: none;"><li class="menu__item">По просмотрам</li></a>
+            <a style="text-decoration: none;"><li class="menu__item">По лайкам</li></a>
+            <a style="text-decoration: none;"><li class="menu__item">По кол-ву глав</li></a>
+            <a style="text-decoration: none;"><li class="menu__item">По новизне</li></a>
                           </div></div></div></div>
           </div>
 </ul>
