@@ -13,14 +13,42 @@
             @endforeach
         </select>
         <p> Статус перевода </p>
-        <select></select>
+        <div class="checkselect">
+		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
+		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
+		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
+		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+	</div>
         <p> Возрастное ограничение </p>
-        <select></select>
+        <div class="checkselect">
+		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
+		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
+		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
+		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+	</div>
         <p> Год выпуска </p> <input type="text">
         <p> Жанры </p>
-        <select></select>
+        <div class="checkselect">
+		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
+		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
+		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
+		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+	</div>
         <p> Категории </p>
-        <select></select>
+        <div class="checkselect">
+		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
+		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
+		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
+		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+	</div>
         <p> Ссылка на оригинал </p> <input type="text">
         <p> Сообщение модератору </p> <input type="text">
     </form>

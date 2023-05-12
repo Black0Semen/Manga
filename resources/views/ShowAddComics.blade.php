@@ -67,17 +67,14 @@
           <div class="search-filter-submenu__name">
             Жанры
           </div> 
-          <div class="search-filter-submenu__right">
-          
-          <svg class="header-right-menu__avatar" data-dropdown="" data-tippy-placement="bottom-end" aria-expanded="false" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"></path></svg>
-          <div class="menu-template">
-            <div data-tippy-root="" id="tippy-4" style="height:200px; width:auto;overflow:auto; z-index: 9999;visibility: visible;margin: 0px;margin-left: 128px;margin-top: -1455px;position: absolute;inset: 0px auto auto 0px;transform: translate(755.2px, 1504.8px);"><div class="tippy-box" data-state="visible" tabindex="-1" data-theme="dropdown" data-animation="shift-toward" role="tooltip" style="max-width: 350px; transition-duration: 200ms;" data-placement="bottom-end"><div class="tippy-content" data-state="visible" style="transition-duration: 200ms;"><div class="menu header-dropdown">
-            @foreach(App\Models\Janr::all() as $value)       
-              <input type="checkbox" name="janrChoose2[]" value="{{$value->id_janr}}"> {{$value->janr}}
-            @endforeach
-                          </div></div></div></div>
-          </div>
-          </div>
+          <div class="checkselect">
+		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
+		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
+		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
+		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+	</div>
         </div>
 
         @foreach(App\Models\Janr::all() as $value)       
@@ -87,27 +84,14 @@
           <div class="search-filter-submenu__name">
             Теги
           </div> 
-          <div class="search-filter-submenu__right">
-          <ul class="dropdown">
-          <svg class="header-right-menu__avatar" data-dropdown="" data-tippy-placement="bottom-end" aria-expanded="false" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"></path></svg>
-          <div class="menu-template">
-            <div data-tippy-root="" id="tippy-4" style="height:200px; width:auto;overflow:auto; z-index: 9999;visibility: visible;margin: 0px;margin-left: 128px;margin-top: -1455px;position: absolute;inset: 0px auto auto 0px;transform: translate(755.2px, 1504.8px);"><div class="tippy-box" data-state="visible" tabindex="-1" data-theme="dropdown" data-animation="shift-toward" role="tooltip" style="max-width: 350px; transition-duration: 200ms;" data-placement="bottom-end"><div class="tippy-content" data-state="visible" style="transition-duration: 200ms;"><div class="menu header-dropdown">
-            @foreach(App\Models\Tags::all() as $value)
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="{{$value->id_tag}}"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                {{$value->tag}}
-              </span>
-            </label>
-            </li>
-            @endforeach
-                          </div></div></div></div>
-          </div>
-</ul>
-          </div>
+          <div class="checkselect">
+		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
+		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
+		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
+		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+	</div>
         </div>
         <div>
         <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
