@@ -8,28 +8,37 @@
     <input type='text' id="title" name="title"><br>
 
     <b>Тип:</b>
-    <select name="type">
-        @foreach(App\Models\ComicType::all() as $value)
-            <option value="{{$value->id_type}}">{{$value->type}}</option>
-        @endforeach
-    </select><br>
+    <div class="checkselect">
+		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
+		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
+		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
+		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+	</div>
 
     <b>Тэги:</b>
-    <select name="tags">
-        @foreach(App\Models\Tags::all() as $value)
-            <option value="{{$value->id_tag}}">{{$value->tag}}</option>
-        @endforeach
-    </select><br>
+    <div class="checkselect">
+		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
+		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
+		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
+		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+	</div>
 
     <b>Год релиза:</b>
     <input type="text" name="date" id="date"><br>
 
     <b>Жанры: </b>
-    <select name="janr">
-        @foreach(App\Models\Janr::all() as $value)
-        <option value="{{$value->id_janr}}">{{$value->janr}}</option>
-        @endforeach
-    </select><br>
+    <div class="checkselect">
+		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
+		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
+		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
+		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+	</div>
 
     <b>Команда переводчиков:</b>
     <select name="team">
@@ -39,18 +48,24 @@
     </select><br>
 
     <b>статус перевода:</b>
-    <select name="status">
-        @foreach(App\Models\ComicStatus::all() as $value)
-        <option value="{{$value->id_status}}">{{$value->status}}</option>
-        @endforeach
-    </select><br>
+    <div class="checkselect">
+		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
+		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
+		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
+		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+	</div>
 
     <b>Возрастные ограничения:</b>
-    <select name="ogr">
-        @foreach(App\Models\ComicOgr::all() as $value)
-        <option value="{{$value->id_ogr}}">{{$value->ogr}}</option>
-        @endforeach
-    </select><br>
+    <div class="checkselect">
+		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
+		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
+		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
+		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+	</div>
 
     <b>Ссылка на оригинал</b>
     <input type="text" name="link" id="link"><br>

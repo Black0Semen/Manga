@@ -51,6 +51,7 @@
 	font-size: 1em;
 	line-height: 1.1;
 	cursor: pointer;
+	background: #868e96;
 }			
 .checkselect-popup input {
 	position: absolute;
@@ -60,7 +61,7 @@
 	padding: 0;
 }
 .checkselect-popup label:hover {
-	background: #03a2ff;
+	background: #8d965b;
 	color: #fff;
 }
 .checkselect-popup fieldset {
