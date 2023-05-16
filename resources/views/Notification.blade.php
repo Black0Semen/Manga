@@ -13,11 +13,11 @@
           <img src="content/photo/logo.png" class="header-right-menu__avatar" data-dropdown="" data-tippy-placement="bottom-end" aria-expanded="false">
           <div class="menu-template">
             <div data-tippy-root="" id="tippy-6" style="z-index: 9999;visibility: visible;margin: 0px;margin-left: 128px;margin-top: -1455px;position: absolute;inset: 0px auto auto 0px;transform: translate(755.2px, 1504.8px);"><div class="tippy-box" data-state="visible" tabindex="-1" data-theme="dropdown" data-animation="shift-toward" role="tooltip" style="max-width: 350px; transition-duration: 200ms;" data-placement="bottom-end"><div class="tippy-content" data-state="visible" style="transition-duration: 200ms;"><div class="menu header-dropdown">
-            <li class="menu__item">Показ сначала</li>
-            <li class="menu__item">Показ с конца</li>
-            <li class="menu__item text-danger">Удалить</li>
-            <li class="menu__item text-danger">Подтвердить</li>
-            <li class="menu__item text-danger">Отменить</li>
+            <a style="text-decoration: none;"><li class="menu__item">Показ сначала</li></a>
+            <a style="text-decoration: none;"><li class="menu__item">Показ с конца</li></a>
+            <a style="text-decoration: none;"><li class="menu__item text-danger">Удалить</li></a>
+            <a style="text-decoration: none;"><li class="menu__item text-danger">Подтвердить</li></a>
+            <a style="text-decoration: none;"><li class="menu__item text-danger">Отменить</li></a>
                           </div></div></div></div>
           </div>
 </ul>

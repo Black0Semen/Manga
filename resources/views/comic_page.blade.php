@@ -8,7 +8,7 @@
       <div class="media-sidebar">
   <div>
         <div class="media-sidebar__cover paper">
-      <img src="/" style="height: 30%;">
+      <img src="{{ asset('/storage/uploads/' . $value->image )}}" style="height: 45%;">
     </div>
   </div>
 
@@ -16,7 +16,10 @@
                 <button class="button button_block button_primary">
         <div>Добавить в список</div>
       </button>
-      <button class="button button_block button_primary" onclick="window.location.href='/'">
+      <?php
+      $title = str_slug($value->eng_title,'-');
+      ?>
+      <button class="button button_block button_primary" onclick="window.location.href='/comic_edit/{{$title}}'">
         <div>Редактировать</div>
       </button>
       </div>
@@ -61,7 +64,7 @@
             <div class="media-name__main">{{$value->title}}</div>
 
             
-                                          <div class="media-name__alt">The Duke’s Imposter Sister</div>
+                                          <div class="media-name__alt">{{$value->eng_title}}</div>
                                     </div>
 
           <div class="media-rating-wrap">
@@ -95,9 +98,15 @@
         {{$value->opisanie}}
       </div>
       <div class="media-tags">
-        @foreach($tags as $tag)
+        @foreach(App\Models\ComicTags::WHERE('id_comic','=',$value->id_comic)->get() as $tag)
         @foreach(App\Models\Tags::WHERE('id_tag','=',$tag->tag)->get() as $val)
                       <a href="" class="media-tag-item ">{{$val->tag}}</a>
+                      @endforeach
+                      @endforeach
+
+        @foreach(App\Models\ComicJanr::WHERE('id_comic','=',$value->id_comic)->get() as $janr)
+        @foreach(App\Models\Janr::WHERE('id_janr','=',$janr->janr)->get() as $val)
+                      <a href="" class="media-tag-item ">{{$val->janr}}</a>
                       @endforeach
                       @endforeach
           </div>
@@ -112,12 +121,11 @@
       @foreach(App\Models\Team::WHERE('title','=',$value->team)->get() as $command)
               <a href="/team/{{$command->id_team}}" class="team-list-item team-list-item_xs">
           <div class="team-list-item__cover" style="background-image: url(https://mangalib.me/uploads/team/melinoie-team/cover/evgbEDDlXq_250x350.jpg?)"></div>
-          <div class="team-list-item__name">
-          {{$command->title}}
-          </div>
+          <div class="team-list-item__name">{{$command->title}}</div>
         </a>
+        @endforeach
           </div>
-          @endforeach
+          
        
   </div>
 
@@ -152,34 +160,34 @@
           <h2 class="manga-search__title">
             <span>Комментарии</span>
           </h2>
+          @if(Illuminate\Support\Facades\Auth::check())
           <div>
-            <div class="media-section paper">             
-                <section>
-                <div class="comments__form">
-                  <div class="comment-reply">
-                    <div aria-placeholder="Написать комментарий..." class="comment-reply__editor is-dirty" contenteditable="true">
-                      <div>
-                        <br>
-                      </div>
-                    </div> 
-                    <div class="comment-reply__controls">
+                  <div>
+                  <input type="text" id="comment_write_body" value="">
+                  <input type="hidden" id="id_user" value="{{Illuminate\Support\Facades\Auth::user()->id}}">
+                  <input type="hidden" id="id_comic" value="{{$value->id_comic}}">
+                    <div>
                       <div class="comment-reply__right">
                         <!----> 
-                        <button tabindex="-1" class="comment-reply__send button_md button button_primary">
+                        <button class="_3KhAJh7zsjUJI-s2OGbY8v_0 button button_green" id="comment_button">
                          Отправить
                         </button>
                       </div> 
                     </div>
                   </div>
                 </div>
+                @else
+                <h3>Комментарии может оставлять только авторизированнный пользователь</h3>
+                @endif
 <!----> <!----> 
+@foreach(App\Models\Posts::WHERE('id_comic','=',$value->id_comic)->get() as $post)
 <div class="comment">
   <div class="comment__body">
     <div class="comment__head">
       <a href="/user/4059002" class="comment__user">
         <img src="/uploads/users/4059002/KZMVofNImN9A.gif" alt="4ернобородый" class="comment__avatar"> 
         <span class="comment__username text-truncate">
-          4ернобородый
+          {{$post->id_user}}
         </span>
       </a> 
       <time class="comment__date-time">
@@ -190,7 +198,7 @@
     </div> 
     <div class="comment__content">
       <div>
-        На англе глав на 20 больше
+        {{$post->text}}
       </div>
     </div> 
     <!----> 
@@ -218,6 +226,7 @@
     <!---->
   </div> 
   <!----> <!---->
+  @endforeach
 </div>
 </div>
 </div> 
@@ -260,7 +269,7 @@
 </div> 
 </div>
 </div>
-                      </div>
+</div>
           <!-- END:Главы -->
 </section>
                 

@@ -14,7 +14,7 @@
   
     
 
-<form method="post"> 
+<form method="post" enctype="multipart/form-data"> 
     @csrf 
      
       <section class="section paper tabs" id="latest-updates" data-tabs-id="tabs_1">
@@ -31,7 +31,7 @@
     <p>
         Обложка
       </p>
-    <input type="file" placeholder="Глава" class="form__input" name="image" id="image">
+    <input type="file" class="form__input" name="image" id="image">
       </div>
         <div>
         <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">

@@ -38,16 +38,25 @@
                     <div class="top-user__username">
                       <div class="link-default" style="padding-left: 110px;">Аккаунт</div>
                     </div>
+                    <div class="search-filter-submenu">
+          <div class="search-filter-submenu__name">
+            Роль
+          </div> 
+          <div class="checkselect">
+		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
+		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
+		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
+		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+	</div>
+        </div>
                     <div>
                       <div class="top-user__lvl">Аватар</div>
                       <input type="file" accept="image/*"><input type="file" class="hidden" hidden="true" accept="image/*"></label>
                     </div>
                     <div>
                       <div class="top-user__lvl">Логин</div>
-					  <input class="form__input manga-search__input" type="text">
-                    </div>
-                    <div>
-                      <div class="top-user__lvl">Роль</div>
 					  <input class="form__input manga-search__input" type="text">
                     </div>
 					<div>

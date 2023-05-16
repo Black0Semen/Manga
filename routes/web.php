@@ -21,13 +21,14 @@ Route::get('/pravila', [IndexController::class, 'pravila']);
 Route::get('/order', [IndexController::class, 'order']);
 Route::get('/zakladki', [IndexController::class, 'zakladki']);
 Route::get('/Catalog', [IndexController::class, 'Catalog']);
-Route::get('/comics', [IndexController::class, 'comics']);
+Route::get('/comic_page', [IndexController::class, 'comic_page']);
 Route::get('/team_page', [IndexController::class, 'team_page']);
 Route::get('/Notification', [IndexController::class, 'Notification']);
 Route::get('/ComicsShowStr', [IndexController::class, 'ComicsShowStr']);
 Route::get('/ShowAddComics', [IndexController::class, 'ShowAddComics']);
 Route::get('/ShowAddGlava', [IndexController::class, 'ShowAddGlava']);
 Route::get('/ShowAddTeams', [IndexController::class, 'ShowAddTeams']);
+Route::get('/SettingsUser', [IndexController::class, 'SettingsUser']);
 Route::get('/ShowReplaceComics', [IndexController::class, 'ShowReplaceComics']);
 Route::get('/ShowReplaceGlava', [IndexController::class, 'ShowReplaceGlava']);
 Route::get('/ShowReplaceTeams', [IndexController::class, 'ShowReplaceTeams']);
@@ -36,16 +37,17 @@ Route::get('/search', [IndexController::class, 'search']);
 Route::get('/search', [IndexController::class, 'findSomeThing']);
 
 Route::get('/team/{id}', [IndexController::class, 'teamShow']);
-
-Route::get('/comic_add', [IndexController::class, 'addComicShow']);
-Route::post('/comic_add', [IndexController::class, 'addComic']);
-
 Route::get('/team_add', [IndexController::class, 'addTeamShow']);
 Route::post('/team_add', [IndexController::class, 'addTeam']);
 
-Route::get('comic/{id}',[IndexController::class, 'comicPage']);
+Route::get('comic/{title}',[IndexController::class, 'comicPage']);
+Route::get('/comic_add', [IndexController::class, 'addComicShow']);
+Route::post('/comic_add', [IndexController::class, 'addComic']);
+Route::get('/comic_edit/{title}', [IndexController::class, 'editComic']);
 
-Route::get('glava/{id}',[IndexController::class, 'glavaView']);
+Route::get('comic/{title}/{id}',[IndexController::class, 'glavaView']);
+Route::get('comic/{title}/glava_add', [IndexController::class, 'addGlavaShow']);
+Route::post('comic/{title}/glava_add', [IndexController::class, 'addGlava']);
 
 Route::get('/rules', [IndexController::class, 'ruleShow']);
 
@@ -64,6 +66,13 @@ Route::get('/Settings', [IndexController::class, 'Settings']);
 //Route::get('/', function () {
    // return view('welcome');
 //});
+
+Route::group(['middleware' => ['auth']], function() {
+    /**
+    * Logout Route
+    */
+    Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
+    });
 
 Route::get('/dashboard', function () {
     return view('dashboard');

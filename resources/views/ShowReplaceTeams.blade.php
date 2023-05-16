@@ -31,17 +31,17 @@
     <p>
         Обложка
       </p>
-    <input type="file" placeholder="Глава" class="form__input">
+    <input type="file" placeholder="Обложка" class="form__input">
       </div>
         <div>
         <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
       Название
       </p>
-          <input type="text" placeholder="Название главы" class="form__input"> 
+          <input type="text" placeholder="Название" class="form__input"> 
           <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
       Ссылка на группу
       </p>
-          <input type="text" placeholder="Том" class="form__input"> 
+          <input type="text" placeholder="Ссылка на группу" class="form__input"> 
           <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Описание
       </p>

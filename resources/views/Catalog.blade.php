@@ -13,11 +13,11 @@
           <svg class="header-right-menu__avatar" data-dropdown="" data-tippy-placement="bottom-end" aria-expanded="false" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"></path></svg>
           <div class="menu-template">
             <div data-tippy-root="" id="tippy-1" style="z-index: 3;visibility: visible;margin: 0px;margin-left: 128px;margin-top: -1455px;position: absolute;inset: 0px auto auto 0px;transform: translate(755.2px, 1504.8px);"><div class="tippy-box" data-state="visible" tabindex="-1" data-theme="dropdown" data-animation="shift-toward" role="tooltip" style="max-width: 350px; transition-duration: 200ms;" data-placement="bottom-end"><div class="tippy-content" data-state="visible" style="transition-duration: 200ms;"><div class="menu header-dropdown">
-            <li class="menu__item">По рейтингу</li>
-            <li class="menu__item">По просмотрам</li>
-            <li class="menu__item">По лайкам</li>
-            <li class="menu__item">По кол-ву глав</li>
-            <li class="menu__item">По новизне</li> 
+            <a style="text-decoration: none;"><li class="menu__item">По рейтингу</li></a>
+            <a style="text-decoration: none;"><li class="menu__item">По просмотрам</li></a>
+            <a style="text-decoration: none;"><li class="menu__item">По лайкам</li></a>
+            <a style="text-decoration: none;"><li class="menu__item">По кол-ву глав</li></a>
+            <a style="text-decoration: none;"><li class="menu__item">По новизне</li></a>
                           </div></div></div></div>
           </div>
 </ul>
@@ -45,361 +45,53 @@
             <div class="search-filter-submenu__name">
             Жанры
             </div> 
-            <div class="search-filter__head-title">
-            <ul class="dropdown">
-          <svg class="header-right-menu__avatar" data-dropdown="" data-tippy-placement="bottom-end" aria-expanded="false" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"></path></svg>
-          <div class="menu-template">
-            <div data-tippy-root="" id="tippy-2" style="z-index: 9999;visibility: visible;margin: 0px;margin-left: 128px;margin-top: -1455px;position: absolute;inset: 0px auto auto 0px;transform: translate(755.2px, 1504.8px); height: 200px;width: auto;overflow: auto;"><div class="tippy-box" data-state="visible" tabindex="-1" data-theme="dropdown" data-animation="shift-toward" role="tooltip" style="max-width: 350px; transition-duration: 200ms;" data-placement="bottom-end"><div class="tippy-content" data-state="visible" style="transition-duration: 200ms;"><div class="menu header-dropdown">
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-                          </div></div></div></div>
-          </div>
-</ul>
-          </div>
+            <div class="checkselect">
+		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
+		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
+		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
+		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+	</div>
         </div> 
         <div class="search-filter-submenu">
           <div class="search-filter-submenu__name">
             Теги
           </div> 
-          <div class="search-filter-submenu__right">
-          <ul class="dropdown search-filter__wrap">
-          <svg class="header-right-menu__avatar" data-dropdown="" data-tippy-placement="bottom-end" aria-expanded="false" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"></path></svg>
-          <div class="menu-template">
-            <div data-tippy-root="" id="tippy-3" role="tooltip" style="height:200px; width:auto;overflow:auto; z-index: 9999;visibility: visible;margin: 0px;margin-left: 128px;margin-top: -1455px;position: absolute;inset: 0px auto auto 0px;transform: translate(755.2px, 1504.8px);"><div class="tippy-box" data-state="visible" tabindex="-1" data-theme="dropdown" data-animation="shift-toward" role="tooltip" style="max-width: 350px; transition-duration: 200ms;" data-placement="bottom-end"><div class="tippy-content" data-state="visible" style="transition-duration: 200ms;"><div class="menu header-dropdown">
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-                          </div></div></div></div>
-          </div>
-</ul>
-          </div>
+          <div class="checkselect">
+		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
+		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
+		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
+		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+	</div>
         </div>
         <div class="search-filter-submenu">
           <div class="search-filter-submenu__name">
             Статус перевода
           </div> 
-          <div class="search-filter-submenu__right">
-          <ul class="dropdown">
-          <svg class="header-right-menu__avatar" data-dropdown="" data-tippy-placement="bottom-end" aria-expanded="false" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"></path></svg>
-          <div class="menu-template">
-            <div data-tippy-root="" id="tippy-4" style="height:200px; width:auto;overflow:auto; z-index: 9999;visibility: visible;margin: 0px;margin-left: 128px;margin-top: -1455px;position: absolute;inset: 0px auto auto 0px;transform: translate(755.2px, 1504.8px);"><div class="tippy-box" data-state="visible" tabindex="-1" data-theme="dropdown" data-animation="shift-toward" role="tooltip" style="max-width: 350px; transition-duration: 200ms;" data-placement="bottom-end"><div class="tippy-content" data-state="visible" style="transition-duration: 200ms;"><div class="menu header-dropdown">
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="1"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="2"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="3"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="5"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">            
-              <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="6"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-          </li> 
-                          </div></div></div></div>
-          </div>
-</ul>
-          </div>
+          <div class="checkselect">
+		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
+		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
+		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
+		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+	</div>
         </div>
         <div class="search-filter-submenu">
           <div class="search-filter-submenu__name">
             Тип
           </div> 
-          <div class="search-filter-submenu__right">
-          <ul class="dropdown">
-          <svg class="header-right-menu__avatar" data-dropdown="" data-tippy-placement="bottom-end" aria-expanded="false" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"></path></svg>
-          <div class="menu-template">
-            <div data-tippy-root="" id="tippy-5" style="height:200px; width:auto;overflow:auto; z-index: 9999;visibility: visible;margin: 0px;margin-left: 128px;margin-top: -1455px;position: absolute;inset: 0px auto auto 0px;transform: translate(755.2px, 1504.8px);"><div class="tippy-box" data-state="visible" tabindex="-1" data-theme="dropdown" data-animation="shift-toward" role="tooltip" style="max-width: 350px; transition-duration: 200ms;" data-placement="bottom-end"><div class="tippy-content" data-state="visible" style="transition-duration: 200ms;"><div class="menu header-dropdown">
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-                          </div></div></div></div>
-          </div>
-</ul>
-          </div>
-        </div>
-                <div class="search-filter-submenu">
-          <div class="search-filter-submenu__name">
-            Возрастной рейтинг
-          </div> 
-          <div class="search-filter-submenu__right">
-          <ul class="dropdown">
-          <svg class="header-right-menu__avatar" data-dropdown="" data-tippy-placement="bottom-end" aria-expanded="false" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"></path></svg>
-          <div class="menu-template">
-            <div data-tippy-root="" id="tippy-6" style="height:200px; width:auto;overflow:auto; z-index: 9999;visibility: visible;margin: 0px;margin-left: 128px;margin-top: -1455px;position: absolute;inset: 0px auto auto 0px;transform: translate(755.2px, 1504.8px);"><div class="tippy-box" data-state="visible" tabindex="-1" data-theme="dropdown" data-animation="shift-toward" role="tooltip" style="max-width: 350px; transition-duration: 200ms;" data-placement="bottom-end"><div class="tippy-content" data-state="visible" style="transition-duration: 200ms;"><div class="menu header-dropdown">
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-                          </div></div></div></div>
-          </div>
-</ul>
-          </div>
+          <div class="checkselect">
+		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
+		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
+		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
+		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
+		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+	</div>
         </div>
         <div class="search-filter__group"><div class="search-filter__title">
             Количество глав

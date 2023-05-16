@@ -52,6 +52,8 @@
     <script src="{{asset('content\javascript\main3.js')}}"></script>
     <script src="{{asset('content\javascript\main4.js')}}"></script>
     <script src="{{asset('content\javascript\main5.js')}}"></script>
+    <script src="{{asset('content\javascript\comments.js')}}"></script>
+    <script src="{{asset('content\javascript\jquery.responsiveBlock.js')}}"></script>
     <link media="all" type="text/css" rel="stylesheet" href="{{ asset('content\stylesheets\font-awesome.min.css') }}">
     <script src="{{asset('content\javascript\manifest.f1211b48.js')}}"></script>
     <script src="{{asset('content\javascript\theme.f1211b48.js')}}"></script>
@@ -180,37 +182,23 @@
               <div class="footer__theme-toggler">
     </div>
         </a>
-        <div class="search-filter-submenu">
+        <div class="search-filter-submenu" style="height: 40px;">
             <div class="search-filter__head-title">
             <ul class="dropdown">
-            <svg data-dropdown="" data-tippy-placement="bottom-end" aria-expanded="false" focusable="false" aria-hidden="true"  width="20" height="20" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+            <svg data-dropdown="" style="margin-left: -23px; margin-top: 6px;" data-tippy-placement="bottom-end" aria-expanded="false" focusable="false" aria-hidden="true"  width="20" height="20" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
   <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
 </svg>
           <div class="menu-template">
-            <div data-tippy-root="" id="tippy-2" style="z-index: 9999;visibility: visible;margin: 0px;margin-left: 128px;margin-top: -1455px;position: absolute;inset: 0px auto auto 0px;transform: translate(755.2px, 1504.8px); height: 200px;width: auto;overflow: auto;"><div class="tippy-box" data-state="visible" tabindex="-1" data-theme="dropdown" data-animation="shift-toward" role="tooltip" style="max-width: 150px; transition-duration: 200ms;" data-placement="bottom-end"><div class="tippy-content" data-state="visible" style="transition-duration: 200ms;"><div class="menu header-dropdown" style="height:107px">
+            <div data-tippy-root="" id="tippy-2" style="z-index: 9999;visibility: visible;margin: 0px;margin-left: 128px;margin-top: -1455px;position: absolute;inset: 0px auto auto 0px;transform: translate(755.2px, 1504.8px); height: 200px;width: auto;overflow: auto;"><div class="tippy-box" data-state="visible" tabindex="-1" data-theme="dropdown" data-animation="shift-toward" role="tooltip" style="max-width: 150px; transition-duration: 200ms;" data-placement="bottom-end"><div class="tippy-content" data-state="visible" style="transition-duration: 200ms;"><div class="menu header-dropdown" style="height:114px">
             <ul>
             <div class="header-menu__item dropdown">
-          <a class="menu_item control__text" href="/Catalog">Добавить комикс</a>
+          <a class="menu_item control__text" style="color: red;" href="/comic_add">Добавить комикс</a>
           <div class="menu-template">
           </div>
           <div class="header-menu__item dropdown">
-          <a class="menu_item control__text" href="/Catalog">Добавить команду</a>
+          <a class="menu_item control__text" style="color: red;" href="/team_add">Добавить команду</a>
           <div class="menu-template">
           </div>
-            <li class="menu__item">
-            <a href="/">
-              <span class="control__text">
-                Добавить комикс
-              </span>
-            </a>
-            </li>
-            <li class="menu__item">
-            <a href="/">
-              <span class="control__text">
-                Добавить команду
-              </span>
-            </a>
-            </li>
             </ul>
                           </div></div></div></div>
           </div>
@@ -226,7 +214,14 @@
               <a class="menu__item" href="/zakladki"><i class="fa fa-bookmark fa-fw"></i> Мои закладки</a>
               <a class="menu__item" href="/Notification"><i class="fa fa-bell fa-fw"></i> Уведомления</a>
                             <a class="menu__item" href="/"><i class="fa fa-cog fa-fw"></i> Настройки</a>
-                            <a class="menu__item text-danger" href="/logout" id="logout-button"><i class="fa fa-sign-out fa-fw"></i> Выход</a>
+
+                            <a href="{{ route('logout') }}" class="menu__item" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+Выход
+</a>
+<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+{{ csrf_field() }}
+</form>
+                                        
                             <span class="footer-t-previews" style="    margin-left: 192px;">
               <div class="footer-t-preview tooltip" data-toggle-theme="light" data-place="top" aria-label="Светлая">C</div>
               <div class="footer-t-preview tooltip" data-toggle-theme="dark" data-place="top" aria-label="Темная">T</div>
