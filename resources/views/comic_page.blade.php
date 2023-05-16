@@ -8,7 +8,7 @@
       <div class="media-sidebar">
   <div>
         <div class="media-sidebar__cover paper">
-      <img src="{{ asset('/storage/uploads/' . $value->image )}}" style="height: 30%;">
+      <img src="{{ asset('/storage/uploads/' . $value->image )}}" style="height: 45%;">
     </div>
   </div>
 
@@ -50,7 +50,10 @@
         <div class="media-info-list__title">Загружено глав</div>
         <div class="media-info-list__value text-capitalize">11</div>
         <div>
-    <a href="/" data-place="left" aria-label="Добавить главу" class="media-chapter__icon media-chapter__icon_edit tooltip">
+          <?php
+          $title = str_slug($value->eng_title,'-');
+          ?>
+    <a href="/glava_add/{{$title}}" data-place="left" aria-label="Добавить главу" class="media-chapter__icon media-chapter__icon_edit tooltip">
       Добавить главу
     </a> 
   </div>
@@ -98,14 +101,14 @@
         {{$value->opisanie}}
       </div>
       <div class="media-tags">
-        @foreach(App\Models\ComicJanr::WHERE('id_comic','=',$value->id_comic)->get() as $janr)
-        @foreach(App\Models\Janr::WHERE('id_janr','=',$janr->janr)->get() as $val)
+        @foreach(App\Models\ComicTags::WHERE('id_comic','=',$value->id_comic)->get() as $tag)
+        @foreach(App\Models\Tags::WHERE('id_tag','=',$tag->tag)->get() as $val)
                       <a href="" class="media-tag-item ">{{$val->janr}}</a>
                       @endforeach
                       @endforeach
 
-        @foreach(App\Models\ComicTags::WHERE('id_comic','=',$value->id_comic)->get() as $tag)
-        @foreach(App\Models\Tags::WHERE('id_tag','=',$tag->tag)->get() as $val)
+        @foreach(App\Models\ComicJanr::WHERE('id_comic','=',$value->id_comic)->get() as $janr)
+        @foreach(App\Models\Janr::WHERE('id_janr','=',$janr->janr)->get() as $val)
                       <a href="" class="media-tag-item ">{{$val->janr}}</a>
                       @endforeach
                       @endforeach

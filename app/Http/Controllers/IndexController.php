@@ -29,8 +29,7 @@ class IndexController extends Controller
     public function mainShow(){
         $comic = Comic::all();
         $lastUpdated = Glava::JOIN('comic','glava.id_comic','=','comic.id_comic')->orderBy('glava.updated_at','DESC')->get();
-        $new = Comic::all()->orderBy('created_at','DESC')->limit(5)->get();
-        $popular = Glava::JOIN('comic','glava.id_comic','=','comic.id_comic')->orderBy('glava.views_count','DESC')->limit(5)->get();
+        $new = Comic::orderBy('created_at','DESC')->limit(5)->get();
 
         return view('home', ['comic'=>$comic,'lastUpdated'=>$lastUpdated, 'new'=>$new, 'popular'=>$popular]);
     }
@@ -44,21 +43,12 @@ class IndexController extends Controller
     public function ConsOfApp(){
         return view('ConsOfApp');
     }
-    public function Catalog(){
-        return view('Catalog');
-    }
     public function top(){
         return view('top');
     }
 
     public function Zakladki(){
         return view('Zakladki');
-    }
-    public function comic_page(){
-        return view('comic_page');
-    }
-    public function team_page(){
-        return view('team_page');
     }
 
     public function pravila(){
@@ -71,10 +61,6 @@ class IndexController extends Controller
 
     public function ShowReplaceGlava(){
         return view('ShowReplaceGlava');
-    }
-
-    public function SettingsUser(){
-        return view('SettingsUser');
     }
 
     public function SettingsUser(){
@@ -98,6 +84,12 @@ class IndexController extends Controller
     public function Settings(){
         return view('Settings');
     }
+
+    public function Catalog(){
+        $comics = Comic::get();
+        return view('Catalog',['comics'=>$comics]);
+    }
+
     public function findSomeThing(Request $request){
         $input = $request->title;
         $comics = Comic::WHERE("title","=",$input)->get();
@@ -118,19 +110,13 @@ class IndexController extends Controller
     
     public function comicPage($title){
         //$requestJoin = Course::JOIN('language', 'courses.language_id', '=', 'language.id')->WHERE('language.id', '=', "$language")->orderBy('user_id', 'DESC')->get();  
-        // str_slug - ссылки через тире
-        $title = str_slug($title,' ');
+        $title = str_slug($title, ' ');
         $comic = Comic::WHERE('eng_title','ILIKE', $title)->get();
+        $views_count = 0;
 
         return view('comic_page',['comic'=>$comic]);
     }
 
-    public function teamShow($id){
-        $team = Team::WHERE('id_team','=',$id)->get();
-        $users = UserTeam::WHERE('id_team','=',$id)->get();
-
-        return view('team', ['team'=>$team, 'users'=>$users]);
-    }
 
     public function addComicShow(){
         return view('ShowAddComics');
@@ -140,6 +126,7 @@ class IndexController extends Controller
         $imageName = time().'.'.$request->image->extension();
         $request->image->storeAs('uploads',$imageName, 'public');  
         $array = $request->input('janrChoose');
+        $tags = $request->input('tagsChoose');
 
         DB::table('comic')->insert(['opisanie'=>$request->opisanie,'title'=>$request->title, 'orig_title'=>$request->original_title,'eng_title'=>$request->eng_title,
         'date'=>$request->date, 'id_type'=>$request->type,'status'=>$request->status, 'team'=>$request->team,'id_ogr'=>$request->ogr,
@@ -150,10 +137,9 @@ class IndexController extends Controller
         foreach($array as $value){
             DB::table('comic_janr')->insert(['id_comic'=>$id,'janr'=>$value]);
         };
-        /*
-        $id = DB::getPdo()->lastInsertId();
-        DB::table('comic_tags')->insert(['tag'=>$request->tags, 'id_comic'=>$id]);
-        */
+        foreach($tags as $value){
+            DB::table('comic_tags')->insert(['id_comic'=>$id,'tag'=>$value]);
+        };
         
         return redirect('/');
     }
@@ -168,8 +154,19 @@ class IndexController extends Controller
         foreach($alltags as $val){
             $array2[] = $val->tag;
         }
+        if($array && $array2 != null){
+            return view('ShowReplaceComics',['comic'=>$comic,'alljanr'=>$array,'alltags'=>$array2]);
+        }
+        else{
+            return view('ShowReplaceComics',['comic'=>$comic,'alljanr'=>null,'alltags'=>null]);
+        }
+    }
 
-        return view('ShowReplaceComics',['comic'=>$comic,'alljanr'=>$array,'alltags'=>$array2]);
+    public function teamShow($id){
+        $team = Team::WHERE('id_team','=',$id)->get();
+        $users = UserTeam::WHERE('id_team','=',$id)->get();
+
+        return view('team', ['team'=>$team, 'users'=>$users]);
     }
 
     public function addTeamShow(){
@@ -186,34 +183,39 @@ class IndexController extends Controller
     }
 
     public function glavaView($title,$id){
+        $title = str_slug($title, ' ');
+        $comic = Comic::WHERE('eng_title','ILIKE',$title)->get();
         $photo = Photo::WHERE('id_glava','=',$id)->get();
         $glava = Glava::WHERE('id_glava','=',$id)->get();
-        $comic = Comic::WHERE('eng_title','=',$title)->get();
-        $team_name = Comic::WHERE('eng_title','=',$title)->value('team');
+        $team_name = Comic::WHERE('eng_title','ILIKE',$title)->value('team');
         $team = Team::WHERE('title','=',$team_name)->get();
         //dd($team);
 
         return view('ComicsShowStr',['photo'=>$photo,'title'=>$title, 'id'=>$id,'team'=>$team, 'glava'=>$glava, 'comic'=>$comic]);
     }
+
     public function addGlavaShow($title){
-        $comic = Comic::WHERE('eng_title','=',$title)->get();
+        $title = str_slug($title, ' ');
+        $comic = Comic::WHERE('eng_title','ILIKE',$title)->get();
         return view('ShowAddGlava',['comic'=>$comic]);
     }
+
     public function addGlava(Request $request, $title){        
-        $number = $request->number;
-        $comicId = Comic::WHERE('eng_title','=',$title)->value('id_comic');
+        $title = str_slug($title,' ');
+        $comicId = Comic::WHERE('eng_title','ILIKE',$title)->value('id_comic');
 
-        DB::table('glava')->insert(['title'=>$request->title,'tom'=>$request->tom,'id_comic'=>$comicId,'number'=>$number]);
+        DB::table('glava')->insert(['title'=>$request->title,'tom'=>$request->tom,'id_comic'=>$comicId,'number'=>$request->number]);
         $id = DB::getPdo()->lastInsertId();
-
+        
         foreach($request->file('image') as $value){
-            $value->storeAs('glava/'. $title."/".$id,$value->getClientOriginalName(), 'public');  
+            $value->storeAs('glava/'. $title . "/".$id,$value->getClientOriginalName(), 'public');  
             $names[] = $value->getClientOriginalName();
         }
         
         foreach($names as $value){
             DB::table('photo')->insert(['id_glava'=>$id,'photo'=>$value]);
         }
+
         return redirect('/');
     }
 }

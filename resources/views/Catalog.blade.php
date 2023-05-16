@@ -26,15 +26,21 @@
       </div>
       <div class="media-grid-wrap">
     <div class="media-cards-grid">
+    @foreach($comics as $comic)
       <div class="media-card-wrap">
-      <a class="media-card" href="https://mangalib.me/agnyeo-neun-du-beon-sanda" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg&quot;);" data-src="https://cover.imglib.info/uploads/cover/agnyeo-neun-du-beon-sanda/cover/2JY5XP255eZa_250x350.jpg" data-was-processed="true">
+        <?php
+        $title = str_slug($comic->eng_title,'-');
+        ?>
+      <a class="media-card" href="/comic/{{$title}}" data-media-slug="agnyeo-neun-du-beon-sanda" data-media-id="35398" style="background-image: url(&quot;{{asset('/storage/uploads/' . $comic->image)}}&quot;);" data-src="{{asset('/storage/uploads/' . $comic->image)}}" data-was-processed="true">
         <div class="media-card__caption">
-          <h5 class="media-card__subtitle">Манхва</h5>
-                    <h3 class="media-card__title line-clamp">Вторая жизнь злодейки</h3>
+          <h5 class="media-card__subtitle">{{App\Models\ComicType::WHERE('id_type','=',$comic->id_type)->value('type')}}</h5>
+                    <h3 class="media-card__title line-clamp">{{$comic->title}}</h3>
         </div>
               </a>
     </div>
+    @endforeach
   </div>
+
   </div>
     </div>
           <div class="paper search-filter">
@@ -46,12 +52,9 @@
             Жанры
             </div> 
             <div class="checkselect">
-		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
-		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
-		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
-		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
-		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
-		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+            @foreach(App\Models\Janr::all() as $value)
+		<label><input type="checkbox" name="chooseJanr[]" value="{{$value->id_janr}}"> {{$value->janr}}</label>
+            @endforeach
 	</div>
         </div> 
         <div class="search-filter-submenu">
@@ -59,12 +62,9 @@
             Теги
           </div> 
           <div class="checkselect">
-		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
-		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
-		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
-		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
-		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
-		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+          @foreach(App\Models\Tags::all() as $value)
+		<label><input type="checkbox" name="chooseTag[]" value="{{$value->id_tag}}"> {{$value->tag}}</label>
+    @endforeach
 	</div>
         </div>
         <div class="search-filter-submenu">
@@ -72,12 +72,9 @@
             Статус перевода
           </div> 
           <div class="checkselect">
-		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
-		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
-		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
-		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
-		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
-		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+          @foreach(App\Models\ComicStatus::all() as $value)
+		<label><input type="checkbox" name="chooseStatus[]" value="{{$value->id_status}}"> {{$value->status}}</label>
+    @endforeach
 	</div>
         </div>
         <div class="search-filter-submenu">
@@ -85,12 +82,9 @@
             Тип
           </div> 
           <div class="checkselect">
-		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
-		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
-		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
-		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
-		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
-		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+          @foreach(App\Models\ComicType::all() as $value)
+		<label><input type="checkbox" name="chooseType[]" value="{{$value->id_type}}"> {{$value->type}} </label>
+    @endforeach
 	</div>
         </div>
         <div class="search-filter__group"><div class="search-filter__title">
