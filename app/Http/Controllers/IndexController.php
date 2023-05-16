@@ -10,6 +10,7 @@ use App\Models\Photo;
 use App\Models\ComicTags;
 use App\Models\ComicType;
 use App\Models\ComicOgr;
+use App\Models\ComicJanr;
 use App\Models\Tags;
 use App\Models\Janr;
 use App\Models\ComicStatus;
@@ -129,7 +130,10 @@ class IndexController extends Controller
     public function comicPage($title){
         //$requestJoin = Course::JOIN('language', 'courses.language_id', '=', 'language.id')->WHERE('language.id', '=', "$language")->orderBy('user_id', 'DESC')->get();  
         // str_slug - ссылки через тире
-        $comic = Comic::WHERE('eng_title','=', $title)->get();
+        $title = str_slug($title,' ');
+        $comic = Comic::WHERE('eng_title','ILIKE', $title)->get();
+        
+        
 
         return view('comic_page',['comic'=>$comic]);
     }

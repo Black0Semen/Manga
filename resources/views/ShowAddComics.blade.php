@@ -83,6 +83,10 @@
         @foreach(App\Models\Janr::all() as $value)       
               <input type="checkbox" name="janrChoose[]" value="{{$value->id_janr}}"> {{$value->janr}}
             @endforeach
+            <br><br>
+            @foreach(App\Models\Tags::all() as $value)
+            <input type="checkbox" name="tagChoose[]" value="{{$value->id_tag}}"> {{$value->tag}}
+            @endforeach
         <div class="search-filter-submenu">
           <div class="search-filter-submenu__name">
             Теги
@@ -114,7 +118,7 @@
         <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Статус
       </p>
-          <select type="text" name="type" placeholder="Команда переводчиков" class="form__input">
+          <select type="text" name="status" placeholder="Команда переводчиков" class="form__input">
           @foreach(App\Models\ComicStatus::all() as $value)
             <option class="text-truncate" value="{{$value->id_status}}">{{$value->status}}</option>
           @endforeach
@@ -125,7 +129,7 @@
         <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Команда переводчиков
       </p>
-          <select type="text" name="type" placeholder="Команда переводчиков" class="form__input">
+          <select type="text" name="team" placeholder="Команда переводчиков" class="form__input">
           @foreach(App\Models\Team::all() as $value)
             <option class="text-truncate" value="{{$value->id_team}}">{{$value->title}}</option>
           @endforeach
