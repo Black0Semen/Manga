@@ -24,8 +24,6 @@ Route::get('/Catalog', [IndexController::class, 'Catalog']);
 Route::get('/comic_page', [IndexController::class, 'comic_page']);
 Route::get('/team_page', [IndexController::class, 'team_page']);
 Route::get('/Notification', [IndexController::class, 'Notification']);
-Route::get('/ComicsShowStr', [IndexController::class, 'ComicsShowStr']);
-Route::get('/ShowAddComics', [IndexController::class, 'ShowAddComics']);
 Route::get('/ShowAddGlava', [IndexController::class, 'ShowAddGlava']);
 Route::get('/ShowAddTeams', [IndexController::class, 'ShowAddTeams']);
 Route::get('/SettingsUser', [IndexController::class, 'SettingsUser']);
@@ -46,8 +44,9 @@ Route::post('/comic_add', [IndexController::class, 'addComic']);
 Route::get('/comic_edit/{title}', [IndexController::class, 'editComic']);
 
 Route::get('comic/{title}/{id}',[IndexController::class, 'glavaView']);
-Route::get('comic/{title}/glava_add', [IndexController::class, 'addGlavaShow']);
-Route::post('comic/{title}/glava_add', [IndexController::class, 'addGlava']);
+
+Route::get('glava_add/{title}', [IndexController::class, 'addGlavaShow']);
+Route::post('glava_add/{title}', [IndexController::class, 'addGlava']);
 
 Route::get('/rules', [IndexController::class, 'ruleShow']);
 
