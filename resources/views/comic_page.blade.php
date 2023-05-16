@@ -8,7 +8,7 @@
       <div class="media-sidebar">
   <div>
         <div class="media-sidebar__cover paper">
-      <img src="/" style="height: 30%;">
+      <img src="{{ asset('/storage/uploads/' . $value->image )}}" style="height: 30%;">
     </div>
   </div>
 
@@ -95,7 +95,7 @@
         {{$value->opisanie}}
       </div>
       <div class="media-tags">
-        @foreach($tags as $tag)
+        @foreach(App\Models\ComicTags::WHERE('id_comic','=',$value->id_comic)->get() as $tag)
         @foreach(App\Models\Tags::WHERE('id_tag','=',$tag->tag)->get() as $val)
                       <a href="" class="media-tag-item ">{{$val->tag}}</a>
                       @endforeach

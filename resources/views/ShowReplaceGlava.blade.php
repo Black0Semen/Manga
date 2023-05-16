@@ -48,7 +48,7 @@
     <p>
         Загрузить файл
       </p>
-    <input type="file" placeholder="Глава" class="form__input">
+    <input type="file" placeholder="Загрузить файл" class="form__input">
       </div>
       <div class="_3LRPmC9-gheW_3DDwziWi_0 Lw4uT0l7O6yniFgR8Z7zQ_0">
         <button class="_3KhAJh7zsjUJI-s2OGbY8v_0 button button_green">
