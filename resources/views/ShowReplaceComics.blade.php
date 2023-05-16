@@ -62,7 +62,6 @@
           </div> 
           <div class="checkselect">
           @foreach(App\Models\Janr::all() as $janr)
-        
           @if(in_array($janr->id_janr, $alljanr))
           <label><input type="checkbox" name="chooseJanr[]" value="{{$janr->id_janr}}" checked> {{$janr->janr}}</label>
           @else()

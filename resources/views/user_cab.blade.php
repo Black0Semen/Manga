@@ -26,6 +26,7 @@
     <div class="page__wrapper page__wrapper_right">
       <div class="section paper section-body">
         <div class="team-profile__name"><img src="./команда_files/X2pD0Z5SIDKU.jpg" class="team-profile-users__avatar avatar avatar_circle">{{$value->name}}<a href="https://mangalib.me/team/6122/edit" class="small ml-10 text-muted">Настройки</a></div>
+
           <div class="team-profile__section">
             <div class="team-profile-stats">
   <div class="team-profile-stats__item">

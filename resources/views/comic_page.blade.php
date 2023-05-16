@@ -103,7 +103,13 @@
       <div class="media-tags">
         @foreach(App\Models\ComicTags::WHERE('id_comic','=',$value->id_comic)->get() as $tag)
         @foreach(App\Models\Tags::WHERE('id_tag','=',$tag->tag)->get() as $val)
-                      <a href="" class="media-tag-item ">{{$val->tag}}</a>
+                      <a href="" class="media-tag-item ">{{$val->janr}}</a>
+                      @endforeach
+                      @endforeach
+
+        @foreach(App\Models\ComicJanr::WHERE('id_comic','=',$value->id_comic)->get() as $janr)
+        @foreach(App\Models\Janr::WHERE('id_janr','=',$janr->janr)->get() as $val)
+                      <a href="" class="media-tag-item ">{{$val->janr}}</a>
                       @endforeach
                       @endforeach
 

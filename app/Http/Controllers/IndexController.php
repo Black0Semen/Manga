@@ -12,6 +12,7 @@ use App\Models\ComicTags;
 use App\Models\ComicType;
 use App\Models\ComicJanr;
 use App\Models\ComicOgr;
+use App\Models\ComicJanr;
 use App\Models\Tags;
 use App\Models\Janr;
 use App\Models\ComicStatus;
@@ -29,7 +30,6 @@ class IndexController extends Controller
         $comic = Comic::all();
         $lastUpdated = Glava::JOIN('comic','glava.id_comic','=','comic.id_comic')->orderBy('glava.updated_at','DESC')->get();
         $new = Comic::orderBy('created_at','DESC')->limit(5)->get();
-        $popular = Glava::JOIN('comic','glava.id_comic','=','comic.id_comic')->orderBy('glava.views_count','DESC')->limit(5)->get();
 
         return view('home', ['comic'=>$comic,'lastUpdated'=>$lastUpdated, 'new'=>$new, 'popular'=>$popular]);
     }
