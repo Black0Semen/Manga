@@ -15,7 +15,7 @@
     
 
     
-     
+     @foreach($comic as $value)
       <section class="section paper tabs" id="latest-updates" data-tabs-id="tabs_1">
       <div class="page__inner">
         
@@ -25,7 +25,7 @@
     <div class="media-name__body">
             <div class="media-name__main">Редактирование комикса</div>
             
-                                          <div class="media-name__alt">The Duke’s Imposter Sister</div>
+                                          <div class="media-name__alt">{{$value->eng_title}}</div>
                                     </div>
       <div>
       <div class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
@@ -66,81 +66,23 @@
           <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Описание
       </p>
-          <textarea class="form__input manga-search__input" style="resize: none; height: 100px ; "></textarea>
+          <textarea class="form__input manga-search__input" style="resize: none; height: 100px ; ">{{$value->opisanie}}</textarea>
         </div> 
         <div class="search-filter-submenu">
           <div class="search-filter-submenu__name">
             Жанры
           </div> 
-          <div class="search-filter-submenu__right">
-          <ul class="dropdown">
-          <svg class="header-right-menu__avatar" data-dropdown="" data-tippy-placement="bottom-end" aria-expanded="false" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"></path></svg>
-          <div class="menu-template">
-            <div data-tippy-root="" id="tippy-4" style="height:200px; width:auto;overflow:auto; z-index: 9999;visibility: visible;margin: 0px;margin-left: 128px;margin-top: -1455px;position: absolute;inset: 0px auto auto 0px;transform: translate(755.2px, 1504.8px);"><div class="tippy-box" data-state="visible" tabindex="-1" data-theme="dropdown" data-animation="shift-toward" role="tooltip" style="max-width: 350px; transition-duration: 200ms;" data-placement="bottom-end"><div class="tippy-content" data-state="visible" style="transition-duration: 200ms;"><div class="menu header-dropdown">
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="1"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="2"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="3"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="4"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">
-            <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="5"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-            </li>
-            <li class="menu__item">            
-              <label class="control search-filter__checkbox">
-              <input type="checkbox" class="control__input" value="6"> 
-              <span class="control__indicator control__indicator_checkbox control__indicator_sm">
-              </span> 
-              <span class="control__text">
-                Манга
-              </span>
-            </label>
-          </li> 
-                          </div></div></div></div>
-          </div>
-</ul>
-          </div>
+          <div class="checkselect">
+          @foreach(App\Models\Janr::all() as $janr)
+
+          @if(in_array($janr->id_janr, $alljanr))
+          <label><input type="checkbox" name="chooseJanr[]" value="{{$janr->id_janr}}" checked> {{$janr->janr}}</label>
+          @else()
+          <label><input type="checkbox" name="chooseJanr[]" value="{{$janr->id_janr}}">{{$janr->janr}} </label>
+          @endif
+        
+          @endforeach
+	</div>
         </div>
         <div class="search-filter-submenu">
           <div class="search-filter-submenu__name">
@@ -259,6 +201,7 @@
 
               </div>
 </section>
+@endforeach
         
   </div>
   

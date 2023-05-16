@@ -1,84 +1,86 @@
-body {
-  /* Убираю отступы. */
-  margin:0px;
-  /* Убираю еще отступы. */
-  padding:0px;
-  /* Задаю шрифт. */
-  font: 14px 'Verdana';
+.checkselect {
+	position: relative;
+	display: inline-block;
+	min-width: 200px;
+	text-align: left;
 }
-ul {
-  /* Убираю маркеры у списка*/
-  list-style: none;
-  /* Делаю элементы блочными. */
-  display: block;
-  /* Убираю отступы. */
-  margin:0px;
-  /* Убираю еще отступы! */
-  padding:0px;
+.checkselect-control {
+	position: relative;
+	padding: 0 !important;
+}		
+.checkselect-control select {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	padding-left: 5px;
+	height: 30px;
 }
-ul:after {
-  /* Делаю элементы блочными. */
-  display: block;
-  /* Убираю выравнивание. */
-  float: none;
-  content: ' ';
-  clear: both;
+.checkselect-over {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0; 			
+	cursor: pointer;
 }
-ul.mmenuu > li {
-  /* Задаю выравнивание и позиционирование. */
-  float: left;
-  /* Считаем координаты относительно исходного места*/
-  position: relative;
+.checkselect-popup {
+	display: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	max-height: 200px;
+	position: absolute;
+	top: 100%;
+	left: 0px; 
+	border: 1px solid #dadada;
+	border-top: none;
+	background: #fff;
+	z-index: 9999;
+	overflow: auto;
+	user-select: none;
+}	
+.checkselect label {
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 4px 6px 4px 25px;
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.1;
+	cursor: pointer;
+	background: #868e96;
+}			
+.checkselect-popup input {
+	position: absolute;
+	top: 5px; 
+	left: 8px;
+	margin: 0 !important;
+	padding: 0;
 }
-ul.mmenuu > li > a {
-  /* Делаю элементы блочными: */
-  display: block;
-  /* Задаю белый цвет. */
-  color: #fff;
-  /* Задаю отступ 10px. */
-  padding: 10px;
-  /* Убираю форматирование*/
-  text-decoration: none;
-  /* Задаю цвет. */
-  background-color: #da570f;
+.checkselect-popup label:hover {
+	background: #8d965b;
+	color: #fff;
 }
-ul.mmenuu > li > a:hover {
-  /* Задаю цвет при наведении. */
-  background-color: #eb9316;
+.checkselect-popup fieldset {
+	display: block;
+	margin:  0;
+	padding: 0;
+	border: none;
 }
-ul.ssubmenuu {
-  position: absolute;
-  width: 240px;
-  top: 37px;
-  left:0px;
-  /* Делаю субменю скрытыми. */
-  display: none;
-  /* Цвет — белый. */
-  background-color: white;
-}
-ul.ssubmenuu > li {
-  /* Блочное расположение элементов*/
-  display: block;
-}
-ul.ssubmenuu > li > a {
-  /* Делаю элементы блочными. */
-  display: block;
-  /* Убираю форматирование*/
-  text-decoration: none;
-  /* Задаю отступ. */
-  padding: 10px;
-  /* Задаю цвет. */
-  color: #ffffff;
-  /* Еще цвет. */
-  background-color: #da570f;
-}
-ul.ssubmenuu > li > a:hover {
-  /* Цвет бэкграунда при наведении. */
-  background-color: #eb9316;
-  /* Задаю подчеркивание*/
-  text-decoration: underline;
-}
-ul.mmenuu > li:hover > ul.ssubmenuu {
-  /* Делаю элементы блочными. */
-  display: block;
+.checkselect-popup fieldset input {
+	left: 15px;
+}		
+.checkselect-popup fieldset label {
+	padding-left: 32px;
+}		
+.checkselect-popup legend {
+	display: block;
+	margin: 0;
+	padding: 5px 8px;
+	font-weight: 700;
+	font-size: 1em;
+	line-height: 1.1;
 }

@@ -66,6 +66,13 @@ Route::get('/Settings', [IndexController::class, 'Settings']);
    // return view('welcome');
 //});
 
+Route::group(['middleware' => ['auth']], function() {
+    /**
+    * Logout Route
+    */
+    Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
+    });
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

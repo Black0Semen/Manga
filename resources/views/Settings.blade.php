@@ -41,7 +41,7 @@
                     <div class="search-filter-submenu">
           <div class="search-filter-submenu__name">
             Роль
-          </div> 
+          </div>
           <div class="search-filter-submenu__right">
           <ul class="dropdown">
           <svg class="header-right-menu__avatar" data-dropdown="" data-tippy-placement="bottom-end" aria-expanded="false" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"></path></svg>
