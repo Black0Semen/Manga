@@ -43,7 +43,6 @@ Route::post('/team_add', [IndexController::class, 'addTeam']);
 Route::get('comic/{title}',[IndexController::class, 'comicPage']);
 Route::get('/comic_add', [IndexController::class, 'addComicShow']);
 Route::post('/comic_add', [IndexController::class, 'addComic']);
-Route::get('/comic_edit/{title}', [IndexController::class, 'editComic']);
 
 Route::get('comic/{title}/{id}',[IndexController::class, 'glavaView']);
 Route::get('comic/{title}/glava_add', [IndexController::class, 'addGlavaShow']);

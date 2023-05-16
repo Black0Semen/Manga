@@ -16,7 +16,7 @@
       @foreach($comic as $value)
         <div class="hot-media-item media-card-wrap media-card-wrap_sm">
           <?php
-          $title = str_slug($value->eng_title, '-');
+          $title = str_slug($value->eng_title,'-');
           ?>
           <a href="/comic/{{$title}}" title="Читать последнюю главу. " class="hot-media-item__card media-card" style="background-image: url(&#39;{{asset('/storage/uploads/' . $value->image)}}&#39;)">
             <div class="media-card__caption">

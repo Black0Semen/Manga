@@ -12,6 +12,7 @@ use App\Models\ComicTags;
 use App\Models\ComicType;
 use App\Models\ComicJanr;
 use App\Models\ComicOgr;
+use App\Models\ComicJanr;
 use App\Models\Tags;
 use App\Models\Janr;
 use App\Models\ComicStatus;
@@ -53,6 +54,12 @@ class IndexController extends Controller
     public function Zakladki(){
         return view('Zakladki');
     }
+    public function comic_page(){
+        return view('comic_page');
+    }
+    public function team_page(){
+        return view('team_page');
+    }
 
     public function pravila(){
         return view('pravila');
@@ -64,6 +71,10 @@ class IndexController extends Controller
 
     public function ShowReplaceGlava(){
         return view('ShowReplaceGlava');
+    }
+
+    public function SettingsUser(){
+        return view('SettingsUser');
     }
 
     public function SettingsUser(){
@@ -108,9 +119,8 @@ class IndexController extends Controller
     public function comicPage($title){
         //$requestJoin = Course::JOIN('language', 'courses.language_id', '=', 'language.id')->WHERE('language.id', '=', "$language")->orderBy('user_id', 'DESC')->get();  
         // str_slug - ссылки через тире
-        $title = str_slug($title, ' ');
+        $title = str_slug($title,' ');
         $comic = Comic::WHERE('eng_title','ILIKE', $title)->get();
-        echo($title);
 
         return view('comic_page',['comic'=>$comic]);
     }
@@ -130,7 +140,6 @@ class IndexController extends Controller
         $imageName = time().'.'.$request->image->extension();
         $request->image->storeAs('uploads',$imageName, 'public');  
         $array = $request->input('janrChoose');
-        $tags = $request->input('tagsChoose');
 
         DB::table('comic')->insert(['opisanie'=>$request->opisanie,'title'=>$request->title, 'orig_title'=>$request->original_title,'eng_title'=>$request->eng_title,
         'date'=>$request->date, 'id_type'=>$request->type,'status'=>$request->status, 'team'=>$request->team,'id_ogr'=>$request->ogr,
@@ -141,9 +150,10 @@ class IndexController extends Controller
         foreach($array as $value){
             DB::table('comic_janr')->insert(['id_comic'=>$id,'janr'=>$value]);
         };
-        foreach($tags as $value){
-            DB::table('comic_tags')->insert(['id_comic'=>$id,'tag'=>$value]);
-        };
+        /*
+        $id = DB::getPdo()->lastInsertId();
+        DB::table('comic_tags')->insert(['tag'=>$request->tags, 'id_comic'=>$id]);
+        */
         
         return redirect('/');
     }
@@ -204,7 +214,6 @@ class IndexController extends Controller
         foreach($names as $value){
             DB::table('photo')->insert(['id_glava'=>$id,'photo'=>$value]);
         }
-
         return redirect('/');
     }
 }
