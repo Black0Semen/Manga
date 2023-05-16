@@ -4,17 +4,20 @@ namespace App\Http\Controllers;
 
 use App\Models\Comic;
 use App\Models\Team;
+use App\Models\Posts;
 use App\Models\User;
 use App\Models\Glava;
 use App\Models\Photo;
 use App\Models\ComicTags;
 use App\Models\ComicType;
+use App\Models\ComicJanr;
 use App\Models\ComicOgr;
 use App\Models\Tags;
 use App\Models\Janr;
 use App\Models\ComicStatus;
 use App\Models\UserTeam;
 use App\Models\ComicTeam;
+
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
@@ -25,8 +28,10 @@ class IndexController extends Controller
     public function mainShow(){
         $comic = Comic::all();
         $lastUpdated = Glava::JOIN('comic','glava.id_comic','=','comic.id_comic')->orderBy('glava.updated_at','DESC')->get();
+        $new = Comic::all()->orderBy('created_at','DESC')->limit(5)->get();
+        $popular = Glava::JOIN('comic','glava.id_comic','=','comic.id_comic')->orderBy('glava.views_count','DESC')->limit(5)->get();
 
-        return view('home', ['comic'=>$comic,'lastUpdated'=>$lastUpdated]);
+        return view('home', ['comic'=>$comic,'lastUpdated'=>$lastUpdated, 'new'=>$new, 'popular'=>$popular]);
     }
 
     public function order(){
@@ -45,34 +50,12 @@ class IndexController extends Controller
         return view('top');
     }
 
-    public function search(){
-        return view('search');
-    }
-
     public function Zakladki(){
         return view('Zakladki');
-    }
-    public function comic_page(){
-        return view('comic_page');
-    }
-    public function team_page(){
-        return view('team_page');
     }
 
     public function pravila(){
         return view('pravila');
-    }
-
-    public function ShowAddTeams(){
-        return view('ShowAddTeams');
-    }
-
-    public function ShowAddGlava(){
-        return view('ShowAddGlava');
-    }
-
-    public function ShowAddComics(){
-        return view('ShowAddComics');
     }
 
     public function ShowReplaceTeams(){
@@ -81,10 +64,6 @@ class IndexController extends Controller
 
     public function ShowReplaceGlava(){
         return view('ShowReplaceGlava');
-    }
-
-    public function ShowReplaceComics(){
-        return view('ShowReplaceComics');
     }
 
     public function SettingsUser(){
@@ -129,7 +108,9 @@ class IndexController extends Controller
     public function comicPage($title){
         //$requestJoin = Course::JOIN('language', 'courses.language_id', '=', 'language.id')->WHERE('language.id', '=', "$language")->orderBy('user_id', 'DESC')->get();  
         // str_slug - ссылки через тире
-        $comic = Comic::WHERE('eng_title','=', $title)->get();
+        $title = str_slug($title, ' ');
+        $comic = Comic::WHERE('eng_title','ILIKE', $title)->get();
+        echo($title);
 
         return view('comic_page',['comic'=>$comic]);
     }
@@ -149,6 +130,7 @@ class IndexController extends Controller
         $imageName = time().'.'.$request->image->extension();
         $request->image->storeAs('uploads',$imageName, 'public');  
         $array = $request->input('janrChoose');
+        $tags = $request->input('tagsChoose');
 
         DB::table('comic')->insert(['opisanie'=>$request->opisanie,'title'=>$request->title, 'orig_title'=>$request->original_title,'eng_title'=>$request->eng_title,
         'date'=>$request->date, 'id_type'=>$request->type,'status'=>$request->status, 'team'=>$request->team,'id_ogr'=>$request->ogr,
@@ -159,12 +141,25 @@ class IndexController extends Controller
         foreach($array as $value){
             DB::table('comic_janr')->insert(['id_comic'=>$id,'janr'=>$value]);
         };
-        /*
-        $id = DB::getPdo()->lastInsertId();
-        DB::table('comic_tags')->insert(['tag'=>$request->tags, 'id_comic'=>$id]);
-        */
+        foreach($tags as $value){
+            DB::table('comic_tags')->insert(['id_comic'=>$id,'tag'=>$value]);
+        };
         
         return redirect('/');
+    }
+    public function editComic($title){
+        $title = str_slug($title, ' ');
+        $comic = Comic::WHERE('eng_title','ILIKE', $title)->get();
+        $alljanr = ComicJanr::WHERE('id_comic','=',$comic->value('id_comic'))->get('janr');
+        $alltags = ComicTags::WHERE('id_comic','=',$comic->value('id_comic'))->get('tag');
+        foreach($alljanr as $val){
+            $array[] = $val->janr;
+        }
+        foreach($alltags as $val){
+            $array2[] = $val->tag;
+        }
+
+        return view('ShowReplaceComics',['comic'=>$comic,'alljanr'=>$array,'alltags'=>$array2]);
     }
 
     public function addTeamShow(){
@@ -172,7 +167,10 @@ class IndexController extends Controller
     }
 
     public function addTeam(Request $request){
-        DB::table('translate_team')->insert(['opisanie'=>$request->opisanie, 'title'=>$request->title]);
+        $imageName = time().'.'.$request->image->extension();
+        $request->image->storeAs('teams',$imageName, 'public');  
+
+        DB::table('translate_team')->insert(['opisanie'=>$request->opisanie, 'title'=>$request->title, 'image'=>$imageName, 'status'=>0,'social_vk'=>$request->social_vk]);
 
         return redirect('/');
     }

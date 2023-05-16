@@ -31,7 +31,7 @@
     <p>
         Обложка
       </p>
-    <input type="file"id="image" name="image" placeholder="Глава" class="form__input">
+    <input type="file" id="image" name="image" placeholder="Глава" class="form__input">
       </div>
         <div>
         <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
@@ -68,29 +68,19 @@
             Жанры
           </div> 
           <div class="checkselect">
-		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
-		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
-		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
-		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
-		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
-		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+          @foreach(App\Models\Janr::all() as $value)
+		<label><input type="checkbox" name="janrChoose[]" value="{{$value->id_janr}}"> {{$value->janr}}</label>
+    @endforeach
 	</div>
         </div>
-
-        @foreach(App\Models\Janr::all() as $value)       
-              <input type="checkbox" name="janrChoose[]" value="{{$value->id_janr}}"> {{$value->janr}}
-            @endforeach
         <div class="search-filter-submenu">
           <div class="search-filter-submenu__name">
             Теги
           </div> 
           <div class="checkselect">
-		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
-		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
-		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
-		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
-		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
-		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+          @foreach(App\Models\Tags::all() as $value)
+          <label><input type="checkbox" name="tagsChoose[]" value="{{$value->id_tag}}"> {{$value->tag}}</label>
+    @endforeach
 	</div>
         </div>
         <div>
@@ -108,9 +98,9 @@
         <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Команда переводчиков
       </p>
-          <select type="text" name="type" placeholder="Команда переводчиков" class="form__input">
+          <select type="text" name="team" placeholder="Команда переводчиков" class="form__input">
           @foreach(App\Models\Team::all() as $value)
-            <option class="text-truncate" value="{{$value->id_team}}">{{$value->title}}</option>
+            <option class="text-truncate" value="{{$value->title}}">{{$value->title}}</option>
           @endforeach
           </select>
         </div>

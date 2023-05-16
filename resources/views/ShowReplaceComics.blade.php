@@ -15,7 +15,7 @@
     
 
     
-     
+     @foreach($comic as $value)
       <section class="section paper tabs" id="latest-updates" data-tabs-id="tabs_1">
       <div class="page__inner">
         
@@ -25,7 +25,7 @@
     <div class="media-name__body">
             <div class="media-name__main">Редактирование комикса</div>
             
-                                          <div class="media-name__alt">The Duke’s Imposter Sister</div>
+                                          <div class="media-name__alt">{{$value->eng_title}}</div>
                                     </div>
       <div>
       <div class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
@@ -38,47 +38,38 @@
         <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Оригинальное название
       </p>
-          <input type="text" placeholder="Оригинальное название" class="form__input"> 
+          <input type="text" placeholder="Оригинальное название" value="{{$value->orig_title}}" class="form__input"> 
           <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Русскоязычное название
       </p>
-          <input type="text" placeholder="Русскоязычное название" class="form__input"> 
+          <input type="text" placeholder="Русскоязычное название" value="{{$value->title}} "class="form__input"> 
           <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Год релиза
       </p>
-          <input type="text" placeholder="Год релиза" class="form__input">
-          <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
-        Автор
-      </p>
-          <input type="text" placeholder="Автор" class="form__input">
-          <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
-        Художник
-      </p>
-          <input type="text" placeholder="Художние" class="form__input">
-          <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
-        Издатель
-      </p>
-          <input type="text" placeholder="Издатель" class="form__input">
+          <input type="text" placeholder="Год релиза" value="{{$value->date}}" class="form__input">
           <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Ссылка на оригинал
       </p>
-          <input type="text" placeholder="Ссылка на оригинал" class="form__input">
+          <input type="text" placeholder="Ссылка на оригинал" value="{{$value->link_original}}" class="form__input">
           <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Описание
       </p>
-          <textarea class="form__input manga-search__input" style="resize: none; height: 100px ; "></textarea>
+          <textarea class="form__input manga-search__input" style="resize: none; height: 100px ; ">{{$value->opisanie}}</textarea>
         </div> 
         <div class="search-filter-submenu">
           <div class="search-filter-submenu__name">
             Жанры
           </div> 
           <div class="checkselect">
-		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
-		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
-		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
-		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
-		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
-		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+          @foreach(App\Models\Janr::all() as $janr)
+
+          @if(in_array($janr->id_janr, $alljanr))
+          <label><input type="checkbox" name="chooseJanr[]" value="{{$janr->id_janr}}" checked> {{$janr->janr}}</label>
+          @else()
+          <label><input type="checkbox" name="chooseJanr[]" value="{{$janr->id_janr}}">{{$janr->janr}} </label>
+          @endif
+        
+          @endforeach
 	</div>
         </div>
         <div class="search-filter-submenu">
@@ -86,22 +77,24 @@
             Теги
           </div> 
           <div class="checkselect">
-		<label><input type="checkbox" name="brands[]" value="1" checked> Google Inc.</label>
-		<label><input type="checkbox" name="brands[]" value="2"> Apple Inc.</label>
-		<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
-		<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
-		<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
-		<label><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+          @foreach(App\Models\Tags::all() as $tag)
+          @if(in_array($tag->id_tag, $alltags))
+		      <label><input type="checkbox" name="chooseTags[]" value="{{$tag->id_tag}}" checked> {{$tag->tag}}</label>
+          @else()
+          <label><input type="checkbox" name="chooseTags[]" value="{{$tag->id_tag}}"> {{$tag->tag}}</label>
+          @endif
+    @endforeach
 	</div>
         </div>
         <div>
         <p class="text-center text-muted _3qjIVhHEptuufiVk_wKbPe_0">
         Статус перевода
       </p>
+
           <select type="text" placeholder="Статус перевода" class="form__input">
-            <option class="text-truncate" value="1">Rescue Team</option>
-            <option class="text-truncate" value="2">Rescue555555555 Team</option>
-            <option class="text-truncate" value="3">Rescue 444444Team</option>
+            @foreach(App\Models\ComicStatus::all() as $status)
+            <option class="text-truncate" value="{{$status->id_status}}">{{$status->status}}</option>
+            @endforeach
           </select>
         </div>
         <div>
@@ -109,9 +102,9 @@
         Тип
       </p>
           <select type="text" placeholder="Тип" class="form__input">
-            <option class="text-truncate" value="1">Rescue Team</option>
-            <option class="text-truncate" value="2">Rescue555555555 Team</option>
-            <option class="text-truncate" value="3">Rescue 444444Team</option>
+          @foreach(App\Models\ComicType::all() as $type)
+            <option class="text-truncate" value="{{$type->id_type}}">{{$type->type}}</option>
+            @endforeach
           </select>
         </div>
         <div>
@@ -119,9 +112,9 @@
         Возрастной рейтинг
       </p>
           <select type="text" placeholder="Возрастной рейтинг" class="form__input">
-            <option class="text-truncate" value="1">Rescue Team</option>
-            <option class="text-truncate" value="2">Rescue555555555 Team</option>
-            <option class="text-truncate" value="3">Rescue 444444Team</option>
+          @foreach(App\Models\ComicOgr::all() as $ogr)
+            <option class="text-truncate" value="{{$ogr->id_ogr}}">{{$ogr->ogr}}</option>
+          @endforeach
           </select>
         </div>
   </div>
@@ -137,6 +130,7 @@
 
               </div>
 </section>
+@endforeach
         
   </div>
   
