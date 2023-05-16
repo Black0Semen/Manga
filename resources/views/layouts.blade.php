@@ -52,6 +52,7 @@
     <script src="{{asset('content\javascript\main3.js')}}"></script>
     <script src="{{asset('content\javascript\main4.js')}}"></script>
     <script src="{{asset('content\javascript\main5.js')}}"></script>
+    <script src="{{asset('content\javascript\comments.js')}}"></script>
     <script src="{{asset('content\javascript\jquery.responsiveBlock.js')}}"></script>
     <link media="all" type="text/css" rel="stylesheet" href="{{ asset('content\stylesheets\font-awesome.min.css') }}">
     <script src="{{asset('content\javascript\manifest.f1211b48.js')}}"></script>
@@ -191,11 +192,11 @@
             <div data-tippy-root="" id="tippy-2" style="z-index: 9999;visibility: visible;margin: 0px;margin-left: 128px;margin-top: -1455px;position: absolute;inset: 0px auto auto 0px;transform: translate(755.2px, 1504.8px); height: 200px;width: auto;overflow: auto;"><div class="tippy-box" data-state="visible" tabindex="-1" data-theme="dropdown" data-animation="shift-toward" role="tooltip" style="max-width: 150px; transition-duration: 200ms;" data-placement="bottom-end"><div class="tippy-content" data-state="visible" style="transition-duration: 200ms;"><div class="menu header-dropdown" style="height:114px">
             <ul>
             <div class="header-menu__item dropdown">
-          <a class="menu_item control__text" style="color: red;" href="/Catalog">Добавить комикс</a>
+          <a class="menu_item control__text" style="color: red;" href="/comic_add">Добавить комикс</a>
           <div class="menu-template">
           </div>
           <div class="header-menu__item dropdown">
-          <a class="menu_item control__text" style="color: red;" href="/Catalog">Добавить команду</a>
+          <a class="menu_item control__text" style="color: red;" href="/team_add">Добавить команду</a>
           <div class="menu-template">
           </div>
             </ul>
@@ -213,7 +214,14 @@
               <a class="menu__item" href="/zakladki"><i class="fa fa-bookmark fa-fw"></i> Мои закладки</a>
               <a class="menu__item" href="/Notification"><i class="fa fa-bell fa-fw"></i> Уведомления</a>
                             <a class="menu__item" href="/"><i class="fa fa-cog fa-fw"></i> Настройки</a>
-                            <a class="menu__item text-danger" href="/logout" id="logout-button"><i class="fa fa-sign-out fa-fw"></i> Выход</a>
+
+                            <a href="{{ route('logout') }}" class="menu__item" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+Выход
+</a>
+<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+{{ csrf_field() }}
+</form>
+                                        
                             <span class="footer-t-previews" style="    margin-left: 192px;">
               <div class="footer-t-preview tooltip" data-toggle-theme="light" data-place="top" aria-label="Светлая">C</div>
               <div class="footer-t-preview tooltip" data-toggle-theme="dark" data-place="top" aria-label="Темная">T</div>
